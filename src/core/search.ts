@@ -1,8 +1,9 @@
 import { corpus } from "../generated/corpus";
+import { candidateTerms } from "../generated/candidates";
 import { assertNever } from "./invariants";
-import type { PartKind, PartId, SourceId, TermId } from "./types";
+import type { CandidateTermId, PartKind, PartId, SourceId, TermId } from "./types";
 
-export type SearchKind = "term" | PartKind;
+export type SearchKind = "term" | "candidateTerm" | PartKind;
 export type SearchMatchKind = "exact" | "prefix" | "token_prefix" | "substring";
 export type SearchMatchField = "term" | "alias" | "notation" | "surface" | "meaning";
 
@@ -39,7 +40,17 @@ export type PartSearchResult = SearchResultBase & {
   readonly meaning: string;
 };
 
-export type SearchResult = TermSearchResult | PartSearchResult;
+export type CandidateTermSearchResult = SearchResultBase & {
+  readonly kind: "candidateTerm";
+  readonly id: CandidateTermId;
+  readonly term: string;
+  readonly aliases: readonly string[];
+  readonly status: "candidate";
+  readonly sourceVersion: string;
+  readonly license: string;
+};
+
+export type SearchResult = TermSearchResult | CandidateTermSearchResult | PartSearchResult;
 
 type SearchField = {
   readonly field: SearchMatchField;
@@ -167,9 +178,52 @@ function partResults(query: string): readonly PartSearchResult[] {
   });
 }
 
+function candidateTermResults(query: string): readonly CandidateTermSearchResult[] {
+  return candidateTerms.flatMap((candidateTerm) => {
+    const aliases = "aliases" in candidateTerm ? candidateTerm.aliases : [];
+    const evidence = bestEvidence(query, [
+      { field: "term", value: candidateTerm.term },
+      ...aliases.map((alias) => ({ field: "alias" as const, value: alias })),
+    ]);
+    return evidence === undefined
+      ? []
+      : [
+          {
+            kind: "candidateTerm" as const,
+            id: candidateTerm.id,
+            term: candidateTerm.term,
+            aliases,
+            status: candidateTerm.status,
+            sourceVersion: candidateTerm.sourceVersion,
+            license: candidateTerm.license,
+            matchedBy: evidence,
+            citations: [...candidateTerm.sources],
+          },
+        ];
+  });
+}
+
+function sourceRank(result: SearchResult): number {
+  switch (result.kind) {
+    case "term":
+      return 0;
+    case "prefix":
+    case "root":
+    case "suffix":
+    case "combiningForm":
+      return 1;
+    case "candidateTerm":
+      return 2;
+    default:
+      return assertNever(result);
+  }
+}
+
 function compareResults(left: SearchResult, right: SearchResult): number {
   const quality = matchRank(left.matchedBy.kind) - matchRank(right.matchedBy.kind);
   if (quality !== 0) return quality;
+  const source = sourceRank(left) - sourceRank(right);
+  if (source !== 0) return source;
   const field = fieldRank(left.matchedBy.field) - fieldRank(right.matchedBy.field);
   if (field !== 0) return field;
   if (left.id < right.id) return -1;
@@ -182,7 +236,7 @@ export function searchCorpus(input: SearchInput): readonly SearchResult[] {
   const limit = Math.max(0, Math.floor(input.limit ?? defaultResultLimit));
   if (query.length === 0 || limit === 0) return [];
   const kindSet = input.kinds === undefined ? undefined : new Set(input.kinds);
-  return [...termResults(query), ...partResults(query)]
+  return [...termResults(query), ...partResults(query), ...candidateTermResults(query)]
     .filter((result) => kindSet === undefined || kindSet.has(result.kind))
     .sort(compareResults)
     .slice(0, limit);

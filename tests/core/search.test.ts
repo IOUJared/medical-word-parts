@@ -13,6 +13,29 @@ describe("deterministic corpus search", () => {
     });
   });
 
+  it("Given an open-source candidate term, when searched, then it is returned as awaiting verification", () => {
+    const results = searchCorpus({ query: "diabetes" });
+
+    expect(results[0]).toMatchObject({
+      kind: "candidateTerm",
+      id: "candidate:diabetes",
+      term: "diabetes",
+      status: "candidate",
+      matchedBy: { kind: "exact", field: "term", value: "diabetes" },
+    });
+  });
+
+  it("Given a verified term and a candidate prefix match, when searched, then verified results rank first", () => {
+    const results = searchCorpus({ query: "neph" });
+
+    expect(results.map((result) => result.id).slice(0, 3)).toEqual([
+      "term:nephritis",
+      "root:nephr",
+      "root:nephro",
+    ]);
+    expect(results.some((result) => result.id === "candidate:nephrotic-syndrome")).toBe(true);
+  });
+
   it("Given an alias spelling, when searched, then its canonical term carries alias evidence", () => {
     const results = searchCorpus({ query: "hypoglycaemia" });
 
@@ -90,6 +113,7 @@ describe("deterministic corpus search", () => {
       "root:nephro",
       "root:ren",
       "root:reno",
+      "candidate:chronic-kidney-disease",
     ]);
     expect(second).toEqual(first);
   });
@@ -104,7 +128,7 @@ describe("deterministic corpus search", () => {
     expect(searchCorpus({ query: "  " })).toEqual([]);
   });
 
-  it("Given a query with no corpus match, when searched, then it returns no results", () => {
+  it("Given a query with no verified or candidate corpus match, when searched, then it returns no results", () => {
     expect(searchCorpus({ query: "quartz" })).toEqual([]);
   });
 

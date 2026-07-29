@@ -1,7 +1,9 @@
 import type { corpus } from "../generated/corpus";
+import type { candidateTerms } from "../generated/candidates";
 
 export type PartId = (typeof corpus.parts)[number]["id"];
 export type TermId = (typeof corpus.terms)[number]["id"];
+export type CandidateTermId = (typeof candidateTerms)[number]["id"];
 export type SourceId = (typeof corpus.sources)[number]["id"];
 export type PartKind = (typeof corpus.parts)[number]["kind"];
 export type RelationKind = (typeof corpus.relations)[number]["kind"];
