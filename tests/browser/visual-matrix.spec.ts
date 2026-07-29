@@ -5,16 +5,15 @@ import { appUrl, visualRoutes } from "./fixtures";
 
 test.describe.configure({ mode: "serial" });
 
-test("production routes load complete, accessible documents in both themes without failed assets or overflow", async ({ page }) => {
-  await page.goto(appUrl("/"), { waitUntil: "networkidle" });
-  for (const theme of ["light", "dark"] as const) {
-    await page.evaluate((choice) => localStorage.setItem("medical-word-parts:theme", choice), theme);
-    for (const route of visualRoutes) {
+for (const theme of ["light", "dark"] as const) {
+  for (const route of visualRoutes) {
+    test(`${route.slug} loads a complete, accessible ${theme} document without failed assets or overflow`, async ({ page }) => {
       const failedAssets: string[] = [];
       const recordFailedAsset = (response: { readonly url: () => string; readonly status: () => number }) => {
         if (response.url().includes("/_next/") && response.status() >= 400) failedAssets.push(response.url());
       };
       page.on("response", recordFailedAsset);
+      await page.addInitScript((choice) => localStorage.setItem("medical-word-parts:theme", choice), theme);
       const response = await page.goto(appUrl(route.path), { waitUntil: "networkidle" });
 
       expect(response?.status()).toBe(200);
@@ -31,9 +30,9 @@ test("production routes load complete, accessible documents in both themes witho
       const accessibility = await new AxeBuilder({ page }).analyze();
       expect(accessibility.violations).toEqual([]);
       page.off("response", recordFailedAsset);
-    }
+    });
   }
-});
+}
 
 test("all route types render in both themes at required visual evidence widths", async ({ browser }) => {
   test.setTimeout(300_000);
