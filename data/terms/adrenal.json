@@ -1,0 +1,15 @@
+{
+  "id": "term:adrenal", "slug": "adrenal", "term": "adrenal", "normalized": "adrenal", "sources": ["source:ncbi-medical-terminology"],
+  "note": "A word-part teaching record for the adrenal term.",
+  "analyses": [
+    { "id": "analysis:adrenal-primary", "primary": true, "segments": [
+      { "partId": "prefix:ad", "surface": "ad", "start": 0, "end": 2 },
+      { "partId": "root:ren", "surface": "ren", "start": 2, "end": 5 },
+      { "partId": "suffix:al", "surface": "al", "start": 5, "end": 7 }
+    ] },
+    { "id": "analysis:adrenal-alternative", "primary": false, "qualification": "The ad- plus ren- division is an educational analysis; adren- is retained as an alternative stem analysis.", "segments": [
+      { "partId": "root:adren", "surface": "adren", "start": 0, "end": 5 },
+      { "partId": "suffix:al", "surface": "al", "start": 5, "end": 7 }
+    ] }
+  ]
+}

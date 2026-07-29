@@ -1,0 +1,9 @@
+{
+  "id": "term:bradycardia", "slug": "bradycardia", "term": "bradycardia", "normalized": "bradycardia", "sources": ["source:ncbi-medical-terminology"],
+  "note": "A word-part teaching record paired with tachycardia as a contrast.",
+  "analyses": [{ "id": "analysis:bradycardia-primary", "primary": true, "segments": [
+    { "partId": "prefix:brady", "surface": "brady", "start": 0, "end": 5 },
+    { "partId": "root:card", "surface": "card", "start": 5, "end": 9 },
+    { "partId": "suffix:ia", "surface": "ia", "start": 9, "end": 11 }
+  ] }]
+}
