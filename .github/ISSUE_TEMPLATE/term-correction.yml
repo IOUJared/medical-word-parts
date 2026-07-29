@@ -1,0 +1,57 @@
+name: Medical term correction
+description: Report a correction or improvement to a medical term analysis.
+title: "[Correction]: "
+labels:
+  - correction
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include medical information about yourself or another person, patient details, or other personal information. Keep this report limited to public terminology and sources.
+  - type: input
+    id: medical_term
+    attributes:
+      label: Medical term
+      description: Which medical term should be corrected?
+    validations:
+      required: true
+  - type: textarea
+    id: current_analysis
+    attributes:
+      label: Current analysis
+      description: What analysis is currently shown?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_breakdown
+    attributes:
+      label: Proposed breakdown
+      description: What word-part breakdown should replace it?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_meanings
+    attributes:
+      label: Proposed meanings
+      description: What meanings should be assigned to the parts?
+    validations:
+      required: true
+  - type: textarea
+    id: supporting_source
+    attributes:
+      label: Supporting source
+      description: Link to a public dictionary, textbook, journal, or other source.
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Why is the proposed correction more accurate?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Optional context
+      description: Add any other public context that helps review the correction.
