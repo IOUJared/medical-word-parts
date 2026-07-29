@@ -12,10 +12,10 @@ const cleanups: Array<() => void> = [];
 
 afterEach(() => {
   for (const cleanup of cleanups.splice(0)) cleanup();
-  localStorage.clear();
+  window.localStorage.clear();
   document.documentElement.removeAttribute("data-theme");
   vi.restoreAllMocks();
-  vi.unstubAllGlobals();
+  Reflect.deleteProperty(window, "matchMedia");
 });
 
 function installColorSchemePreference(initialDark: boolean) {
@@ -25,7 +25,10 @@ function installColorSchemePreference(initialDark: boolean) {
     addEventListener: (_type: string, listener: (event: { readonly matches: boolean }) => void) => listeners.add(listener),
     removeEventListener: (_type: string, listener: (event: { readonly matches: boolean }) => void) => listeners.delete(listener),
   };
-  vi.stubGlobal("matchMedia", () => preference);
+  Object.defineProperty(window, "matchMedia", {
+    configurable: true,
+    value: () => preference,
+  });
   return {
     change(matches: boolean) {
       preference.matches = matches;
@@ -58,6 +61,8 @@ describe("application shell", () => {
     const toggle = document.querySelector<HTMLButtonElement>("[data-theme-toggle]");
     if (toggle === null) throw new TypeError("Expected theme toggle");
     expect(toggle).toHaveTextContent("Dark mode");
+    expect(toggle).toHaveClass("button-quiet");
+    expect(toggle).not.toHaveClass("button-secondary");
     expect(toggle).toHaveAttribute("type", "button");
     expect(toggle).toHaveAttribute("aria-pressed", "false");
     expect(toggle).toHaveAttribute("inert");

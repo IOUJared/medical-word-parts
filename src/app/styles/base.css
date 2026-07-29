@@ -29,7 +29,6 @@ pre { max-inline-size: 100%; overflow-wrap: anywhere; white-space: pre-wrap; }
 .desktop-nav a, .site-footer nav a { display: inline-flex; min-block-size: var(--size-target-min); align-items: center; }
 .nav-actions { display: flex; max-inline-size: 100%; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: var(--space-2); margin-inline-start: auto; }
 .masthead-search { display: inline-flex; min-block-size: var(--size-target-min); align-items: center; padding-inline: var(--space-2); white-space: nowrap; }
-.theme-toggle { min-block-size: var(--size-target-min); min-inline-size: var(--size-target-min); white-space: nowrap; }
 .theme-toggle[inert] { visibility: hidden; }
 .mobile-nav { position: relative; }
 .mobile-menu { position: fixed; z-index: 30; inset-block-start: var(--space-16); inset-inline: auto var(--space-4); display: none; min-inline-size: min(18rem, calc(100vw - var(--space-8))); margin: 0; padding: 0; border: var(--rule-active) solid var(--color-ink); background: var(--color-paper-strong); }
@@ -62,6 +61,9 @@ input[type="search"] { inline-size: 100%; min-block-size: var(--size-control-lg)
 .button-primary:hover { background: var(--color-blue-800); color: var(--color-paper-strong); }
 .button-secondary { background: var(--color-paper-strong); color: var(--color-ink); }
 .button-quiet { border-color: transparent; background: transparent; color: var(--color-blue-700); text-decoration: underline; }
+.button.theme-toggle { min-block-size: var(--size-target-min); min-inline-size: var(--size-target-min); padding-inline: var(--space-3); border-color: transparent; background: transparent; color: var(--color-ink-muted); font-family: var(--font-body); font-weight: 400; text-decoration: none; white-space: nowrap; }
+.button.theme-toggle:hover { border-color: var(--color-rule-strong); color: var(--color-blue-700); }
+.button.theme-toggle[aria-pressed="true"] { border-color: var(--color-blue-400); color: var(--color-blue-700); }
 .button-icon, .status-icon { inline-size: var(--size-icon-md); block-size: var(--size-icon-md); fill: none; stroke: currentColor; stroke-linecap: square; stroke-linejoin: miter; stroke-width: var(--rule-active); }
 .button-row { display: flex; flex-wrap: wrap; gap: var(--space-3); }
 .margin-note { padding-block: var(--space-2); border-block: var(--rule-hairline) solid var(--color-rule-strong); color: var(--color-ink-muted); font-size: var(--type-small); }

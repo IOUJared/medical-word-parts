@@ -19,7 +19,7 @@ export function AppShell({ children }: { readonly children: ReactNode }) {
         <div className="desktop-nav">{primaryLinks.map(([label, href]) => <Link key={href} href={href} prefetch={false}>{label}</Link>)}</div>
         <div className="nav-actions">
           <Link className="masthead-search" href="/analyze/" prefetch={false}>Search</Link>
-          <button aria-pressed="false" className="button button-secondary theme-toggle" data-theme-toggle inert type="button">Dark mode</button>
+          <button aria-pressed="false" className="button button-quiet theme-toggle" data-theme-toggle inert type="button">Dark mode</button>
           <MobileNav />
         </div>
       </nav>
