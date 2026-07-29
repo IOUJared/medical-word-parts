@@ -14,10 +14,15 @@ The version-controlled files in `data/` are the only authored corpus inputs. `sr
 | `source:nci-adenoma` | National Cancer Institute | The adenoma term citation. |
 | `source:nci-osteoplasty` | National Cancer Institute | The osteoplasty term citation. |
 | `source:nlm-snomed-core-subset` | National Library of Medicine | Frequently used clinical problem-list source for the common terms route. |
+| `source:wikidata-cc0` | Wikimedia Foundation | CC0 candidate-term discovery data. |
+| `source:disease-ontology-cc0` | Disease Ontology | CC0 disease-name candidate records. |
+| `source:mesh-terms` | National Library of Medicine | MeSH candidate-term discovery data with NLM acknowledgement and version tracking. |
 
 The canonical URLs live in [`data/sources.json`](../data/sources.json). The corpus does not fetch them at build or runtime.
 
 The common terms route cites the NLM CORE Problem List Subset as the frequency-backed source. The page only displays local terms whose word-part analyses are already verified in this corpus; raw CORE terms are not imported until their parts are source-checked and authored.
+
+`data/candidate-terms.json` is a discovery queue, not a verified word-part corpus. Candidate terms may be shown in search and on the common terms route, but they do not produce term detail pages or verified analyses until an authored `data/terms/*.json` record is added.
 
 ## Provenance notes
 

@@ -5,6 +5,9 @@
     { "id": "source:nci-cytokine", "publisher": "National Cancer Institute", "title": "Cytokine", "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cytokine" },
     { "id": "source:nci-adenoma", "publisher": "National Cancer Institute", "title": "Adenoma", "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncim/C0001430" },
     { "id": "source:nci-osteoplasty", "publisher": "National Cancer Institute", "title": "Osteoplasty", "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncim/C0185364" },
-    { "id": "source:nlm-snomed-core-subset", "publisher": "National Library of Medicine", "title": "The CORE Problem List Subset of SNOMED CT", "url": "https://www.nlm.nih.gov/research/umls/Snomed/core_subset.html" }
+    { "id": "source:nlm-snomed-core-subset", "publisher": "National Library of Medicine", "title": "The CORE Problem List Subset of SNOMED CT", "url": "https://www.nlm.nih.gov/research/umls/Snomed/core_subset.html" },
+    { "id": "source:wikidata-cc0", "publisher": "Wikimedia Foundation", "title": "Wikidata: Database download", "url": "https://www.wikidata.org/wiki/Wikidata:Database_download" },
+    { "id": "source:disease-ontology-cc0", "publisher": "Disease Ontology", "title": "Human Disease Ontology releases", "url": "https://github.com/DiseaseOntology/HumanDiseaseOntology/releases" },
+    { "id": "source:mesh-terms", "publisher": "National Library of Medicine", "title": "Download MeSH Data", "url": "https://www.nlm.nih.gov/databases/download/mesh.html" }
   ]
 }
