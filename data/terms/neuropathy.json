@@ -1,0 +1,8 @@
+{
+  "id": "term:neuropathy", "slug": "neuropathy", "term": "neuropathy", "normalized": "neuropathy", "sources": ["source:medlineplus-appendix-a"],
+  "note": "A word-part teaching record using the nerve root and disease suffix.",
+  "analyses": [{ "id": "analysis:neuropathy-primary", "primary": true, "segments": [
+    { "partId": "root:neur", "surface": "neur", "start": 0, "end": 4 },
+    { "partId": "suffix:opathy", "surface": "opathy", "start": 4, "end": 10 }
+  ] }]
+}

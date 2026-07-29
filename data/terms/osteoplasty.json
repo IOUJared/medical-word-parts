@@ -1,0 +1,8 @@
+{
+  "id": "term:osteoplasty", "slug": "osteoplasty", "term": "osteoplasty", "normalized": "osteoplasty", "sources": ["source:nci-osteoplasty", "source:medlineplus-appendix-a"],
+  "note": "A source-cited word-part teaching record for osteoplasty.",
+  "analyses": [{ "id": "analysis:osteoplasty-primary", "primary": true, "segments": [
+    { "partId": "root:osteo", "surface": "osteo", "start": 0, "end": 5 },
+    { "partId": "suffix:plasty", "surface": "plasty", "start": 5, "end": 11 }
+  ] }]
+}

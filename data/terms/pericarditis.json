@@ -1,0 +1,9 @@
+{
+  "id": "term:pericarditis", "slug": "pericarditis", "term": "pericarditis", "normalized": "pericarditis", "sources": ["source:medlineplus-appendix-a"],
+  "note": "A word-part teaching record related to endocarditis by the shared heart root.",
+  "analyses": [{ "id": "analysis:pericarditis-primary", "primary": true, "segments": [
+    { "partId": "prefix:peri", "surface": "peri", "start": 0, "end": 4 },
+    { "partId": "root:card", "surface": "card", "start": 4, "end": 8 },
+    { "partId": "suffix:itis", "surface": "itis", "start": 8, "end": 12 }
+  ] }]
+}
