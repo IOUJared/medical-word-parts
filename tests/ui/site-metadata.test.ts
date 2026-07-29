@@ -23,6 +23,13 @@ describe("static discovery metadata", () => {
     expect(policy.sitemap).toBe("https://ioujared.github.io/medical-word-parts/sitemap.xml");
   });
 
+  it("Given the common-terms route, when discovery metadata is built, then the public route and frequency source are registered", () => {
+    const entries = sitemap();
+
+    expect(entries.some((entry) => entry.url.endsWith("/common-medical-terms/"))).toBe(true);
+    expect(corpus.sources.some((source) => source.id === "source:nlm-snomed-core-subset")).toBe(true);
+  });
+
   it("Given the public route inventory, when source and documentation are inspected, then no production showcase route exists", () => {
     const repositoryRoot = process.cwd();
     const readme = readFileSync(join(repositoryRoot, "README.md"), "utf8");

@@ -20,6 +20,7 @@ Educational note: this is a sourced terminology guide, not medical advice. It he
 | `/parts/` | Browse the part catalog |
 | `/parts/[slug]/` | Part detail page |
 | `/term/[slug]/` | Term detail page |
+| `/common-medical-terms/` | Frequency-backed entry point for verified common term records |
 | `/sources/` | Source ledger and provenance |
 | `/methodology/` | Editorial and analysis method |
 
