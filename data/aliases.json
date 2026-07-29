@@ -1,0 +1,6 @@
+{
+  "aliases": [
+    { "alias": "hypoglycaemia", "normalized": "hypoglycaemia", "termId": "term:hypoglycemia", "sources": ["source:ncbi-medical-terminology"] },
+    { "alias": "hyperglycaemia", "normalized": "hyperglycaemia", "termId": "term:hyperglycemia", "sources": ["source:ncbi-medical-terminology"] }
+  ]
+}

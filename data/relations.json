@@ -1,0 +1,7 @@
+{
+  "relations": [
+    { "kind": "contrast", "from": "term:hypoglycemia", "to": "term:hyperglycemia", "sources": ["source:medlineplus-appendix-a"] },
+    { "kind": "contrast", "from": "term:tachycardia", "to": "term:bradycardia", "sources": ["source:medlineplus-appendix-a"] },
+    { "kind": "related", "from": "term:endocarditis", "to": "term:pericarditis", "sources": ["source:medlineplus-appendix-a"] }
+  ]
+}
