@@ -2,6 +2,10 @@ import { z } from "zod";
 
 export const partKinds = ["prefix", "root", "suffix", "combiningForm"] as const;
 export const relationKinds = ["contrast", "related"] as const;
+export const candidateReviewReasons = [
+  "insufficient_decomposition_evidence",
+  "term_schema_incompatible",
+] as const;
 
 const partNamespaceByKind = {
   prefix: "prefix",
@@ -110,6 +114,18 @@ export const candidateTermSchema = z.strictObject({
 
 export const candidateTermsDocumentSchema = z.strictObject({ candidateTerms: z.array(candidateTermSchema) });
 
+export const candidateReviewDecisionSchema = z.strictObject({
+    candidateId,
+    outcome: z.literal("deferred"),
+    reason: z.enum(candidateReviewReasons),
+    reviewSources: citationIds,
+    note: z.string().min(1),
+  });
+
+export const candidateReviewDecisionsDocumentSchema = z.strictObject({
+  candidateReviewDecisions: z.array(candidateReviewDecisionSchema),
+});
+
 export const relationSchema = z.strictObject({
     kind: z.enum(relationKinds),
     from: termId,
@@ -124,5 +140,6 @@ export type Part = z.infer<typeof partSchema>;
 export type Term = z.infer<typeof termSchema>;
 export type Alias = z.infer<typeof aliasSchema>;
 export type CandidateTerm = z.infer<typeof candidateTermSchema>;
+export type CandidateReviewDecision = z.infer<typeof candidateReviewDecisionSchema>;
 export type Relation = z.infer<typeof relationSchema>;
 export type Transformation = z.infer<typeof transformationSchema>;

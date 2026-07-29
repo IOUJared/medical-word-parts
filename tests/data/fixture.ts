@@ -9,6 +9,9 @@ export const fixtureIssues = [
   "duplicate-normalized",
   "duplicate-candidate-normalized",
   "candidate-term-collision",
+  "duplicate-candidate-review",
+  "dangling-candidate-review",
+  "dangling-candidate-review-source",
   "duplicate-part-source",
   "duplicate-term-source",
   "duplicate-alias-source",
@@ -220,6 +223,18 @@ export function createFixture(options: FixtureOptions = {}): string {
     candidateTerms: options.issue === "duplicate-candidate-normalized"
       ? [candidateTerm, { ...candidateTerm, id: "candidate:diabetes-second" }]
       : [candidateTerm],
+  });
+  const candidateReviewDecision = {
+    candidateId: options.issue === "dangling-candidate-review" ? "candidate:missing" : "candidate:diabetes",
+    outcome: "deferred",
+    reason: "insufficient_decomposition_evidence",
+    reviewSources: options.issue === "dangling-candidate-review-source" ? ["source:missing"] : ["source:test"],
+    note: "The reviewed source does not document an exact word-part analysis.",
+  };
+  writeJson(join(directory, "candidate-review-decisions.json"), {
+    candidateReviewDecisions: options.issue === "duplicate-candidate-review"
+      ? [candidateReviewDecision, candidateReviewDecision]
+      : [candidateReviewDecision],
   });
   return directory;
 }

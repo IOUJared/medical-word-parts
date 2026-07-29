@@ -88,6 +88,18 @@ describe("authored data validation", () => {
     expectInvalidFixture("candidate-term-collision", "candidate normalized prerootia collides with a verified term");
   });
 
+  it("Given duplicate candidate review decisions, when validated, then the duplicate is rejected", () => {
+    expectInvalidFixture("duplicate-candidate-review", "duplicate candidate review decision candidate:diabetes");
+  });
+
+  it("Given a review for a missing candidate, when validated, then the dangling candidate is rejected", () => {
+    expectInvalidFixture("dangling-candidate-review", "dangling candidate candidate:missing");
+  });
+
+  it("Given a review with a missing source, when validated, then the dangling source is rejected", () => {
+    expectInvalidFixture("dangling-candidate-review-source", "dangling source source:missing");
+  });
+
   it.each([
     ["duplicate-part-source", "word-parts/prefixes.json"],
     ["duplicate-term-source", "terms/sample.json"],

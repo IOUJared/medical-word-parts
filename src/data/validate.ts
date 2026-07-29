@@ -1,7 +1,7 @@
 import { DataValidationError } from "./errors";
 import type { LoadedCorpus, Located } from "./load";
 import { compareCodePoints } from "./ordering";
-import type { Alias, CandidateTerm, Part, Relation, Source, Term } from "./schemas";
+import type { Alias, CandidateReviewDecision, CandidateTerm, Part, Relation, Source, Term } from "./schemas";
 import { checkAnalyses } from "./validate-analyses";
 
 export type Corpus = {
@@ -10,6 +10,7 @@ export type Corpus = {
   readonly terms: readonly Term[];
   readonly aliases: readonly Alias[];
   readonly candidateTerms: readonly CandidateTerm[];
+  readonly candidateReviewDecisions: readonly CandidateReviewDecision[];
   readonly relations: readonly Relation[];
 };
 
@@ -112,6 +113,33 @@ function checkCandidateTerms(
   checkSources(candidateTerms, references.sourceIds, errors);
 }
 
+function checkCandidateReviewDecisions(
+  decisions: readonly Located<CandidateReviewDecision>[],
+  candidateIds: ReadonlySet<string>,
+  sourceIds: ReadonlySet<string>,
+  errors: string[],
+): void {
+  const reviewedCandidateIds = new Set<string>();
+  for (const decision of decisions) {
+    const candidateId = decision.value.candidateId;
+    if (reviewedCandidateIds.has(candidateId)) {
+      errors.push(`${decision.path}: duplicate candidate review decision ${candidateId}`);
+    }
+    if (!candidateIds.has(candidateId)) {
+      errors.push(`${decision.path}: dangling candidate ${candidateId}`);
+    }
+    reviewedCandidateIds.add(candidateId);
+  }
+  checkSources(
+    decisions.map((decision) => ({
+      path: decision.path,
+      value: { id: decision.value.candidateId, sources: decision.value.reviewSources },
+    })),
+    sourceIds,
+    errors,
+  );
+}
+
 function checkRelations(
   relations: readonly Located<Relation>[],
   references: CorpusReferences,
@@ -157,6 +185,12 @@ export function validateCorpus(loaded: LoadedCorpus): Corpus {
   checkAnalyses(loaded.terms, partById, errors);
   checkAliases(loaded.aliases, references, errors);
   checkCandidateTerms(loaded.candidateTerms, references, errors);
+  checkCandidateReviewDecisions(
+    loaded.candidateReviewDecisions,
+    new Set(loaded.candidateTerms.map((record) => record.value.id)),
+    references.sourceIds,
+    errors,
+  );
   checkRelations(loaded.relations, references, errors);
   if (errors.length > 0) {
     throw new DataValidationError(errors);
@@ -167,6 +201,7 @@ export function validateCorpus(loaded: LoadedCorpus): Corpus {
     terms: loaded.terms.map((record) => record.value),
     aliases: loaded.aliases.map((record) => record.value),
     candidateTerms: loaded.candidateTerms.map((record) => record.value),
+    candidateReviewDecisions: loaded.candidateReviewDecisions.map((record) => record.value),
     relations: loaded.relations.map((record) => record.value),
   };
 }

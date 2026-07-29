@@ -6,6 +6,7 @@ import { DataError } from "./errors";
 import { compareCodePoints } from "./ordering";
 import {
   aliasesDocumentSchema,
+  candidateReviewDecisionsDocumentSchema,
   candidateTermsDocumentSchema,
   partsDocumentSchema,
   relationsDocumentSchema,
@@ -13,6 +14,7 @@ import {
   termSchema,
   type Alias,
   type CandidateTerm,
+  type CandidateReviewDecision,
   type Part,
   type Relation,
   type Source,
@@ -30,6 +32,7 @@ export type LoadedCorpus = {
   readonly terms: readonly Located<Term>[];
   readonly aliases: readonly Located<Alias>[];
   readonly candidateTerms: readonly Located<CandidateTerm>[];
+  readonly candidateReviewDecisions: readonly Located<CandidateReviewDecision>[];
   readonly relations: readonly Located<Relation>[];
 };
 
@@ -85,6 +88,7 @@ export function loadCorpus(root: string): LoadedCorpus {
   const aliasPath = join(root, "aliases.json");
   const relationPath = join(root, "relations.json");
   const candidateTermsPath = join(root, "candidate-terms.json");
+  const candidateReviewDecisionsPath = join(root, "candidate-review-decisions.json");
   const sources = parseFile(root, sourcePath, sourcesDocumentSchema).sources.map((value) => ({
     path: displayPath(root, sourcePath),
     value,
@@ -101,6 +105,14 @@ export function loadCorpus(root: string): LoadedCorpus {
     path: displayPath(root, candidateTermsPath),
     value,
   }));
+  const candidateReviewDecisions = parseFile(
+    root,
+    candidateReviewDecisionsPath,
+    candidateReviewDecisionsDocumentSchema,
+  ).candidateReviewDecisions.map((value) => ({
+    path: displayPath(root, candidateReviewDecisionsPath),
+    value,
+  }));
   return {
     sources,
     parts: [
@@ -112,6 +124,7 @@ export function loadCorpus(root: string): LoadedCorpus {
     terms: loadTerms(root),
     aliases,
     candidateTerms,
+    candidateReviewDecisions,
     relations,
   };
 }
