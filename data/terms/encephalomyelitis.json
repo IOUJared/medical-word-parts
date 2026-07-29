@@ -1,0 +1,23 @@
+{
+  "id": "term:encephalomyelitis",
+  "slug": "encephalomyelitis",
+  "term": "encephalomyelitis",
+  "normalized": "encephalomyelitis",
+  "sources": [
+    "source:ncbi-medical-terminology-nervous",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for encephalomyelitis.",
+  "analyses": [
+    {
+      "id": "analysis:encephalomyelitis-primary",
+      "primary": true,
+      "segments": [
+        { "partId": "root:encephalo", "surface": "encephalo", "start": 0, "end": 9 },
+        { "partId": "root:myel", "surface": "myel", "start": 9, "end": 13 },
+        { "partId": "suffix:itis", "surface": "itis", "start": 13, "end": 17 }
+      ]
+    }
+  ]
+}

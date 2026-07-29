@@ -1,0 +1,30 @@
+{
+  "id": "term:dermatopathy",
+  "slug": "dermatopathy",
+  "term": "dermatopathy",
+  "normalized": "dermatopathy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for dermatopathy.",
+  "analyses": [
+    {
+      "id": "analysis:dermatopathy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:dermat",
+          "surface": "dermat",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:opathy",
+          "surface": "opathy",
+          "start": 6,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

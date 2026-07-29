@@ -1,0 +1,17 @@
+{
+  "id": "term:hemarthrosis",
+  "slug": "hemarthrosis",
+  "term": "hemarthrosis",
+  "normalized": "hemarthrosis",
+  "sources": ["source:medlineplus-appendix-a", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for hemarthrosis.",
+  "analyses": [{
+    "id": "analysis:hemarthrosis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:hem", "surface": "hem", "start": 0, "end": 3 },
+      { "partId": "root:arthr", "surface": "arthr", "start": 3, "end": 8 },
+      { "partId": "suffix:osis", "surface": "osis", "start": 8, "end": 12 }
+    ]
+  }]
+}

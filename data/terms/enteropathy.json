@@ -1,0 +1,30 @@
+{
+  "id": "term:enteropathy",
+  "slug": "enteropathy",
+  "term": "enteropathy",
+  "normalized": "enteropathy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for enteropathy.",
+  "analyses": [
+    {
+      "id": "analysis:enteropathy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:enter",
+          "surface": "enter",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:opathy",
+          "surface": "opathy",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

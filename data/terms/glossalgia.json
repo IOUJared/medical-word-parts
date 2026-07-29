@@ -1,0 +1,31 @@
+{
+  "id": "term:glossalgia",
+  "slug": "glossalgia",
+  "term": "glossalgia",
+  "normalized": "glossalgia",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for glossalgia.",
+  "analyses": [
+    {
+      "id": "analysis:glossalgia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gloss",
+          "surface": "gloss",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:algia",
+          "surface": "algia",
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

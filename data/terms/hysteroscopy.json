@@ -1,0 +1,30 @@
+{
+  "id": "term:hysteroscopy",
+  "slug": "hysteroscopy",
+  "term": "hysteroscopy",
+  "normalized": "hysteroscopy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for hysteroscopy.",
+  "analyses": [
+    {
+      "id": "analysis:hysteroscopy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hystero",
+          "surface": "hystero",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:scopy",
+          "surface": "scopy",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

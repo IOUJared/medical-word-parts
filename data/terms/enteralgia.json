@@ -1,0 +1,30 @@
+{
+  "id": "term:enteralgia",
+  "slug": "enteralgia",
+  "term": "enteralgia",
+  "normalized": "enteralgia",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for enteralgia.",
+  "analyses": [
+    {
+      "id": "analysis:enteralgia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:enter",
+          "surface": "enter",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:algia",
+          "surface": "algia",
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

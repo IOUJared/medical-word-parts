@@ -1,0 +1,19 @@
+{
+  "id": "term:hematocele",
+  "slug": "hematocele",
+  "term": "hematocele",
+  "normalized": "hematocele",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for hematocele.",
+  "analyses": [{
+    "id": "analysis:hematocele-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:hemato", "surface": "hemato", "start": 0, "end": 6 },
+      { "partId": "suffix:cele", "surface": "cele", "start": 6, "end": 10 }
+    ]
+  }]
+}

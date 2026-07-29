@@ -1,0 +1,30 @@
+{
+  "id": "term:gastropathy",
+  "slug": "gastropathy",
+  "term": "gastropathy",
+  "normalized": "gastropathy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for gastropathy.",
+  "analyses": [
+    {
+      "id": "analysis:gastropathy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gastr",
+          "surface": "gastr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:opathy",
+          "surface": "opathy",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

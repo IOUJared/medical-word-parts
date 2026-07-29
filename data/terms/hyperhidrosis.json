@@ -1,0 +1,23 @@
+{
+  "id": "term:hyperhidrosis",
+  "slug": "hyperhidrosis",
+  "term": "hyperhidrosis",
+  "normalized": "hyperhidrosis",
+  "sources": [
+    "source:ncbi-medical-terminology-integumentary",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for hyperhidrosis.",
+  "analyses": [
+    {
+      "id": "analysis:hyperhidrosis-primary",
+      "primary": true,
+      "segments": [
+        { "partId": "prefix:hyper", "surface": "hyper", "start": 0, "end": 5 },
+        { "partId": "root:hidr", "surface": "hidr", "start": 5, "end": 9 },
+        { "partId": "suffix:osis", "surface": "osis", "start": 9, "end": 13 }
+      ]
+    }
+  ]
+}

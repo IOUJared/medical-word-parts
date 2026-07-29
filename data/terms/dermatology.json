@@ -1,0 +1,30 @@
+{
+  "id": "term:dermatology",
+  "slug": "dermatology",
+  "term": "dermatology",
+  "normalized": "dermatology",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for dermatology.",
+  "analyses": [
+    {
+      "id": "analysis:dermatology-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:dermato",
+          "surface": "dermato",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:logy",
+          "surface": "logy",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "term:glioblastoma",
+  "slug": "glioblastoma",
+  "term": "glioblastoma",
+  "normalized": "glioblastoma",
+  "sources": [
+    "source:ncbi-medical-terminology-nervous",
+    "source:medlineplus-appendix-a",
+    "source:ncbi-medical-terminology",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for glioblastoma.",
+  "analyses": [{
+    "id": "analysis:glioblastoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:gli-o", "surface": "glio", "start": 0, "end": 4 },
+      { "partId": "root:blast", "surface": "blast", "start": 4, "end": 9 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 9, "end": 12 }
+    ]
+  }]
+}

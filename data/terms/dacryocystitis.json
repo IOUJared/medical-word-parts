@@ -1,0 +1,20 @@
+{
+  "id": "term:dacryocystitis",
+  "slug": "dacryocystitis",
+  "term": "dacryocystitis",
+  "normalized": "dacryocystitis",
+  "sources": [
+    "source:ncbi-medical-terminology-sensory",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for dacryocystitis.",
+  "analyses": [{
+    "id": "analysis:dacryocystitis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:dacry-o", "surface": "dacryo", "start": 0, "end": 6 },
+      { "partId": "combining:cyst-o", "surface": "cyst", "start": 6, "end": 10, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:itis", "surface": "itis", "start": 10, "end": 14 }
+    ]
+  }]
+}

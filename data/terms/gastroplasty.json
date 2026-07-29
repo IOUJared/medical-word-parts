@@ -1,0 +1,30 @@
+{
+  "id": "term:gastroplasty",
+  "slug": "gastroplasty",
+  "term": "gastroplasty",
+  "normalized": "gastroplasty",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for gastroplasty.",
+  "analyses": [
+    {
+      "id": "analysis:gastroplasty-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gastro",
+          "surface": "gastro",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:plasty",
+          "surface": "plasty",
+          "start": 6,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

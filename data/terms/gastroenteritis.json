@@ -1,0 +1,37 @@
+{
+  "id": "term:gastroenteritis",
+  "slug": "gastroenteritis",
+  "term": "gastroenteritis",
+  "normalized": "gastroenteritis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for gastroenteritis.",
+  "analyses": [
+    {
+      "id": "analysis:gastroenteritis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gastro",
+          "surface": "gastro",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "root:enter",
+          "surface": "enter",
+          "start": 6,
+          "end": 11
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 11,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}

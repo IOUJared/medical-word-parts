@@ -1,0 +1,21 @@
+{
+  "id": "term:hemangiosarcoma",
+  "slug": "hemangiosarcoma",
+  "term": "hemangiosarcoma",
+  "normalized": "hemangiosarcoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for hemangiosarcoma.",
+  "analyses": [{
+    "id": "analysis:hemangiosarcoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:hem", "surface": "hem", "start": 0, "end": 3 },
+      { "partId": "root:angio", "surface": "angio", "start": 3, "end": 8 },
+      { "partId": "root:sarc", "surface": "sarc", "start": 8, "end": 12 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 12, "end": 15 }
+    ]
+  }]
+}

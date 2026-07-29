@@ -1,0 +1,17 @@
+{
+  "id": "term:fibromyalgia",
+  "slug": "fibromyalgia",
+  "term": "fibromyalgia",
+  "normalized": "fibromyalgia",
+  "sources": ["source:medlineplus-appendix-a", "source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for fibromyalgia.",
+  "analyses": [{
+    "id": "analysis:fibromyalgia-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:fibro", "surface": "fibro", "start": 0, "end": 5 },
+      { "partId": "root:my", "surface": "my", "start": 5, "end": 7 },
+      { "partId": "suffix:algia", "surface": "algia", "start": 7, "end": 12 }
+    ]
+  }]
+}

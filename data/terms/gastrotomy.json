@@ -1,0 +1,30 @@
+{
+  "id": "term:gastrotomy",
+  "slug": "gastrotomy",
+  "term": "gastrotomy",
+  "normalized": "gastrotomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for gastrotomy.",
+  "analyses": [
+    {
+      "id": "analysis:gastrotomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gastr",
+          "surface": "gastr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:otomy",
+          "surface": "otomy",
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "term:gastrectomy",
+  "slug": "gastrectomy",
+  "term": "gastrectomy",
+  "normalized": "gastrectomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for gastrectomy.",
+  "analyses": [
+    {
+      "id": "analysis:gastrectomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gastr",
+          "surface": "gastr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:ectomy",
+          "surface": "ectomy",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

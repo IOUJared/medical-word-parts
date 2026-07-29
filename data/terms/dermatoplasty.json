@@ -1,0 +1,30 @@
+{
+  "id": "term:dermatoplasty",
+  "slug": "dermatoplasty",
+  "term": "dermatoplasty",
+  "normalized": "dermatoplasty",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for dermatoplasty.",
+  "analyses": [
+    {
+      "id": "analysis:dermatoplasty-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:dermato",
+          "surface": "dermato",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:plasty",
+          "surface": "plasty",
+          "start": 7,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

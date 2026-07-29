@@ -1,0 +1,16 @@
+{
+  "id": "term:dyspnea",
+  "slug": "dyspnea",
+  "term": "dyspnea",
+  "normalized": "dyspnea",
+  "sources": ["source:ncbi-medical-terminology-respiratory", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for dyspnea.",
+  "analyses": [{
+    "id": "analysis:dyspnea-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "prefix:dys", "surface": "dys", "start": 0, "end": 3 },
+      { "partId": "suffix:pnea", "surface": "pnea", "start": 3, "end": 7 }
+    ]
+  }]
+}

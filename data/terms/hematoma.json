@@ -1,0 +1,19 @@
+{
+  "id": "term:hematoma",
+  "slug": "hematoma",
+  "term": "hematoma",
+  "normalized": "hematoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for hematoma.",
+  "analyses": [{
+    "id": "analysis:hematoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:hemat", "surface": "hemat", "start": 0, "end": 5 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 5, "end": 8 }
+    ]
+  }]
+}

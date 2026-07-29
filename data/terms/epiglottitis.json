@@ -1,0 +1,16 @@
+{
+  "id": "term:epiglottitis",
+  "slug": "epiglottitis",
+  "term": "epiglottitis",
+  "normalized": "epiglottitis",
+  "sources": ["source:ncbi-medical-terminology-respiratory", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for epiglottitis.",
+  "analyses": [{
+    "id": "analysis:epiglottitis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:epiglott-o", "surface": "epiglott", "start": 0, "end": 8, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:itis", "surface": "itis", "start": 8, "end": 12 }
+    ]
+  }]
+}

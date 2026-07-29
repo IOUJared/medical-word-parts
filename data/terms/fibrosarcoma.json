@@ -1,0 +1,20 @@
+{
+  "id": "term:fibrosarcoma",
+  "slug": "fibrosarcoma",
+  "term": "fibrosarcoma",
+  "normalized": "fibrosarcoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for fibrosarcoma.",
+  "analyses": [{
+    "id": "analysis:fibrosarcoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:fibro", "surface": "fibro", "start": 0, "end": 5 },
+      { "partId": "root:sarc", "surface": "sarc", "start": 5, "end": 9 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 9, "end": 12 }
+    ]
+  }]
+}

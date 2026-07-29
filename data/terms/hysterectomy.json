@@ -1,0 +1,30 @@
+{
+  "id": "term:hysterectomy",
+  "slug": "hysterectomy",
+  "term": "hysterectomy",
+  "normalized": "hysterectomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for hysterectomy.",
+  "analyses": [
+    {
+      "id": "analysis:hysterectomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hyster",
+          "surface": "hyster",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:ectomy",
+          "surface": "ectomy",
+          "start": 6,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

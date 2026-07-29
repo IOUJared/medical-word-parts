@@ -1,0 +1,17 @@
+{
+  "id": "term:dystonia",
+  "slug": "dystonia",
+  "term": "dystonia",
+  "normalized": "dystonia",
+  "sources": ["source:ncbi-medical-terminology-sensory", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for dystonia.",
+  "analyses": [{
+    "id": "analysis:dystonia-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "prefix:dys", "surface": "dys", "start": 0, "end": 3 },
+      { "partId": "combining:ton-o", "surface": "ton", "start": 3, "end": 6, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:ia", "surface": "ia", "start": 6, "end": 8 }
+    ]
+  }]
+}

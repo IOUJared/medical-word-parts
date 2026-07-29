@@ -1,0 +1,30 @@
+{
+  "id": "term:hysteralgia",
+  "slug": "hysteralgia",
+  "term": "hysteralgia",
+  "normalized": "hysteralgia",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for hysteralgia.",
+  "analyses": [
+    {
+      "id": "analysis:hysteralgia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hyster",
+          "surface": "hyster",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:algia",
+          "surface": "algia",
+          "start": 6,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

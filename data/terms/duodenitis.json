@@ -1,0 +1,31 @@
+{
+  "id": "term:duodenitis",
+  "slug": "duodenitis",
+  "term": "duodenitis",
+  "normalized": "duodenitis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for duodenitis.",
+  "analyses": [
+    {
+      "id": "analysis:duodenitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:duoden",
+          "surface": "duoden",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

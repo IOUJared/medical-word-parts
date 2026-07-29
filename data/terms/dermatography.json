@@ -1,0 +1,30 @@
+{
+  "id": "term:dermatography",
+  "slug": "dermatography",
+  "term": "dermatography",
+  "normalized": "dermatography",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for dermatography.",
+  "analyses": [
+    {
+      "id": "analysis:dermatography-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:dermato",
+          "surface": "dermato",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:graphy",
+          "surface": "graphy",
+          "start": 7,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

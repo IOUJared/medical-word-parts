@@ -1,0 +1,30 @@
+{
+  "id": "term:gastrostomy",
+  "slug": "gastrostomy",
+  "term": "gastrostomy",
+  "normalized": "gastrostomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for gastrostomy.",
+  "analyses": [
+    {
+      "id": "analysis:gastrostomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gastr",
+          "surface": "gastr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:ostomy",
+          "surface": "ostomy",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

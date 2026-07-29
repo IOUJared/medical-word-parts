@@ -1,0 +1,16 @@
+{
+  "id": "term:fibroma",
+  "slug": "fibroma",
+  "term": "fibroma",
+  "normalized": "fibroma",
+  "sources": ["source:medlineplus-appendix-a", "source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for fibroma.",
+  "analyses": [{
+    "id": "analysis:fibroma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:fibr", "surface": "fibr", "start": 0, "end": 4 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 4, "end": 7 }
+    ]
+  }]
+}

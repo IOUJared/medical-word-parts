@@ -1,0 +1,30 @@
+{
+  "id": "term:hepatoscopy",
+  "slug": "hepatoscopy",
+  "term": "hepatoscopy",
+  "normalized": "hepatoscopy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for hepatoscopy.",
+  "analyses": [
+    {
+      "id": "analysis:hepatoscopy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hepato",
+          "surface": "hepato",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:scopy",
+          "surface": "scopy",
+          "start": 6,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

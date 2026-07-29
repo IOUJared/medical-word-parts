@@ -1,0 +1,21 @@
+{
+  "id": "term:encephalocele",
+  "slug": "encephalocele",
+  "term": "encephalocele",
+  "normalized": "encephalocele",
+  "sources": [
+    "source:ncbi-medical-terminology-nervous",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for encephalocele.",
+  "analyses": [
+    {
+      "id": "analysis:encephalocele-primary",
+      "primary": true,
+      "segments": [
+        { "partId": "root:encephalo", "surface": "encephalo", "start": 0, "end": 9 },
+        { "partId": "suffix:cele", "surface": "cele", "start": 9, "end": 13 }
+      ]
+    }
+  ]
+}

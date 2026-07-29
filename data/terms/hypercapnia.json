@@ -1,0 +1,23 @@
+{
+  "id": "term:hypercapnia",
+  "slug": "hypercapnia",
+  "term": "hypercapnia",
+  "normalized": "hypercapnia",
+  "sources": [
+    "source:ncbi-medical-terminology-respiratory",
+    "source:ncbi-medical-terminology",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for hypercapnia.",
+  "analyses": [
+    {
+      "id": "analysis:hypercapnia-primary",
+      "primary": true,
+      "segments": [
+        { "partId": "prefix:hyper", "surface": "hyper", "start": 0, "end": 5 },
+        { "partId": "root:capn", "surface": "capn", "start": 5, "end": 9 },
+        { "partId": "suffix:ia", "surface": "ia", "start": 9, "end": 11 }
+      ]
+    }
+  ]
+}

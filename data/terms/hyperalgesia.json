@@ -1,0 +1,22 @@
+{
+  "id": "term:hyperalgesia",
+  "slug": "hyperalgesia",
+  "term": "hyperalgesia",
+  "normalized": "hyperalgesia",
+  "sources": [
+    "source:ncbi-medical-terminology-nervous",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for hyperalgesia.",
+  "analyses": [
+    {
+      "id": "analysis:hyperalgesia-primary",
+      "primary": true,
+      "segments": [
+        { "partId": "prefix:hyper", "surface": "hyper", "start": 0, "end": 5 },
+        { "partId": "suffix:algesia", "surface": "algesia", "start": 5, "end": 12 }
+      ]
+    }
+  ]
+}

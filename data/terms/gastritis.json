@@ -1,0 +1,30 @@
+{
+  "id": "term:gastritis",
+  "slug": "gastritis",
+  "term": "gastritis",
+  "normalized": "gastritis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for gastritis.",
+  "analyses": [
+    {
+      "id": "analysis:gastritis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gastr",
+          "surface": "gastr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

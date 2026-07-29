@@ -1,0 +1,19 @@
+{
+  "id": "term:gliosis",
+  "slug": "gliosis",
+  "term": "gliosis",
+  "normalized": "gliosis",
+  "sources": [
+    "source:ncbi-medical-terminology-nervous",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for gliosis.",
+  "analyses": [{
+    "id": "analysis:gliosis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:gli-o", "surface": "gli", "start": 0, "end": 3, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:osis", "surface": "osis", "start": 3, "end": 7 }
+    ]
+  }]
+}

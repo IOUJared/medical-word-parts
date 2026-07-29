@@ -1,0 +1,30 @@
+{
+  "id": "term:dermatosis",
+  "slug": "dermatosis",
+  "term": "dermatosis",
+  "normalized": "dermatosis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for dermatosis.",
+  "analyses": [
+    {
+      "id": "analysis:dermatosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:dermat",
+          "surface": "dermat",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:osis",
+          "surface": "osis",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

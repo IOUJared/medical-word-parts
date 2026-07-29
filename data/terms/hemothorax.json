@@ -1,0 +1,16 @@
+{
+  "id": "term:hemothorax",
+  "slug": "hemothorax",
+  "term": "hemothorax",
+  "normalized": "hemothorax",
+  "sources": ["source:ncbi-medical-terminology-respiratory", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for hemothorax.",
+  "analyses": [{
+    "id": "analysis:hemothorax-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:hem-o", "surface": "hemo", "start": 0, "end": 4 },
+      { "partId": "suffix:thorax", "surface": "thorax", "start": 4, "end": 10 }
+    ]
+  }]
+}

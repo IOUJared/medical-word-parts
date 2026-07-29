@@ -1,0 +1,30 @@
+{
+  "id": "term:hepatectomy",
+  "slug": "hepatectomy",
+  "term": "hepatectomy",
+  "normalized": "hepatectomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for hepatectomy.",
+  "analyses": [
+    {
+      "id": "analysis:hepatectomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hepat",
+          "surface": "hepat",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:ectomy",
+          "surface": "ectomy",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "term:encephalitis",
+  "slug": "encephalitis",
+  "term": "encephalitis",
+  "normalized": "encephalitis",
+  "sources": [
+    "source:ncbi-medical-terminology",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for encephalitis.",
+  "analyses": [
+    {
+      "id": "analysis:encephalitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:encephal",
+          "surface": "encephal",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 8,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

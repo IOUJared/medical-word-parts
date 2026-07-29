@@ -1,0 +1,30 @@
+{
+  "id": "term:enteritis",
+  "slug": "enteritis",
+  "term": "enteritis",
+  "normalized": "enteritis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for enteritis.",
+  "analyses": [
+    {
+      "id": "analysis:enteritis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:enter",
+          "surface": "enter",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

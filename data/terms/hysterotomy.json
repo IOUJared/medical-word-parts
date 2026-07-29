@@ -1,0 +1,30 @@
+{
+  "id": "term:hysterotomy",
+  "slug": "hysterotomy",
+  "term": "hysterotomy",
+  "normalized": "hysterotomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for hysterotomy.",
+  "analyses": [
+    {
+      "id": "analysis:hysterotomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hyster",
+          "surface": "hyster",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:otomy",
+          "surface": "otomy",
+          "start": 6,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

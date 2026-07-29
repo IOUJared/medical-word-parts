@@ -1,0 +1,30 @@
+{
+  "id": "term:enterostomy",
+  "slug": "enterostomy",
+  "term": "enterostomy",
+  "normalized": "enterostomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for enterostomy.",
+  "analyses": [
+    {
+      "id": "analysis:enterostomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:enter",
+          "surface": "enter",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:ostomy",
+          "surface": "ostomy",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

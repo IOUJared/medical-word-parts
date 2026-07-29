@@ -1,0 +1,22 @@
+{
+  "id": "term:ganglioneuroma",
+  "slug": "ganglioneuroma",
+  "term": "ganglioneuroma",
+  "normalized": "ganglioneuroma",
+  "sources": [
+    "source:ncbi-medical-terminology-nervous",
+    "source:medlineplus-appendix-a",
+    "source:ncbi-medical-terminology",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for ganglioneuroma.",
+  "analyses": [{
+    "id": "analysis:ganglioneuroma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:gangli-o", "surface": "ganglio", "start": 0, "end": 7 },
+      { "partId": "root:neur", "surface": "neur", "start": 7, "end": 11 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 11, "end": 14 }
+    ]
+  }]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "term:endometriosis",
+  "slug": "endometriosis",
+  "term": "endometriosis",
+  "normalized": "endometriosis",
+  "sources": [
+    "source:ncbi-medical-terminology-female-reproductive",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for endometriosis.",
+  "analyses": [{
+    "id": "analysis:endometriosis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:endometri-o", "surface": "endometri", "start": 0, "end": 9, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:osis", "surface": "osis", "start": 9, "end": 13 }
+    ]
+  }]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "term:glossitis",
+  "slug": "glossitis",
+  "term": "glossitis",
+  "normalized": "glossitis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for glossitis.",
+  "analyses": [
+    {
+      "id": "analysis:glossitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gloss",
+          "surface": "gloss",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

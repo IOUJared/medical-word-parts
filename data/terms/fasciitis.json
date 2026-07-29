@@ -1,0 +1,16 @@
+{
+  "id": "term:fasciitis",
+  "slug": "fasciitis",
+  "term": "fasciitis",
+  "normalized": "fasciitis",
+  "sources": ["source:ncbi-medical-terminology-muscular", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for fasciitis.",
+  "analyses": [{
+    "id": "analysis:fasciitis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:fasci-o", "surface": "fasci", "start": 0, "end": 5, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:itis", "surface": "itis", "start": 5, "end": 9 }
+    ]
+  }]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "term:endometritis",
+  "slug": "endometritis",
+  "term": "endometritis",
+  "normalized": "endometritis",
+  "sources": [
+    "source:ncbi-medical-terminology-female-reproductive",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for endometritis.",
+  "analyses": [{
+    "id": "analysis:endometritis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:endometr", "surface": "endometr", "start": 0, "end": 8 },
+      { "partId": "suffix:itis", "surface": "itis", "start": 8, "end": 12 }
+    ]
+  }]
+}

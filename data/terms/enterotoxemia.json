@@ -1,0 +1,23 @@
+{
+  "id": "term:enterotoxemia",
+  "slug": "enterotoxemia",
+  "term": "enterotoxemia",
+  "normalized": "enterotoxemia",
+  "sources": [
+    "source:ncbi-medical-terminology-lymphatic",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for enterotoxemia.",
+  "analyses": [
+    {
+      "id": "analysis:enterotoxemia-primary",
+      "primary": true,
+      "segments": [
+        { "partId": "root:entero", "surface": "entero", "start": 0, "end": 6 },
+        { "partId": "root:tox", "surface": "tox", "start": 6, "end": 9 },
+        { "partId": "suffix:emia", "surface": "emia", "start": 9, "end": 13 }
+      ]
+    }
+  ]
+}

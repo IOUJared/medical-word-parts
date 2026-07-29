@@ -1,0 +1,30 @@
+{
+  "id": "term:hepatitis",
+  "slug": "hepatitis",
+  "term": "hepatitis",
+  "normalized": "hepatitis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for hepatitis.",
+  "analyses": [
+    {
+      "id": "analysis:hepatitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hepat",
+          "surface": "hepat",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}
