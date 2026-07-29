@@ -29,6 +29,7 @@ const stepSchema = z.looseObject({
     with: z.record(z.string(), z.string()).optional(),
     env: z.record(z.string(), z.string()).optional(),
     "continue-on-error": z.boolean().optional(),
+    "timeout-minutes": z.number().int().positive().optional(),
   });
 
 const jobSchema = z.looseObject({
@@ -157,9 +158,10 @@ describe("GitHub workflow contracts", () => {
       "id-token": "write",
     });
     expect(workflow.concurrency).toEqual({
-      group: "pages",
+      group: "pages-${{ github.ref }}",
       "cancel-in-progress": true,
     });
+    expect(job.steps.find((step) => step.name === "Install Chromium")?.["timeout-minutes"]).toBe(10);
     expect(job.environment).toEqual({
       name: "github-pages",
       url: "${{ steps.deployment.outputs.page_url }}",
