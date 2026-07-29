@@ -23,7 +23,29 @@ test("known search routes canonically and survives a direct refresh", async ({ p
 });
 
 test("representative verified terms begin with canonical identity followed by complete primary morphology", async ({ page }) => {
-  for (const slug of ["adrenal", "cytokine", "hypoglycemia"] as const) {
+  for (const slug of [
+    "achondroplasia",
+    "adrenal",
+    "anaplasia",
+    "aphakia",
+    "aphasia",
+    "aphonia",
+    "apnea",
+    "aortitis",
+    "appendicitis",
+    "chondroma",
+    "cholestasis",
+    "cytokine",
+    "dyspnea",
+    "dyspepsia",
+    "dystonia",
+    "epiglottitis",
+    "fasciitis",
+    "hemothorax",
+    "hemiplegia",
+    "glomerulonephritis",
+    "hypoglycemia",
+  ] as const) {
     await page.goto(appUrl(`/term/${slug}/`), { waitUntil: "networkidle" });
     const leadingBlocks = page.locator(".term-page > *");
 
@@ -156,7 +178,7 @@ test("parts search, kind filter, and reset recover the collection", async ({ pag
   await page.getByRole("searchbox", { name: "Search word parts" }).fill("quartz");
   await expect(page.getByTestId("no-results")).toBeVisible();
   await page.getByRole("button", { name: "Clear filters" }).click();
-  await expect(page.locator(".part-list > li:visible")).toHaveCount(47);
+  await expect(page.locator(".part-list > li:visible")).toHaveCount(163);
   await expect(page.getByRole("searchbox", { name: "Search word parts" })).toBeFocused();
 
   await page.getByRole("checkbox", { name: "Prefix" }).check();
@@ -189,7 +211,7 @@ test("home kind links load the intended parts filter and browser history stays s
 
   await expect(page).toHaveURL(/\/parts\/?\?kind=prefix$/);
   await expect(page.getByRole("checkbox", { name: "Prefix" })).toBeChecked();
-  await expect(page.getByRole("status")).toHaveText(`${expectedCount} of 47 parts`);
+  await expect(page.getByRole("status")).toHaveText(`${expectedCount} of 163 parts`);
 
   await page.evaluate(() => {
     window.history.pushState(null, "", "?kind=suffix");
@@ -207,7 +229,7 @@ test("parts server index remains complete and honestly describes unavailable int
   await page.goto(appUrl("/parts/?kind=prefix"), { waitUntil: "load" });
 
   await expect(page.getByRole("searchbox", { name: "Search word parts" })).toBeVisible();
-  await expect(page.locator(".part-list > li")).toHaveCount(47);
+  await expect(page.locator(".part-list > li")).toHaveCount(163);
   await expect(page.getByRole("button", { name: "Apply filters" })).toHaveCount(0);
   await expect(page.getByText(/interactive filtering requires javascript/i)).toBeVisible();
   await context.close();

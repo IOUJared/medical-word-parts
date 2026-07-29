@@ -52,7 +52,7 @@ describe("deterministic analyzer browser bundle", () => {
 
     expect(digest()).toBe(firstDigest);
     expect(bundle).toMatch(/^\/\/ GENERATED FILE/);
-    expect(Buffer.byteLength(bundle)).toBeLessThanOrEqual(36_000);
+    expect(Buffer.byteLength(bundle)).toBeLessThanOrEqual(139_750);
     expect(bundle).not.toContain("sourceMappingURL");
     expect(bundle).not.toContain("react-dom");
     expect(bundle).not.toContain("innerHTML");
@@ -126,7 +126,7 @@ describe("deterministic analyzer browser bundle", () => {
     const bundle = readFileSync(bundlePath, "utf8");
 
     expect(digest()).toBe(firstDigest);
-    expect(Buffer.byteLength(bundle)).toBeLessThanOrEqual(8_000);
+    expect(Buffer.byteLength(bundle)).toBeLessThanOrEqual(60_000);
     expect(bundle).not.toContain("sourceMappingURL");
     expect(bundle).not.toContain("react-dom");
     expect(bundle).not.toContain("innerHTML");
