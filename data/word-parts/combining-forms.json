@@ -1,0 +1,6 @@
+{
+  "parts": [
+    { "id": "combining:cyt-o", "kind": "combiningForm", "form": "cyt/o", "meaning": "cell", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "combining:glyc-o", "kind": "combiningForm", "form": "glyc/o", "meaning": "sugar", "sources": ["source:ncbi-medical-terminology"] }
+  ]
+}
