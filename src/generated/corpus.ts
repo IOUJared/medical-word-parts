@@ -31,6 +31,12 @@ export const corpus = {
       "publisher": "National Cancer Institute",
       "title": "Osteoplasty",
       "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncim/C0185364"
+    },
+    {
+      "id": "source:nlm-snomed-core-subset",
+      "publisher": "National Library of Medicine",
+      "title": "The CORE Problem List Subset of SNOMED CT",
+      "url": "https://www.nlm.nih.gov/research/umls/Snomed/core_subset.html"
     }
   ],
   "parts": [

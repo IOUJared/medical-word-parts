@@ -311,5 +311,11 @@ export const sourceCitations = {
     "parts": [],
     "aliases": [],
     "relations": []
+  },
+  "source:nlm-snomed-core-subset": {
+    "terms": [],
+    "parts": [],
+    "aliases": [],
+    "relations": []
   }
 } as const;

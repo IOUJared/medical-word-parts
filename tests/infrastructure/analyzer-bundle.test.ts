@@ -52,7 +52,7 @@ describe("deterministic analyzer browser bundle", () => {
 
     expect(digest()).toBe(firstDigest);
     expect(bundle).toMatch(/^\/\/ GENERATED FILE/);
-    expect(Buffer.byteLength(bundle)).toBeLessThanOrEqual(35_000);
+    expect(Buffer.byteLength(bundle)).toBeLessThanOrEqual(36_000);
     expect(bundle).not.toContain("sourceMappingURL");
     expect(bundle).not.toContain("react-dom");
     expect(bundle).not.toContain("innerHTML");
