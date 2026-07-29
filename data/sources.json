@@ -1,0 +1,9 @@
+{
+  "sources": [
+    { "id": "source:medlineplus-appendix-a", "publisher": "National Library of Medicine, NIH", "title": "Appendix A: Word Parts and What They Mean", "url": "https://medlineplus.gov/appendixa.html" },
+    { "id": "source:ncbi-medical-terminology", "publisher": "National Library of Medicine, Open Resources for Nursing", "title": "Medical Terminology, 2nd ed., Chapter 1 - Identifying Word Parts", "url": "https://www.ncbi.nlm.nih.gov/books/NBK607453/" },
+    { "id": "source:nci-cytokine", "publisher": "National Cancer Institute", "title": "Cytokine", "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cytokine" },
+    { "id": "source:nci-adenoma", "publisher": "National Cancer Institute", "title": "Adenoma", "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncim/C0001430" },
+    { "id": "source:nci-osteoplasty", "publisher": "National Cancer Institute", "title": "Osteoplasty", "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncim/C0185364" }
+  ]
+}
