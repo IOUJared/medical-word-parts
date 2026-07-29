@@ -1,7 +1,7 @@
 import { DataValidationError } from "./errors";
 import type { LoadedCorpus, Located } from "./load";
 import { compareCodePoints } from "./ordering";
-import type { Alias, Part, Relation, Source, Term } from "./schemas";
+import type { Alias, CandidateTerm, Part, Relation, Source, Term } from "./schemas";
 import { checkAnalyses } from "./validate-analyses";
 
 export type Corpus = {
@@ -9,6 +9,7 @@ export type Corpus = {
   readonly parts: readonly Part[];
   readonly terms: readonly Term[];
   readonly aliases: readonly Alias[];
+  readonly candidateTerms: readonly CandidateTerm[];
   readonly relations: readonly Relation[];
 };
 
@@ -92,6 +93,25 @@ function checkAliases(
   checkSources(aliases, references.sourceIds, errors);
 }
 
+function checkCandidateTerms(
+  candidateTerms: readonly Located<CandidateTerm>[],
+  references: CorpusReferences,
+  errors: string[],
+): void {
+  const normalizedCandidates = new Set<string>();
+  for (const candidate of candidateTerms) {
+    const normalized = candidate.value.normalized;
+    if (references.normalizedTerms.has(normalized)) {
+      errors.push(`${candidate.path}: candidate normalized ${normalized} collides with a verified term`);
+    }
+    if (normalizedCandidates.has(normalized)) {
+      errors.push(`${candidate.path}: duplicate candidate normalized ${normalized}`);
+    }
+    normalizedCandidates.add(normalized);
+  }
+  checkSources(candidateTerms, references.sourceIds, errors);
+}
+
 function checkRelations(
   relations: readonly Located<Relation>[],
   references: CorpusReferences,
@@ -124,6 +144,7 @@ export function validateCorpus(loaded: LoadedCorpus): Corpus {
   addDuplicateErrors(loaded.sources, "source id", errors);
   addDuplicateErrors(loaded.parts, "part id", errors);
   addDuplicateErrors(loaded.terms, "term id", errors);
+  addDuplicateErrors(loaded.candidateTerms, "candidate id", errors);
   checkTermKeys(loaded.terms, errors);
   const references: CorpusReferences = {
     sourceIds: new Set(loaded.sources.map((record) => record.value.id)),
@@ -135,6 +156,7 @@ export function validateCorpus(loaded: LoadedCorpus): Corpus {
   checkSources(loaded.terms, references.sourceIds, errors);
   checkAnalyses(loaded.terms, partById, errors);
   checkAliases(loaded.aliases, references, errors);
+  checkCandidateTerms(loaded.candidateTerms, references, errors);
   checkRelations(loaded.relations, references, errors);
   if (errors.length > 0) {
     throw new DataValidationError(errors);
@@ -144,6 +166,7 @@ export function validateCorpus(loaded: LoadedCorpus): Corpus {
     parts: loaded.parts.map((record) => record.value),
     terms: loaded.terms.map((record) => record.value),
     aliases: loaded.aliases.map((record) => record.value),
+    candidateTerms: loaded.candidateTerms.map((record) => record.value),
     relations: loaded.relations.map((record) => record.value),
   };
 }

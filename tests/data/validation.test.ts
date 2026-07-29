@@ -80,6 +80,14 @@ describe("authored data validation", () => {
     expectInvalidFixture("duplicate-normalized", "duplicate term normalized");
   });
 
+  it("Given duplicate candidate normalized values, when validated, then the duplicate is rejected", () => {
+    expectInvalidFixture("duplicate-candidate-normalized", "duplicate candidate normalized diabetes");
+  });
+
+  it("Given a candidate colliding with a verified term, when validated, then the candidate is rejected", () => {
+    expectInvalidFixture("candidate-term-collision", "candidate normalized prerootia collides with a verified term");
+  });
+
   it.each([
     ["duplicate-part-source", "word-parts/prefixes.json"],
     ["duplicate-term-source", "terms/sample.json"],
