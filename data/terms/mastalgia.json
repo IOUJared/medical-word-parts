@@ -1,0 +1,30 @@
+{
+  "id": "term:mastalgia",
+  "slug": "mastalgia",
+  "term": "mastalgia",
+  "normalized": "mastalgia",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for mastalgia.",
+  "analyses": [
+    {
+      "id": "analysis:mastalgia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:mast",
+          "surface": "mast",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:algia",
+          "surface": "algia",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

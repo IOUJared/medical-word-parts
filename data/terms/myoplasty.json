@@ -1,0 +1,30 @@
+{
+  "id": "term:myoplasty",
+  "slug": "myoplasty",
+  "term": "myoplasty",
+  "normalized": "myoplasty",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for myoplasty.",
+  "analyses": [
+    {
+      "id": "analysis:myoplasty-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:myo",
+          "surface": "myo",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "suffix:plasty",
+          "surface": "plasty",
+          "start": 3,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

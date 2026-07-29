@@ -1,0 +1,30 @@
+{
+  "id": "term:mastotomy",
+  "slug": "mastotomy",
+  "term": "mastotomy",
+  "normalized": "mastotomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for mastotomy.",
+  "analyses": [
+    {
+      "id": "analysis:mastotomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:mast",
+          "surface": "mast",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:otomy",
+          "surface": "otomy",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

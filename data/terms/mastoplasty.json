@@ -1,0 +1,30 @@
+{
+  "id": "term:mastoplasty",
+  "slug": "mastoplasty",
+  "term": "mastoplasty",
+  "normalized": "mastoplasty",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for mastoplasty.",
+  "analyses": [
+    {
+      "id": "analysis:mastoplasty-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:masto",
+          "surface": "masto",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:plasty",
+          "surface": "plasty",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

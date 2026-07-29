@@ -1,0 +1,30 @@
+{
+  "id": "term:myotomy",
+  "slug": "myotomy",
+  "term": "myotomy",
+  "normalized": "myotomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for myotomy.",
+  "analyses": [
+    {
+      "id": "analysis:myotomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:my",
+          "surface": "my",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "partId": "suffix:otomy",
+          "surface": "otomy",
+          "start": 2,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}

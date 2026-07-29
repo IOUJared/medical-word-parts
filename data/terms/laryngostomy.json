@@ -1,0 +1,30 @@
+{
+  "id": "term:laryngostomy",
+  "slug": "laryngostomy",
+  "term": "laryngostomy",
+  "normalized": "laryngostomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for laryngostomy.",
+  "analyses": [
+    {
+      "id": "analysis:laryngostomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:laryng",
+          "surface": "laryng",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:ostomy",
+          "surface": "ostomy",
+          "start": 6,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

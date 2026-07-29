@@ -1,0 +1,30 @@
+{
+  "id": "term:myoma",
+  "slug": "myoma",
+  "term": "myoma",
+  "normalized": "myoma",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for myoma.",
+  "analyses": [
+    {
+      "id": "analysis:myoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:my",
+          "surface": "my",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}

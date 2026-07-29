@@ -1,0 +1,30 @@
+{
+  "id": "term:myopathy",
+  "slug": "myopathy",
+  "term": "myopathy",
+  "normalized": "myopathy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for myopathy.",
+  "analyses": [
+    {
+      "id": "analysis:myopathy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:my",
+          "surface": "my",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "partId": "suffix:opathy",
+          "surface": "opathy",
+          "start": 2,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
