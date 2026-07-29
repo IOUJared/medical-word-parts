@@ -1,0 +1,8 @@
+{
+  "id": "term:dermatitis", "slug": "dermatitis", "term": "dermatitis", "normalized": "dermatitis", "sources": ["source:medlineplus-appendix-a"],
+  "note": "A word-part teaching record using the skin root and inflammation suffix.",
+  "analyses": [{ "id": "analysis:dermatitis-primary", "primary": true, "segments": [
+    { "partId": "root:dermat", "surface": "dermat", "start": 0, "end": 6 },
+    { "partId": "suffix:itis", "surface": "itis", "start": 6, "end": 10 }
+  ] }]
+}

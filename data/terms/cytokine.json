@@ -1,0 +1,10 @@
+{
+  "id": "term:cytokine", "slug": "cytokine", "term": "cytokine", "normalized": "cytokine", "sources": ["source:nci-cytokine", "source:ncbi-medical-terminology"],
+  "note": "A source-cited word-part teaching record for cytokine.",
+  "analyses": [
+    { "id": "analysis:cytokine-primary", "primary": true, "qualification": "This cyt/o plus lexicalized -kine decomposition is a qualified teaching analysis; it is not a claim that -kine is universally productive.", "segments": [
+      { "partId": "combining:cyt-o", "surface": "cyto", "start": 0, "end": 4 },
+      { "partId": "suffix:kine", "surface": "kine", "start": 4, "end": 8 }
+    ] }
+  ]
+}

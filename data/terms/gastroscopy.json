@@ -1,0 +1,8 @@
+{
+  "id": "term:gastroscopy", "slug": "gastroscopy", "term": "gastroscopy", "normalized": "gastroscopy", "sources": ["source:medlineplus-appendix-a"],
+  "note": "A word-part teaching record using the stomach root and visual examination suffix.",
+  "analyses": [{ "id": "analysis:gastroscopy-primary", "primary": true, "segments": [
+    { "partId": "root:gastro", "surface": "gastro", "start": 0, "end": 6 },
+    { "partId": "suffix:scopy", "surface": "scopy", "start": 6, "end": 11 }
+  ] }]
+}
