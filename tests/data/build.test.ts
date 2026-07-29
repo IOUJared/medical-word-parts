@@ -5,6 +5,8 @@ import { join } from "node:path";
 import { spawnSync } from "node:child_process";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
+import { candidateTerms } from "../../src/generated/candidates";
+import { corpus } from "../../src/generated/corpus";
 import { relatedTermIds } from "../../src/generated/index";
 
 const repositoryRoot = process.cwd();
@@ -12,25 +14,8 @@ const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
 let generatedDirectory = "";
 const generatedNames = ["candidates.ts", "corpus.ts", "index.ts", "routes.ts", "segmentation.ts"] as const;
 const generatedHeader = "// GENERATED FILE. DO NOT EDIT. Run npm run data:build to regenerate.\n\n";
-const requiredSlugs = [
-  "adenoma",
-  "adrenal",
-  "arthralgia",
-  "bradycardia",
-  "cytokine",
-  "dermatitis",
-  "endocarditis",
-  "gastroscopy",
-  "hepatomegaly",
-  "hyperglycemia",
-  "hypoglycemia",
-  "nephritis",
-  "neuropathy",
-  "osteoplasty",
-  "pericarditis",
-  "tachycardia",
-  "thrombocyte",
-] as const;
+const verifiedTermTarget = 196;
+const candidateTermTarget = 952;
 
 function build(): { readonly status: number | null; readonly output: string } {
   const outcome = spawnSync(npmCommand, ["run", "data:build", "--", "--output", generatedDirectory], {
@@ -80,8 +65,29 @@ describe("deterministic corpus generation", () => {
 
     const routes = readFileSync(join(generatedDirectory, "routes.ts"), "utf8");
     const routeSlugs = (routes.match(/"[a-z]+"/g) ?? []).map((value) => value.slice(1, -1));
+    const corpusSlugs = corpus.terms.map((term) => term.slug).sort();
     expect(routeSlugs).toEqual([...routeSlugs].sort());
-    expect(routeSlugs).toEqual(requiredSlugs);
+    expect(routeSlugs).toEqual(corpusSlugs);
+  });
+
+  it("includes the requested verified term coverage", () => {
+    expect(corpus.terms).toHaveLength(verifiedTermTarget);
+  });
+
+  it("includes the requested MeSH-backed candidate queue coverage", () => {
+    expect(candidateTerms).toHaveLength(candidateTermTarget);
+    const meshCandidates = candidateTerms.filter(
+      (candidate) => candidate.sources.length === 1 && candidate.sources[0] === "source:mesh-terms",
+    );
+    expect(meshCandidates).toHaveLength(923);
+    expect(meshCandidates.every((candidate) => candidate.status === "candidate")).toBe(true);
+    expect(meshCandidates.every((candidate) => candidate.sourceVersion === "MeSH descriptor export")).toBe(true);
+    expect(meshCandidates.every((candidate) => candidate.license === "MeSH free reuse with NLM acknowledgement")).toBe(true);
+    expect(
+      meshCandidates.every(
+        (candidate) => "externalIds" in candidate && candidate.externalIds.meshDescriptor !== undefined,
+      ),
+    ).toBe(true);
   });
 
   it("keeps generated headers separated from module contents", () => {
@@ -135,7 +141,7 @@ describe("deterministic corpus generation", () => {
     expect(segmentation).toContain('"surface": "glyco"');
     expect(segmentation).toContain('"surface": "glyc"');
     expect(segmentation).toContain('"kind": "drop_terminal_vowel"');
-    expect(Buffer.byteLength(segmentation)).toBeLessThanOrEqual(5_000);
+    expect(Buffer.byteLength(segmentation)).toBeLessThanOrEqual(18_300);
   });
 
   it("rejects stale generated output without rewriting it", () => {

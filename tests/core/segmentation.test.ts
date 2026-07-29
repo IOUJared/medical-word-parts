@@ -9,11 +9,11 @@ describe("candidate segmentation", () => {
     expect(candidates).toHaveLength(6);
     expect(candidates.map((candidate) => candidate.segments.map((segment) => segment.partId))).toEqual([
       ["prefix:ad", "root:adren", "root:adren"],
+      ["prefix:a", "root:adren", "root:adren"],
       ["root:adren", "root:adren"],
       ["prefix:ad", "root:adren", "root:ren"],
       ["prefix:ad", "root:ren", "root:adren"],
-      ["root:adren", "root:ren"],
-      ["root:ren", "root:adren"],
+      ["prefix:a", "root:adren", "root:ren"],
     ]);
   });
 });

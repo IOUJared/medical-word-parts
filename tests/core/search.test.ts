@@ -28,12 +28,23 @@ describe("deterministic corpus search", () => {
   it("Given a verified term and a candidate prefix match, when searched, then verified results rank first", () => {
     const results = searchCorpus({ query: "neph" });
 
-    expect(results.map((result) => result.id).slice(0, 3)).toEqual([
+    expect(results.map((result) => result.id).slice(0, 7)).toEqual([
+      "term:nephralgia",
+      "term:nephrectomy",
       "term:nephritis",
-      "root:nephr",
-      "root:nephro",
+      "term:nephroma",
+      "term:nephropathy",
+      "term:nephrostomy",
+      "term:nephrotomy",
     ]);
-    expect(results.some((result) => result.id === "candidate:nephrotic-syndrome")).toBe(true);
+    expect(results.map((result) => result.id).slice(7, 9)).toEqual(["root:nephr", "root:nephro"]);
+    expect(results.map((result) => result.id).slice(9)).toEqual([
+      "candidate:nephrotic-syndrome",
+      "candidate:balkan-nephropathy",
+      "candidate:diabetic-nephropathies",
+      "term:glomerulonephritis",
+      "candidate:hydronephrosis",
+    ]);
   });
 
   it("Given an alias spelling, when searched, then its canonical term carries alias evidence", () => {
@@ -81,18 +92,28 @@ describe("deterministic corpus search", () => {
   it("Given a meaning token, when searched, then exact meaning precedes token-prefix meaning", () => {
     const results = searchCorpus({ query: "condition" });
 
-    expect(results.map((result) => result.id).slice(0, 2)).toEqual(["suffix:ia", "suffix:emia"]);
+    expect(results.map((result) => result.id).slice(0, 3)).toEqual(["suffix:ia", "suffix:osis", "suffix:emia"]);
     expect(results[0]?.matchedBy.kind).toBe("exact");
-    expect(results[1]?.matchedBy.kind).toBe("token_prefix");
+    expect(results[1]?.matchedBy.kind).toBe("prefix");
+    expect(results[2]?.matchedBy.kind).toBe("token_prefix");
   });
 
   it("Given a meaning prefix, when searched, then it records prefix evidence", () => {
     const results = searchCorpus({ query: "blood" });
 
-    expect(results[0]).toMatchObject({
-      id: "suffix:emia",
-      matchedBy: { kind: "prefix", field: "meaning", value: "blood condition" },
-    });
+    expect(results.map((result) => result.id).slice(0, 7)).toEqual([
+      "combining:hem-o",
+      "root:hem",
+      "root:hemat",
+      "root:hemato",
+      "root:angi",
+      "root:angio",
+      "suffix:emia",
+    ]);
+    expect(results[0]).toMatchObject({ matchedBy: { kind: "exact", field: "meaning", value: "blood" } });
+    expect(results[1]).toMatchObject({ matchedBy: { kind: "exact", field: "meaning", value: "blood" } });
+    expect(results[4]).toMatchObject({ matchedBy: { kind: "prefix", field: "meaning", value: "blood vessel" } });
+    expect(results[6]).toMatchObject({ matchedBy: { kind: "prefix", field: "meaning", value: "blood condition" } });
   });
 
   it("Given a meaning substring, when searched, then it records substring evidence", () => {
