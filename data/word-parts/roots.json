@@ -1,0 +1,30 @@
+{
+  "parts": [
+    { "id": "root:aden", "kind": "root", "form": "aden-", "meaning": "gland", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "root:adeno", "kind": "root", "form": "adeno-", "meaning": "gland", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "root:adren", "kind": "root", "form": "adren-", "meaning": "adrenal gland", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "root:adreno", "kind": "root", "form": "adreno-", "meaning": "adrenal gland", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "root:arthr", "kind": "root", "form": "arthr-", "meaning": "joint", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:arthro", "kind": "root", "form": "arthro-", "meaning": "joint", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:card", "kind": "root", "form": "card-", "meaning": "heart", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "root:cardi", "kind": "root", "form": "cardi-", "meaning": "heart", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:cardio", "kind": "root", "form": "cardio-", "meaning": "heart", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:derm", "kind": "root", "form": "derm-", "meaning": "skin", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:dermat", "kind": "root", "form": "dermat-", "meaning": "skin", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "root:dermato", "kind": "root", "form": "dermato-", "meaning": "skin", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:gastr", "kind": "root", "form": "gastr-", "meaning": "stomach", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:gastro", "kind": "root", "form": "gastro-", "meaning": "stomach", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:hepat", "kind": "root", "form": "hepat-", "meaning": "liver", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:hepato", "kind": "root", "form": "hepato-", "meaning": "liver", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:nephr", "kind": "root", "form": "nephr-", "meaning": "kidney", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:nephro", "kind": "root", "form": "nephro-", "meaning": "kidney", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:neur", "kind": "root", "form": "neur-", "meaning": "nerve", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:neuro", "kind": "root", "form": "neuro-", "meaning": "nerve", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:oste", "kind": "root", "form": "oste-", "meaning": "bone", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:osteo", "kind": "root", "form": "osteo-", "meaning": "bone", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:ren", "kind": "root", "form": "ren-", "meaning": "kidney", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "root:reno", "kind": "root", "form": "reno-", "meaning": "kidney", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "root:thromb", "kind": "root", "form": "thromb-", "meaning": "clot", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "root:thrombo", "kind": "root", "form": "thrombo-", "meaning": "clot", "sources": ["source:medlineplus-appendix-a"] }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "parts": [
+    { "id": "prefix:ad", "kind": "prefix", "form": "ad-", "meaning": "toward", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:brady", "kind": "prefix", "form": "brady-", "meaning": "slow", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:endo", "kind": "prefix", "form": "endo-", "meaning": "within", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:hyper", "kind": "prefix", "form": "hyper-", "meaning": "above or excessive", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:hypo", "kind": "prefix", "form": "hypo-", "meaning": "below or deficient", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:peri", "kind": "prefix", "form": "peri-", "meaning": "around", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:tachy", "kind": "prefix", "form": "tachy-", "meaning": "fast", "sources": ["source:medlineplus-appendix-a"] }
+  ]
+}
