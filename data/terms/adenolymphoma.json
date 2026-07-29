@@ -1,0 +1,21 @@
+{
+  "id": "term:adenolymphoma",
+  "slug": "adenolymphoma",
+  "term": "adenolymphoma",
+  "normalized": "adenolymphoma",
+  "sources": [
+    "source:ncbi-medical-terminology",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for adenolymphoma.",
+  "analyses": [{
+    "id": "analysis:adenolymphoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:adeno", "surface": "adeno", "start": 0, "end": 5 },
+      { "partId": "root:lymph", "surface": "lymph", "start": 5, "end": 10 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 10, "end": 13 }
+    ]
+  }]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "term:angiogram",
+  "slug": "angiogram",
+  "term": "angiogram",
+  "normalized": "angiogram",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for angiogram.",
+  "analyses": [
+    {
+      "id": "analysis:angiogram-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:angio",
+          "surface": "angio",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:gram",
+          "surface": "gram",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

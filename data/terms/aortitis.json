@@ -1,0 +1,16 @@
+{
+  "id": "term:aortitis",
+  "slug": "aortitis",
+  "term": "aortitis",
+  "normalized": "aortitis",
+  "sources": ["source:ncbi-medical-terminology-cardiovascular", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for aortitis.",
+  "analyses": [{
+    "id": "analysis:aortitis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:aort-o", "surface": "aort", "start": 0, "end": 4, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:itis", "surface": "itis", "start": 4, "end": 8 }
+    ]
+  }]
+}

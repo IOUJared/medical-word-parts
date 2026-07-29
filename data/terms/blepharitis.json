@@ -1,0 +1,31 @@
+{
+  "id": "term:blepharitis",
+  "slug": "blepharitis",
+  "term": "blepharitis",
+  "normalized": "blepharitis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for blepharitis.",
+  "analyses": [
+    {
+      "id": "analysis:blepharitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:blephar",
+          "surface": "blephar",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "term:bronchography",
+  "slug": "bronchography",
+  "term": "bronchography",
+  "normalized": "bronchography",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for bronchography.",
+  "analyses": [
+    {
+      "id": "analysis:bronchography-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:broncho",
+          "surface": "broncho",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:graphy",
+          "surface": "graphy",
+          "start": 7,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

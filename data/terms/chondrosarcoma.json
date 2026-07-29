@@ -1,0 +1,17 @@
+{
+  "id": "term:chondrosarcoma",
+  "slug": "chondrosarcoma",
+  "term": "chondrosarcoma",
+  "normalized": "chondrosarcoma",
+  "sources": ["source:ncbi-medical-terminology-skeletal", "source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for chondrosarcoma.",
+  "analyses": [{
+    "id": "analysis:chondrosarcoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:chondr-o", "surface": "chondro", "start": 0, "end": 7 },
+      { "partId": "root:sarc", "surface": "sarc", "start": 7, "end": 11 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 11, "end": 14 }
+    ]
+  }]
+}

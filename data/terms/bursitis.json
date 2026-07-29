@@ -1,0 +1,31 @@
+{
+  "id": "term:bursitis",
+  "slug": "bursitis",
+  "term": "bursitis",
+  "normalized": "bursitis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for bursitis.",
+  "analyses": [
+    {
+      "id": "analysis:bursitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:burs",
+          "surface": "burs",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

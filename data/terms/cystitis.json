@@ -1,0 +1,30 @@
+{
+  "id": "term:cystitis",
+  "slug": "cystitis",
+  "term": "cystitis",
+  "normalized": "cystitis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for cystitis.",
+  "analyses": [
+    {
+      "id": "analysis:cystitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:cyst",
+          "surface": "cyst",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

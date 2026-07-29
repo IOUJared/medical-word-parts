@@ -1,0 +1,18 @@
+{
+  "id": "term:cystadenocarcinoma",
+  "slug": "cystadenocarcinoma",
+  "term": "cystadenocarcinoma",
+  "normalized": "cystadenocarcinoma",
+  "sources": ["source:medlineplus-appendix-a", "source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for cystadenocarcinoma.",
+  "analyses": [{
+    "id": "analysis:cystadenocarcinoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:cyst", "surface": "cyst", "start": 0, "end": 4 },
+      { "partId": "root:adeno", "surface": "adeno", "start": 4, "end": 9 },
+      { "partId": "root:carcin", "surface": "carcin", "start": 9, "end": 15 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 15, "end": 18 }
+    ]
+  }]
+}

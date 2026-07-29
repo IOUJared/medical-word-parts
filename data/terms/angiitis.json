@@ -1,0 +1,30 @@
+{
+  "id": "term:angiitis",
+  "slug": "angiitis",
+  "term": "angiitis",
+  "normalized": "angiitis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for angiitis.",
+  "analyses": [
+    {
+      "id": "analysis:angiitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:angi",
+          "surface": "angi",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

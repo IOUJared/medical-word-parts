@@ -1,0 +1,16 @@
+{
+  "id": "term:carcinoma",
+  "slug": "carcinoma",
+  "term": "carcinoma",
+  "normalized": "carcinoma",
+  "sources": ["source:medlineplus-appendix-a", "source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for carcinoma.",
+  "analyses": [{
+    "id": "analysis:carcinoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:carcin", "surface": "carcin", "start": 0, "end": 6 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 6, "end": 9 }
+    ]
+  }]
+}

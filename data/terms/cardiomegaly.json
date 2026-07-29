@@ -1,0 +1,31 @@
+{
+  "id": "term:cardiomegaly",
+  "slug": "cardiomegaly",
+  "term": "cardiomegaly",
+  "normalized": "cardiomegaly",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for cardiomegaly.",
+  "analyses": [
+    {
+      "id": "analysis:cardiomegaly-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:cardio",
+          "surface": "cardio",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:megaly",
+          "surface": "megaly",
+          "start": 6,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

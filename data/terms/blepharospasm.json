@@ -1,0 +1,31 @@
+{
+  "id": "term:blepharospasm",
+  "slug": "blepharospasm",
+  "term": "blepharospasm",
+  "normalized": "blepharospasm",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for blepharospasm.",
+  "analyses": [
+    {
+      "id": "analysis:blepharospasm-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:blepharo",
+          "surface": "blepharo",
+          "start": 0,
+          "end": 8
+        },
+        {
+          "partId": "suffix:spasm",
+          "surface": "spasm",
+          "start": 8,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

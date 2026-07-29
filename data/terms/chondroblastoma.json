@@ -1,0 +1,17 @@
+{
+  "id": "term:chondroblastoma",
+  "slug": "chondroblastoma",
+  "term": "chondroblastoma",
+  "normalized": "chondroblastoma",
+  "sources": ["source:ncbi-medical-terminology-skeletal", "source:medlineplus-appendix-a", "source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for chondroblastoma.",
+  "analyses": [{
+    "id": "analysis:chondroblastoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:chondr-o", "surface": "chondro", "start": 0, "end": 7 },
+      { "partId": "root:blast", "surface": "blast", "start": 7, "end": 12 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 12, "end": 15 }
+    ]
+  }]
+}

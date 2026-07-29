@@ -1,0 +1,17 @@
+{
+  "id": "term:bronchopneumonia",
+  "slug": "bronchopneumonia",
+  "term": "bronchopneumonia",
+  "normalized": "bronchopneumonia",
+  "sources": ["source:ncbi-medical-terminology-respiratory", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for bronchopneumonia.",
+  "analyses": [{
+    "id": "analysis:bronchopneumonia-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:broncho", "surface": "broncho", "start": 0, "end": 7 },
+      { "partId": "combining:pneumon-o", "surface": "pneumon", "start": 7, "end": 14, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:ia", "surface": "ia", "start": 14, "end": 16 }
+    ]
+  }]
+}

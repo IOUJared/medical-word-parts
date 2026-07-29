@@ -1,0 +1,17 @@
+{
+  "id": "term:carcinosarcoma",
+  "slug": "carcinosarcoma",
+  "term": "carcinosarcoma",
+  "normalized": "carcinosarcoma",
+  "sources": ["source:medlineplus-appendix-a", "source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for carcinosarcoma.",
+  "analyses": [{
+    "id": "analysis:carcinosarcoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:carcino", "surface": "carcino", "start": 0, "end": 7 },
+      { "partId": "root:sarc", "surface": "sarc", "start": 7, "end": 11 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 11, "end": 14 }
+    ]
+  }]
+}

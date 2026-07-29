@@ -1,0 +1,31 @@
+{
+  "id": "term:cyanosis",
+  "slug": "cyanosis",
+  "term": "cyanosis",
+  "normalized": "cyanosis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for cyanosis.",
+  "analyses": [
+    {
+      "id": "analysis:cyanosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:cyan",
+          "surface": "cyan",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:osis",
+          "surface": "osis",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

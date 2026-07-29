@@ -1,0 +1,30 @@
+{
+  "id": "term:bronchitis",
+  "slug": "bronchitis",
+  "term": "bronchitis",
+  "normalized": "bronchitis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for bronchitis.",
+  "analyses": [
+    {
+      "id": "analysis:bronchitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:bronch",
+          "surface": "bronch",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

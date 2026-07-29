@@ -1,0 +1,30 @@
+{
+  "id": "term:cephalotomy",
+  "slug": "cephalotomy",
+  "term": "cephalotomy",
+  "normalized": "cephalotomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for cephalotomy.",
+  "analyses": [
+    {
+      "id": "analysis:cephalotomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:cephal",
+          "surface": "cephal",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:otomy",
+          "surface": "otomy",
+          "start": 6,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

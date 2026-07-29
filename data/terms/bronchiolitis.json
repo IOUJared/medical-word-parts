@@ -1,0 +1,22 @@
+{
+  "id": "term:bronchiolitis",
+  "slug": "bronchiolitis",
+  "term": "bronchiolitis",
+  "normalized": "bronchiolitis",
+  "sources": [
+    "source:open-alberta-respiratory-terminology",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for bronchiolitis.",
+  "analyses": [
+    {
+      "id": "analysis:bronchiolitis-primary",
+      "primary": true,
+      "segments": [
+        { "partId": "root:bronchiol", "surface": "bronchiol", "start": 0, "end": 9 },
+        { "partId": "suffix:itis", "surface": "itis", "start": 9, "end": 13 }
+      ]
+    }
+  ]
+}

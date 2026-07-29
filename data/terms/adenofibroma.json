@@ -1,0 +1,21 @@
+{
+  "id": "term:adenofibroma",
+  "slug": "adenofibroma",
+  "term": "adenofibroma",
+  "normalized": "adenofibroma",
+  "sources": [
+    "source:ncbi-medical-terminology",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for adenofibroma.",
+  "analyses": [{
+    "id": "analysis:adenofibroma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:adeno", "surface": "adeno", "start": 0, "end": 5 },
+      { "partId": "root:fibr", "surface": "fibr", "start": 5, "end": 9 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 9, "end": 12 }
+    ]
+  }]
+}

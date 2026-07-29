@@ -1,0 +1,30 @@
+{
+  "id": "term:arthroscopy",
+  "slug": "arthroscopy",
+  "term": "arthroscopy",
+  "normalized": "arthroscopy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for arthroscopy.",
+  "analyses": [
+    {
+      "id": "analysis:arthroscopy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:arthro",
+          "surface": "arthro",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:scopy",
+          "surface": "scopy",
+          "start": 6,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "term:arthritis",
+  "slug": "arthritis",
+  "term": "arthritis",
+  "normalized": "arthritis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for arthritis.",
+  "analyses": [
+    {
+      "id": "analysis:arthritis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:arthr",
+          "surface": "arthr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

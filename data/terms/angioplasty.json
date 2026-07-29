@@ -1,0 +1,30 @@
+{
+  "id": "term:angioplasty",
+  "slug": "angioplasty",
+  "term": "angioplasty",
+  "normalized": "angioplasty",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for angioplasty.",
+  "analyses": [
+    {
+      "id": "analysis:angioplasty-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:angio",
+          "surface": "angio",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:plasty",
+          "surface": "plasty",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

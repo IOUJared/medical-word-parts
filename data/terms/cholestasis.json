@@ -1,0 +1,16 @@
+{
+  "id": "term:cholestasis",
+  "slug": "cholestasis",
+  "term": "cholestasis",
+  "normalized": "cholestasis",
+  "sources": ["source:ncbi-medical-terminology-digestive", "source:ncbi-medical-terminology-cardiovascular", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for cholestasis.",
+  "analyses": [{
+    "id": "analysis:cholestasis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:chol-e", "surface": "chole", "start": 0, "end": 5 },
+      { "partId": "suffix:stasis", "surface": "stasis", "start": 5, "end": 11 }
+    ]
+  }]
+}

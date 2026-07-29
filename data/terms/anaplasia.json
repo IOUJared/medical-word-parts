@@ -1,0 +1,16 @@
+{
+  "id": "term:anaplasia",
+  "slug": "anaplasia",
+  "term": "anaplasia",
+  "normalized": "anaplasia",
+  "sources": ["source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for anaplasia.",
+  "analyses": [{
+    "id": "analysis:anaplasia-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "prefix:ana", "surface": "ana", "start": 0, "end": 3 },
+      { "partId": "suffix:plasia", "surface": "plasia", "start": 3, "end": 9 }
+    ]
+  }]
+}

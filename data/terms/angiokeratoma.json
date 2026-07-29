@@ -1,0 +1,20 @@
+{
+  "id": "term:angiokeratoma",
+  "slug": "angiokeratoma",
+  "term": "angiokeratoma",
+  "normalized": "angiokeratoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for angiokeratoma.",
+  "analyses": [{
+    "id": "analysis:angiokeratoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:angio", "surface": "angio", "start": 0, "end": 5 },
+      { "partId": "root:kerat", "surface": "kerat", "start": 5, "end": 10 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 10, "end": 13 }
+    ]
+  }]
+}

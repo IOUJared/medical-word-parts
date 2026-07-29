@@ -1,0 +1,16 @@
+{
+  "id": "term:chondroma",
+  "slug": "chondroma",
+  "term": "chondroma",
+  "normalized": "chondroma",
+  "sources": ["source:ncbi-medical-terminology-skeletal", "source:ncbi-medical-terminology", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for chondroma.",
+  "analyses": [{
+    "id": "analysis:chondroma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:chondr-o", "surface": "chondr", "start": 0, "end": 6, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:oma", "surface": "oma", "start": 6, "end": 9 }
+    ]
+  }]
+}

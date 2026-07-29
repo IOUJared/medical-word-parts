@@ -1,0 +1,21 @@
+{
+  "id": "term:cholecystitis",
+  "slug": "cholecystitis",
+  "term": "cholecystitis",
+  "normalized": "cholecystitis",
+  "sources": [
+    "source:ncbi-medical-terminology-digestive",
+    "source:ncbi-medical-terminology-sensory",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for cholecystitis.",
+  "analyses": [{
+    "id": "analysis:cholecystitis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:chole", "surface": "chole", "start": 0, "end": 5 },
+      { "partId": "root:cyst", "surface": "cyst", "start": 5, "end": 9 },
+      { "partId": "suffix:itis", "surface": "itis", "start": 9, "end": 13 }
+    ]
+  }]
+}

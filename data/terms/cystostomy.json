@@ -1,0 +1,30 @@
+{
+  "id": "term:cystostomy",
+  "slug": "cystostomy",
+  "term": "cystostomy",
+  "normalized": "cystostomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for cystostomy.",
+  "analyses": [
+    {
+      "id": "analysis:cystostomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:cyst",
+          "surface": "cyst",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:ostomy",
+          "surface": "ostomy",
+          "start": 4,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

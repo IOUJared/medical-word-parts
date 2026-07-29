@@ -1,0 +1,30 @@
+{
+  "id": "term:bronchotomy",
+  "slug": "bronchotomy",
+  "term": "bronchotomy",
+  "normalized": "bronchotomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for bronchotomy.",
+  "analyses": [
+    {
+      "id": "analysis:bronchotomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:bronch",
+          "surface": "bronch",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:otomy",
+          "surface": "otomy",
+          "start": 6,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

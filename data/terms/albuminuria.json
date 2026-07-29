@@ -1,0 +1,16 @@
+{
+  "id": "term:albuminuria",
+  "slug": "albuminuria",
+  "term": "albuminuria",
+  "normalized": "albuminuria",
+  "sources": ["source:ncbi-medical-terminology-urinary", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for albuminuria.",
+  "analyses": [{
+    "id": "analysis:albuminuria-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:albumin-o", "surface": "albumin", "start": 0, "end": 7, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:uria", "surface": "uria", "start": 7, "end": 11 }
+    ]
+  }]
+}

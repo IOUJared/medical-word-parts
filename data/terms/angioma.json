@@ -1,0 +1,30 @@
+{
+  "id": "term:angioma",
+  "slug": "angioma",
+  "term": "angioma",
+  "normalized": "angioma",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for angioma.",
+  "analyses": [
+    {
+      "id": "analysis:angioma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:angi",
+          "surface": "angi",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}

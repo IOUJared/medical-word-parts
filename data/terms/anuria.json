@@ -1,0 +1,16 @@
+{
+  "id": "term:anuria",
+  "slug": "anuria",
+  "term": "anuria",
+  "normalized": "anuria",
+  "sources": ["source:medlineplus-appendix-a", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for anuria.",
+  "analyses": [{
+    "id": "analysis:anuria-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "prefix:an", "surface": "an", "start": 0, "end": 2 },
+      { "partId": "suffix:uria", "surface": "uria", "start": 2, "end": 6 }
+    ]
+  }]
+}

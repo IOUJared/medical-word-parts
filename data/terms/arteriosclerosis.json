@@ -1,0 +1,16 @@
+{
+  "id": "term:arteriosclerosis",
+  "slug": "arteriosclerosis",
+  "term": "arteriosclerosis",
+  "normalized": "arteriosclerosis",
+  "sources": ["source:ncbi-medical-terminology-cardiovascular", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for arteriosclerosis.",
+  "analyses": [{
+    "id": "analysis:arteriosclerosis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "combining:arteri-o", "surface": "arterio", "start": 0, "end": 7 },
+      { "partId": "suffix:sclerosis", "surface": "sclerosis", "start": 7, "end": 16 }
+    ]
+  }]
+}

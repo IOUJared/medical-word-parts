@@ -1,0 +1,17 @@
+{
+  "id": "term:aphasia",
+  "slug": "aphasia",
+  "term": "aphasia",
+  "normalized": "aphasia",
+  "sources": ["source:ncbi-medical-terminology-nervous", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for aphasia.",
+  "analyses": [{
+    "id": "analysis:aphasia-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "prefix:a", "surface": "a", "start": 0, "end": 1 },
+      { "partId": "combining:phas-o", "surface": "phas", "start": 1, "end": 5, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:ia", "surface": "ia", "start": 5, "end": 7 }
+    ]
+  }]
+}

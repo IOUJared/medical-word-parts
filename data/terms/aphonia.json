@@ -1,0 +1,17 @@
+{
+  "id": "term:aphonia",
+  "slug": "aphonia",
+  "term": "aphonia",
+  "normalized": "aphonia",
+  "sources": ["source:ncbi-medical-terminology-respiratory", "source:mesh-terms"],
+  "note": "A source-cited word-part teaching record for aphonia.",
+  "analyses": [{
+    "id": "analysis:aphonia-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "prefix:a", "surface": "a", "start": 0, "end": 1 },
+      { "partId": "combining:phon-o", "surface": "phon", "start": 1, "end": 5, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:ia", "surface": "ia", "start": 5, "end": 7 }
+    ]
+  }]
+}

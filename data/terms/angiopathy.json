@@ -1,0 +1,30 @@
+{
+  "id": "term:angiopathy",
+  "slug": "angiopathy",
+  "term": "angiopathy",
+  "normalized": "angiopathy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for angiopathy.",
+  "analyses": [
+    {
+      "id": "analysis:angiopathy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:angi",
+          "surface": "angi",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:opathy",
+          "surface": "opathy",
+          "start": 4,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

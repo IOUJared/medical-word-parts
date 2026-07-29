@@ -1,0 +1,21 @@
+{
+  "id": "term:arthrogryposis",
+  "slug": "arthrogryposis",
+  "term": "arthrogryposis",
+  "normalized": "arthrogryposis",
+  "sources": [
+    "source:pmc-arthrogryposis-definition",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for arthrogryposis.",
+  "analyses": [{
+    "id": "analysis:arthrogryposis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:arthro", "surface": "arthro", "start": 0, "end": 6 },
+      { "partId": "root:gryp", "surface": "gryp", "start": 6, "end": 10 },
+      { "partId": "suffix:osis", "surface": "osis", "start": 10, "end": 14 }
+    ]
+  }]
+}

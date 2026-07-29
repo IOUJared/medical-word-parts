@@ -1,0 +1,20 @@
+{
+  "id": "term:acromegaly",
+  "slug": "acromegaly",
+  "term": "acromegaly",
+  "normalized": "acromegaly",
+  "sources": [
+    "source:ncbi-medical-terminology-endocrine",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for acromegaly.",
+  "analyses": [{
+    "id": "analysis:acromegaly-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:acro", "surface": "acro", "start": 0, "end": 4 },
+      { "partId": "suffix:megaly", "surface": "megaly", "start": 4, "end": 10 }
+    ]
+  }]
+}

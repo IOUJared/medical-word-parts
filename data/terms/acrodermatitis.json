@@ -1,0 +1,22 @@
+{
+  "id": "term:acrodermatitis",
+  "slug": "acrodermatitis",
+  "term": "acrodermatitis",
+  "normalized": "acrodermatitis",
+  "sources": [
+    "source:ncbi-medical-terminology-endocrine",
+    "source:ncbi-medical-terminology-integumentary",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for acrodermatitis.",
+  "analyses": [{
+    "id": "analysis:acrodermatitis-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:acro", "surface": "acro", "start": 0, "end": 4 },
+      { "partId": "root:dermat", "surface": "dermat", "start": 4, "end": 10 },
+      { "partId": "suffix:itis", "surface": "itis", "start": 10, "end": 14 }
+    ]
+  }]
+}

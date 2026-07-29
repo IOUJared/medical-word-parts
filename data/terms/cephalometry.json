@@ -1,0 +1,30 @@
+{
+  "id": "term:cephalometry",
+  "slug": "cephalometry",
+  "term": "cephalometry",
+  "normalized": "cephalometry",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for cephalometry.",
+  "analyses": [
+    {
+      "id": "analysis:cephalometry-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:cephalo",
+          "surface": "cephalo",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:metry",
+          "surface": "metry",
+          "start": 7,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

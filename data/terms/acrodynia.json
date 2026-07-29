@@ -1,0 +1,20 @@
+{
+  "id": "term:acrodynia",
+  "slug": "acrodynia",
+  "term": "acrodynia",
+  "normalized": "acrodynia",
+  "sources": [
+    "source:ncbi-medical-terminology-endocrine",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for acrodynia.",
+  "analyses": [{
+    "id": "analysis:acrodynia-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:acro", "surface": "acro", "start": 0, "end": 4 },
+      { "partId": "suffix:dynia", "surface": "dynia", "start": 4, "end": 9 }
+    ]
+  }]
+}

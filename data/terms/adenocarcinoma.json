@@ -1,0 +1,21 @@
+{
+  "id": "term:adenocarcinoma",
+  "slug": "adenocarcinoma",
+  "term": "adenocarcinoma",
+  "normalized": "adenocarcinoma",
+  "sources": [
+    "source:ncbi-medical-terminology",
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "note": "A source-cited word-part teaching record for adenocarcinoma.",
+  "analyses": [{
+    "id": "analysis:adenocarcinoma-primary",
+    "primary": true,
+    "segments": [
+      { "partId": "root:adeno", "surface": "adeno", "start": 0, "end": 5 },
+      { "partId": "root:carcin", "surface": "carcin", "start": 5, "end": 11 },
+      { "partId": "suffix:oma", "surface": "oma", "start": 11, "end": 14 }
+    ]
+  }]
+}
