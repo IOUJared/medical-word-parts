@@ -1,0 +1,30 @@
+{
+  "id": "term:neuroma",
+  "slug": "neuroma",
+  "term": "neuroma",
+  "normalized": "neuroma",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for neuroma.",
+  "analyses": [
+    {
+      "id": "analysis:neuroma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:neur",
+          "surface": "neur",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}

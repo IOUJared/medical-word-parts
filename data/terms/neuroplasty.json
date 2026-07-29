@@ -1,0 +1,30 @@
+{
+  "id": "term:neuroplasty",
+  "slug": "neuroplasty",
+  "term": "neuroplasty",
+  "normalized": "neuroplasty",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for neuroplasty.",
+  "analyses": [
+    {
+      "id": "analysis:neuroplasty-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:neuro",
+          "surface": "neuro",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:plasty",
+          "surface": "plasty",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

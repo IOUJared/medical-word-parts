@@ -1,0 +1,30 @@
+{
+  "id": "term:osteosclerosis",
+  "slug": "osteosclerosis",
+  "term": "osteosclerosis",
+  "normalized": "osteosclerosis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for osteosclerosis.",
+  "analyses": [
+    {
+      "id": "analysis:osteosclerosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:osteo",
+          "surface": "osteo",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:sclerosis",
+          "surface": "sclerosis",
+          "start": 5,
+          "end": 14
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "term:osteoarthritis",
+  "slug": "osteoarthritis",
+  "term": "osteoarthritis",
+  "normalized": "osteoarthritis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for osteoarthritis.",
+  "analyses": [
+    {
+      "id": "analysis:osteoarthritis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:osteo",
+          "surface": "osteo",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:arthr",
+          "surface": "arthr",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    }
+  ]
+}

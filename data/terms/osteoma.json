@@ -1,0 +1,30 @@
+{
+  "id": "term:osteoma",
+  "slug": "osteoma",
+  "term": "osteoma",
+  "normalized": "osteoma",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for osteoma.",
+  "analyses": [
+    {
+      "id": "analysis:osteoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:oste",
+          "surface": "oste",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}

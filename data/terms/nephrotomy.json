@@ -1,0 +1,30 @@
+{
+  "id": "term:nephrotomy",
+  "slug": "nephrotomy",
+  "term": "nephrotomy",
+  "normalized": "nephrotomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for nephrotomy.",
+  "analyses": [
+    {
+      "id": "analysis:nephrotomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:nephr",
+          "surface": "nephr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:otomy",
+          "surface": "otomy",
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

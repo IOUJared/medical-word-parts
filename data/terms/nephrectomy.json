@@ -1,0 +1,30 @@
+{
+  "id": "term:nephrectomy",
+  "slug": "nephrectomy",
+  "term": "nephrectomy",
+  "normalized": "nephrectomy",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for nephrectomy.",
+  "analyses": [
+    {
+      "id": "analysis:nephrectomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:nephr",
+          "surface": "nephr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:ectomy",
+          "surface": "ectomy",
+          "start": 5,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

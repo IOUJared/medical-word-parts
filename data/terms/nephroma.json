@@ -1,0 +1,30 @@
+{
+  "id": "term:nephroma",
+  "slug": "nephroma",
+  "term": "nephroma",
+  "normalized": "nephroma",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for nephroma.",
+  "analyses": [
+    {
+      "id": "analysis:nephroma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:nephr",
+          "surface": "nephr",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 5,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

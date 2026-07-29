@@ -1,0 +1,30 @@
+{
+  "id": "term:otalgia",
+  "slug": "otalgia",
+  "term": "otalgia",
+  "normalized": "otalgia",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for otalgia.",
+  "analyses": [
+    {
+      "id": "analysis:otalgia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:ot",
+          "surface": "ot",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "partId": "suffix:algia",
+          "surface": "algia",
+          "start": 2,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}

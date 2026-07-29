@@ -1,0 +1,30 @@
+{
+  "id": "term:neuralgia",
+  "slug": "neuralgia",
+  "term": "neuralgia",
+  "normalized": "neuralgia",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for neuralgia.",
+  "analyses": [
+    {
+      "id": "analysis:neuralgia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:neur",
+          "surface": "neur",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:algia",
+          "surface": "algia",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

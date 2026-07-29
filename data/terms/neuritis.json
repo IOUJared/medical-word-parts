@@ -1,0 +1,30 @@
+{
+  "id": "term:neuritis",
+  "slug": "neuritis",
+  "term": "neuritis",
+  "normalized": "neuritis",
+  "sources": [
+    "source:medlineplus-appendix-a"
+  ],
+  "note": "A source-cited word-part teaching record for neuritis.",
+  "analyses": [
+    {
+      "id": "analysis:neuritis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:neur",
+          "surface": "neur",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}
