@@ -13,8 +13,11 @@ The version-controlled files in `data/` are the only authored corpus inputs. `sr
 | `source:nci-cytokine` | National Cancer Institute | The lexicalized cytokine note and the `-kine` citation. |
 | `source:nci-adenoma` | National Cancer Institute | The adenoma term citation. |
 | `source:nci-osteoplasty` | National Cancer Institute | The osteoplasty term citation. |
+| `source:nlm-snomed-core-subset` | National Library of Medicine | Frequently used clinical problem-list source for the common terms route. |
 
 The canonical URLs live in [`data/sources.json`](../data/sources.json). The corpus does not fetch them at build or runtime.
+
+The common terms route cites the NLM CORE Problem List Subset as the frequency-backed source. The page only displays local terms whose word-part analyses are already verified in this corpus; raw CORE terms are not imported until their parts are source-checked and authored.
 
 ## Provenance notes
 
