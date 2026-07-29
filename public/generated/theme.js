@@ -1,0 +1,2 @@
+// GENERATED FILE
+(()=>{var o="medical-word-parts:theme";function r(e){switch(e){case"light":case"dark":return e;default:return}}function i(e){try{return r(e.localStorage.getItem(o))}catch(t){if(t instanceof DOMException)return;throw t}}function c(e,t){t===void 0?e.document.documentElement.removeAttribute("data-theme"):e.document.documentElement.dataset.theme=t}function n(e){c(e,i(e))}n(window);})();
