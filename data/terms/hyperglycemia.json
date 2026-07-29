@@ -1,0 +1,11 @@
+{
+  "id": "term:hyperglycemia", "slug": "hyperglycemia", "term": "hyperglycemia", "normalized": "hyperglycemia", "sources": ["source:ncbi-medical-terminology"],
+  "note": "A word-part teaching record paired with hypoglycemia as a contrast.",
+  "analyses": [
+    { "id": "analysis:hyperglycemia-primary", "primary": true, "segments": [
+      { "partId": "prefix:hyper", "surface": "hyper", "start": 0, "end": 5 },
+      { "partId": "combining:glyc-o", "surface": "glyc", "start": 5, "end": 9, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:emia", "surface": "emia", "start": 9, "end": 13 }
+    ] }
+  ]
+}

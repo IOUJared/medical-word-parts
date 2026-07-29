@@ -1,0 +1,11 @@
+{
+  "id": "term:hypoglycemia", "slug": "hypoglycemia", "term": "hypoglycemia", "normalized": "hypoglycemia", "sources": ["source:ncbi-medical-terminology"],
+  "note": "A word-part teaching record showing the dropped combining vowel.",
+  "analyses": [
+    { "id": "analysis:hypoglycemia-primary", "primary": true, "segments": [
+      { "partId": "prefix:hypo", "surface": "hypo", "start": 0, "end": 4 },
+      { "partId": "combining:glyc-o", "surface": "glyc", "start": 4, "end": 8, "transformations": [{ "kind": "drop_terminal_vowel", "vowel": "o" }] },
+      { "partId": "suffix:emia", "surface": "emia", "start": 8, "end": 12 }
+    ] }
+  ]
+}
