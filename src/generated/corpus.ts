@@ -3,10 +3,22 @@
 export const corpus = {
   "sources": [
     {
+      "id": "source:disease-ontology-cc0",
+      "publisher": "Disease Ontology",
+      "title": "Human Disease Ontology releases",
+      "url": "https://github.com/DiseaseOntology/HumanDiseaseOntology/releases"
+    },
+    {
       "id": "source:medlineplus-appendix-a",
       "publisher": "National Library of Medicine, NIH",
       "title": "Appendix A: Word Parts and What They Mean",
       "url": "https://medlineplus.gov/appendixa.html"
+    },
+    {
+      "id": "source:mesh-terms",
+      "publisher": "National Library of Medicine",
+      "title": "Download MeSH Data",
+      "url": "https://www.nlm.nih.gov/databases/download/mesh.html"
     },
     {
       "id": "source:ncbi-medical-terminology",
@@ -37,6 +49,12 @@ export const corpus = {
       "publisher": "National Library of Medicine",
       "title": "The CORE Problem List Subset of SNOMED CT",
       "url": "https://www.nlm.nih.gov/research/umls/Snomed/core_subset.html"
+    },
+    {
+      "id": "source:wikidata-cc0",
+      "publisher": "Wikimedia Foundation",
+      "title": "Wikidata: Database download",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Database_download"
     }
   ],
   "parts": [

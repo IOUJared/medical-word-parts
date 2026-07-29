@@ -1,0 +1,472 @@
+// GENERATED FILE. DO NOT EDIT. Run npm run data:build to regenerate.
+
+export const candidateTerms = [
+  {
+    "id": "candidate:abdominal-pain",
+    "term": "abdominal pain",
+    "normalized": "abdominal pain",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:allergic-rhinitis",
+    "term": "allergic rhinitis",
+    "normalized": "allergic rhinitis",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:alzheimers-disease",
+    "term": "Alzheimer disease",
+    "normalized": "alzheimer disease",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "Alzheimer's disease"
+    ]
+  },
+  {
+    "id": "candidate:anemia",
+    "term": "anemia",
+    "normalized": "anemia",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:angina-pectoris",
+    "term": "angina pectoris",
+    "normalized": "angina pectoris",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:anxiety-disorder",
+    "term": "anxiety disorder",
+    "normalized": "anxiety disorder",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:appendicitis",
+    "term": "appendicitis",
+    "normalized": "appendicitis",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:asthma",
+    "term": "asthma",
+    "normalized": "asthma",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:atrial-fibrillation",
+    "term": "atrial fibrillation",
+    "normalized": "atrial fibrillation",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:bronchitis",
+    "term": "bronchitis",
+    "normalized": "bronchitis",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:chronic-kidney-disease",
+    "term": "chronic kidney disease",
+    "normalized": "chronic kidney disease",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "CKD"
+    ]
+  },
+  {
+    "id": "candidate:chronic-obstructive-pulmonary-disease",
+    "term": "chronic obstructive pulmonary disease",
+    "normalized": "chronic obstructive pulmonary disease",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "COPD"
+    ]
+  },
+  {
+    "id": "candidate:coronary-artery-disease",
+    "term": "coronary artery disease",
+    "normalized": "coronary artery disease",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:depression",
+    "term": "depression",
+    "normalized": "depression",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:diabetes",
+    "term": "diabetes",
+    "normalized": "diabetes",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "diabetes mellitus"
+    ]
+  },
+  {
+    "id": "candidate:eczema",
+    "term": "eczema",
+    "normalized": "eczema",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:epilepsy",
+    "term": "epilepsy",
+    "normalized": "epilepsy",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:gastritis",
+    "term": "gastritis",
+    "normalized": "gastritis",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:gastroesophageal-reflux-disease",
+    "term": "gastroesophageal reflux disease",
+    "normalized": "gastroesophageal reflux disease",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "GERD"
+    ]
+  },
+  {
+    "id": "candidate:heart-failure",
+    "term": "heart failure",
+    "normalized": "heart failure",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:hypertension",
+    "term": "hypertension",
+    "normalized": "hypertension",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "high blood pressure"
+    ]
+  },
+  {
+    "id": "candidate:hypothyroidism",
+    "term": "hypothyroidism",
+    "normalized": "hypothyroidism",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:influenza",
+    "term": "influenza",
+    "normalized": "influenza",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "flu"
+    ]
+  },
+  {
+    "id": "candidate:migraine",
+    "term": "migraine",
+    "normalized": "migraine",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:myocardial-infarction",
+    "term": "myocardial infarction",
+    "normalized": "myocardial infarction",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "heart attack"
+    ]
+  },
+  {
+    "id": "candidate:nephrotic-syndrome",
+    "term": "nephrotic syndrome",
+    "normalized": "nephrotic syndrome",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:obesity",
+    "term": "obesity",
+    "normalized": "obesity",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:osteoarthritis",
+    "term": "osteoarthritis",
+    "normalized": "osteoarthritis",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:osteoporosis",
+    "term": "osteoporosis",
+    "normalized": "osteoporosis",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:pneumonia",
+    "term": "pneumonia",
+    "normalized": "pneumonia",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:rheumatoid-arthritis",
+    "term": "rheumatoid arthritis",
+    "normalized": "rheumatoid arthritis",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:sinusitis",
+    "term": "sinusitis",
+    "normalized": "sinusitis",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:stroke",
+    "term": "stroke",
+    "normalized": "stroke",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "cerebrovascular accident"
+    ]
+  },
+  {
+    "id": "candidate:urinary-tract-infection",
+    "term": "urinary tract infection",
+    "normalized": "urinary tract infection",
+    "status": "candidate",
+    "sources": [
+      "source:wikidata-cc0",
+      "source:disease-ontology-cc0",
+      "source:mesh-terms"
+    ],
+    "sourceVersion": "2026 candidate seed",
+    "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement",
+    "aliases": [
+      "UTI"
+    ]
+  }
+] as const;

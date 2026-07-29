@@ -20,6 +20,43 @@ export const termSearchIndex = {
   "thrombocyte": "term:thrombocyte"
 } as const;
 
+export const candidateTermSearchIndex = {
+  "abdominal pain": "candidate:abdominal-pain",
+  "allergic rhinitis": "candidate:allergic-rhinitis",
+  "alzheimer disease": "candidate:alzheimers-disease",
+  "anemia": "candidate:anemia",
+  "angina pectoris": "candidate:angina-pectoris",
+  "anxiety disorder": "candidate:anxiety-disorder",
+  "appendicitis": "candidate:appendicitis",
+  "asthma": "candidate:asthma",
+  "atrial fibrillation": "candidate:atrial-fibrillation",
+  "bronchitis": "candidate:bronchitis",
+  "chronic kidney disease": "candidate:chronic-kidney-disease",
+  "chronic obstructive pulmonary disease": "candidate:chronic-obstructive-pulmonary-disease",
+  "coronary artery disease": "candidate:coronary-artery-disease",
+  "depression": "candidate:depression",
+  "diabetes": "candidate:diabetes",
+  "eczema": "candidate:eczema",
+  "epilepsy": "candidate:epilepsy",
+  "gastritis": "candidate:gastritis",
+  "gastroesophageal reflux disease": "candidate:gastroesophageal-reflux-disease",
+  "heart failure": "candidate:heart-failure",
+  "hypertension": "candidate:hypertension",
+  "hypothyroidism": "candidate:hypothyroidism",
+  "influenza": "candidate:influenza",
+  "migraine": "candidate:migraine",
+  "myocardial infarction": "candidate:myocardial-infarction",
+  "nephrotic syndrome": "candidate:nephrotic-syndrome",
+  "obesity": "candidate:obesity",
+  "osteoarthritis": "candidate:osteoarthritis",
+  "osteoporosis": "candidate:osteoporosis",
+  "pneumonia": "candidate:pneumonia",
+  "rheumatoid arthritis": "candidate:rheumatoid-arthritis",
+  "sinusitis": "candidate:sinusitis",
+  "stroke": "candidate:stroke",
+  "urinary tract infection": "candidate:urinary-tract-infection"
+} as const;
+
 export const termRouteIndex = {
   "adenoma": "adenoma",
   "adrenal": "adrenal",
@@ -200,6 +237,44 @@ export const relatedTermIds = {
 } as const;
 
 export const sourceCitations = {
+  "source:disease-ontology-cc0": {
+    "terms": [],
+    "candidateTerms": [
+      "candidate:alzheimers-disease",
+      "candidate:anemia",
+      "candidate:anxiety-disorder",
+      "candidate:appendicitis",
+      "candidate:asthma",
+      "candidate:bronchitis",
+      "candidate:chronic-kidney-disease",
+      "candidate:chronic-obstructive-pulmonary-disease",
+      "candidate:coronary-artery-disease",
+      "candidate:depression",
+      "candidate:diabetes",
+      "candidate:eczema",
+      "candidate:epilepsy",
+      "candidate:gastritis",
+      "candidate:gastroesophageal-reflux-disease",
+      "candidate:heart-failure",
+      "candidate:hypertension",
+      "candidate:hypothyroidism",
+      "candidate:influenza",
+      "candidate:migraine",
+      "candidate:myocardial-infarction",
+      "candidate:nephrotic-syndrome",
+      "candidate:obesity",
+      "candidate:osteoarthritis",
+      "candidate:osteoporosis",
+      "candidate:pneumonia",
+      "candidate:rheumatoid-arthritis",
+      "candidate:sinusitis",
+      "candidate:stroke",
+      "candidate:urinary-tract-infection"
+    ],
+    "parts": [],
+    "aliases": [],
+    "relations": []
+  },
   "source:medlineplus-appendix-a": {
     "terms": [
       "term:arthralgia",
@@ -213,6 +288,7 @@ export const sourceCitations = {
       "term:pericarditis",
       "term:thrombocyte"
     ],
+    "candidateTerms": [],
     "parts": [
       "prefix:ad",
       "prefix:brady",
@@ -256,6 +332,48 @@ export const sourceCitations = {
       "related:term:endocarditis:term:pericarditis"
     ]
   },
+  "source:mesh-terms": {
+    "terms": [],
+    "candidateTerms": [
+      "candidate:abdominal-pain",
+      "candidate:allergic-rhinitis",
+      "candidate:alzheimers-disease",
+      "candidate:anemia",
+      "candidate:angina-pectoris",
+      "candidate:anxiety-disorder",
+      "candidate:appendicitis",
+      "candidate:asthma",
+      "candidate:atrial-fibrillation",
+      "candidate:bronchitis",
+      "candidate:chronic-kidney-disease",
+      "candidate:chronic-obstructive-pulmonary-disease",
+      "candidate:coronary-artery-disease",
+      "candidate:depression",
+      "candidate:diabetes",
+      "candidate:eczema",
+      "candidate:epilepsy",
+      "candidate:gastritis",
+      "candidate:gastroesophageal-reflux-disease",
+      "candidate:heart-failure",
+      "candidate:hypertension",
+      "candidate:hypothyroidism",
+      "candidate:influenza",
+      "candidate:migraine",
+      "candidate:myocardial-infarction",
+      "candidate:nephrotic-syndrome",
+      "candidate:obesity",
+      "candidate:osteoarthritis",
+      "candidate:osteoporosis",
+      "candidate:pneumonia",
+      "candidate:rheumatoid-arthritis",
+      "candidate:sinusitis",
+      "candidate:stroke",
+      "candidate:urinary-tract-infection"
+    ],
+    "parts": [],
+    "aliases": [],
+    "relations": []
+  },
   "source:ncbi-medical-terminology": {
     "terms": [
       "term:adenoma",
@@ -266,6 +384,7 @@ export const sourceCitations = {
       "term:hypoglycemia",
       "term:tachycardia"
     ],
+    "candidateTerms": [],
     "parts": [
       "combining:cyt-o",
       "combining:glyc-o",
@@ -290,6 +409,7 @@ export const sourceCitations = {
     "terms": [
       "term:adenoma"
     ],
+    "candidateTerms": [],
     "parts": [],
     "aliases": [],
     "relations": []
@@ -298,6 +418,7 @@ export const sourceCitations = {
     "terms": [
       "term:cytokine"
     ],
+    "candidateTerms": [],
     "parts": [
       "suffix:kine"
     ],
@@ -308,12 +429,56 @@ export const sourceCitations = {
     "terms": [
       "term:osteoplasty"
     ],
+    "candidateTerms": [],
     "parts": [],
     "aliases": [],
     "relations": []
   },
   "source:nlm-snomed-core-subset": {
     "terms": [],
+    "candidateTerms": [],
+    "parts": [],
+    "aliases": [],
+    "relations": []
+  },
+  "source:wikidata-cc0": {
+    "terms": [],
+    "candidateTerms": [
+      "candidate:abdominal-pain",
+      "candidate:allergic-rhinitis",
+      "candidate:alzheimers-disease",
+      "candidate:anemia",
+      "candidate:angina-pectoris",
+      "candidate:anxiety-disorder",
+      "candidate:appendicitis",
+      "candidate:asthma",
+      "candidate:atrial-fibrillation",
+      "candidate:bronchitis",
+      "candidate:chronic-kidney-disease",
+      "candidate:chronic-obstructive-pulmonary-disease",
+      "candidate:coronary-artery-disease",
+      "candidate:depression",
+      "candidate:diabetes",
+      "candidate:eczema",
+      "candidate:epilepsy",
+      "candidate:gastritis",
+      "candidate:gastroesophageal-reflux-disease",
+      "candidate:heart-failure",
+      "candidate:hypertension",
+      "candidate:hypothyroidism",
+      "candidate:influenza",
+      "candidate:migraine",
+      "candidate:myocardial-infarction",
+      "candidate:nephrotic-syndrome",
+      "candidate:obesity",
+      "candidate:osteoarthritis",
+      "candidate:osteoporosis",
+      "candidate:pneumonia",
+      "candidate:rheumatoid-arthritis",
+      "candidate:sinusitis",
+      "candidate:stroke",
+      "candidate:urinary-tract-infection"
+    ],
     "parts": [],
     "aliases": [],
     "relations": []

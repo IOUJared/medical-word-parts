@@ -10,7 +10,7 @@ import { relatedTermIds } from "../../src/generated/index";
 const repositoryRoot = process.cwd();
 const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
 let generatedDirectory = "";
-const generatedNames = ["corpus.ts", "index.ts", "routes.ts", "segmentation.ts"] as const;
+const generatedNames = ["candidates.ts", "corpus.ts", "index.ts", "routes.ts", "segmentation.ts"] as const;
 const generatedHeader = "// GENERATED FILE. DO NOT EDIT. Run npm run data:build to regenerate.\n\n";
 const requiredSlugs = [
   "adenoma",

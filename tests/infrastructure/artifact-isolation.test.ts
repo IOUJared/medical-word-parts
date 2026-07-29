@@ -8,6 +8,7 @@ import { describe, expect, it } from "vitest";
 const repositoryRoot = process.cwd();
 const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
 const canonicalArtifacts = [
+  "src/generated/candidates.ts",
   "src/generated/corpus.ts",
   "src/generated/index.ts",
   "src/generated/routes.ts",

@@ -8,6 +8,7 @@ const generatedHeader = "// GENERATED FILE. DO NOT EDIT. Run npm run data:build 
 
 type CitationBucket = {
   readonly terms: readonly string[];
+  readonly candidateTerms: readonly string[];
   readonly parts: readonly string[];
   readonly aliases: readonly string[];
   readonly relations: readonly string[];
@@ -15,6 +16,7 @@ type CitationBucket = {
 
 type CitationAccumulator = {
   readonly terms: string[];
+  readonly candidateTerms: string[];
   readonly parts: string[];
   readonly aliases: string[];
   readonly relations: string[];
@@ -82,7 +84,7 @@ function relatedTerms(corpus: Corpus): Record<string, readonly string[]> {
 function citations(corpus: Corpus): Record<string, CitationBucket> {
   const buckets = new Map<string, CitationAccumulator>();
   for (const source of corpus.sources) {
-    buckets.set(source.id, { terms: [], parts: [], aliases: [], relations: [] });
+    buckets.set(source.id, { terms: [], candidateTerms: [], parts: [], aliases: [], relations: [] });
   }
   for (const term of corpus.terms) {
     for (const sourceId of term.sources) {
@@ -94,6 +96,12 @@ function citations(corpus: Corpus): Record<string, CitationBucket> {
     for (const sourceId of part.sources) {
       const bucket = buckets.get(sourceId);
       if (bucket !== undefined) bucket.parts.push(part.id);
+    }
+  }
+  for (const candidateTerm of corpus.candidateTerms) {
+    for (const sourceId of candidateTerm.sources) {
+      const bucket = buckets.get(sourceId);
+      if (bucket !== undefined) bucket.candidateTerms.push(candidateTerm.id);
     }
   }
   for (const alias of corpus.aliases) {
@@ -115,6 +123,7 @@ function citations(corpus: Corpus): Record<string, CitationBucket> {
         sourceId,
         {
           terms: sortedStrings(bucket.terms),
+          candidateTerms: sortedStrings(bucket.candidateTerms),
           parts: sortedStrings(bucket.parts),
           aliases: sortedStrings(bucket.aliases),
           relations: sortedStrings(bucket.relations),
@@ -143,6 +152,8 @@ export function renderGeneratedCorpus(corpus: Corpus): readonly GeneratedOutput[
   const sourceData = sortedById(corpus.sources);
   const partData = sortedById(corpus.parts);
   const aliasData = [...corpus.aliases].sort((left, right) => compareCodePoints(left.normalized, right.normalized));
+  const candidateTermData = sortedById(corpus.candidateTerms);
+  const candidateTermSearchIndex = Object.fromEntries(candidateTermData.map((candidate) => [candidate.normalized, candidate.id]));
   const relationData = [...corpus.relations].sort((left, right) => {
     const leftKey = `${left.kind}:${left.from}:${left.to}`;
     const rightKey = `${right.kind}:${right.from}:${right.to}`;
@@ -162,8 +173,12 @@ export function renderGeneratedCorpus(corpus: Corpus): readonly GeneratedOutput[
       contents: `${generatedHeader}\n\nexport const corpus = ${json({ sources: sourceData, parts: partData, terms, aliases: aliasData, relations: relationData })} as const;\n`,
     },
     {
+      filename: "candidates.ts",
+      contents: `${generatedHeader}\n\nexport const candidateTerms = ${json(candidateTermData)} as const;\n`,
+    },
+    {
       filename: "index.ts",
-      contents: `${generatedHeader}\n\nexport const termSearchIndex = ${json(Object.fromEntries(terms.map((term) => [term.normalized, term.id])))} as const;\n\nexport const termRouteIndex = ${json(termRouteIndex)} as const;\n\nexport const partToTermUsage = ${json(reversePartUsage(corpus))} as const;\n\nexport const relatedTermIds = ${json(relatedTerms(corpus))} as const;\n\nexport const sourceCitations = ${json(citations(corpus))} as const;\n`,
+      contents: `${generatedHeader}\n\nexport const termSearchIndex = ${json(Object.fromEntries(terms.map((term) => [term.normalized, term.id])))} as const;\n\nexport const candidateTermSearchIndex = ${json(candidateTermSearchIndex)} as const;\n\nexport const termRouteIndex = ${json(termRouteIndex)} as const;\n\nexport const partToTermUsage = ${json(reversePartUsage(corpus))} as const;\n\nexport const relatedTermIds = ${json(relatedTerms(corpus))} as const;\n\nexport const sourceCitations = ${json(citations(corpus))} as const;\n`,
     },
     {
       filename: "routes.ts",
