@@ -1,0 +1,74 @@
+name: Deploy Cloudflare Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /medical-word-parts
+      NEXT_PUBLIC_SITE_URL: https://medical-word-parts.pages.dev/medical-word-parts
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Check Cloudflare credentials
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::Missing required Cloudflare secret: CLOUDFLARE_API_TOKEN"
+            exit 1
+          fi
+          if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::Missing required Cloudflare secret: CLOUDFLARE_ACCOUNT_ID"
+            exit 1
+          fi
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Validate data
+        run: npm run data:validate
+      - name: Test generated data
+        run: npm run data:test
+      - name: Validate committed browser bundles
+        run: npm run browser:validate
+      - name: Lint
+        run: npm run lint
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Test
+        run: npm test
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run root development end-to-end tests
+        run: npm run test:e2e:dev
+      - name: Build
+        run: npm run build
+      - name: Validate finalized static export
+        run: npm run static:validate
+      - name: Run end-to-end tests
+        run: npm run test:e2e
+      - name: Run production audit
+        run: npm run audit:production
+      - name: Upload validation artifacts on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-artifacts
+          path: .artifacts
+          if-no-files-found: ignore
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name medical-word-parts
