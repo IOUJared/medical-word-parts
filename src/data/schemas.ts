@@ -12,11 +12,13 @@ const partNamespaceByKind = {
 
 const sourceId = z.string().regex(/^source:[a-z0-9-]+$/, "source ID must use source: namespace");
 const termId = z.string().regex(/^term:[a-z0-9-]+$/, "term ID must use term: namespace");
+const candidateId = z.string().regex(/^candidate:[a-z0-9-]+$/, "candidate ID must use candidate: namespace");
 const analysisId = z.string().regex(/^analysis:[a-z0-9-]+$/, "analysis ID must use analysis: namespace");
 const partId = z
   .string()
   .regex(/^(?:prefix|root|suffix|combining):[a-z0-9-]+$/, "part ID must use a part-kind namespace");
 const normalizedWord = z.string().regex(/^[a-z]+$/);
+const normalizedCandidateTerm = z.string().regex(/^[a-z0-9]+(?:[ -][a-z0-9]+)*$/);
 const citationIds = z
   .array(sourceId)
   .min(1)
@@ -94,6 +96,20 @@ export const aliasSchema = z.strictObject({
 
 export const aliasesDocumentSchema = z.strictObject({ aliases: z.array(aliasSchema) });
 
+export const candidateTermSchema = z.strictObject({
+    id: candidateId,
+    term: z.string().min(1),
+    normalized: normalizedCandidateTerm,
+    status: z.literal("candidate"),
+    sources: citationIds,
+    sourceVersion: z.string().min(1),
+    license: z.string().min(1),
+    aliases: z.array(z.string().min(1)).optional(),
+    externalIds: z.record(z.string().min(1), z.string().min(1)).optional(),
+  });
+
+export const candidateTermsDocumentSchema = z.strictObject({ candidateTerms: z.array(candidateTermSchema) });
+
 export const relationSchema = z.strictObject({
     kind: z.enum(relationKinds),
     from: termId,
@@ -107,5 +123,6 @@ export type Source = z.infer<typeof sourceSchema>;
 export type Part = z.infer<typeof partSchema>;
 export type Term = z.infer<typeof termSchema>;
 export type Alias = z.infer<typeof aliasSchema>;
+export type CandidateTerm = z.infer<typeof candidateTermSchema>;
 export type Relation = z.infer<typeof relationSchema>;
 export type Transformation = z.infer<typeof transformationSchema>;

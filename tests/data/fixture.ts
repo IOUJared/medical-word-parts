@@ -7,6 +7,8 @@ export const fixtureIssues = [
   "duplicate-id",
   "duplicate-slug",
   "duplicate-normalized",
+  "duplicate-candidate-normalized",
+  "candidate-term-collision",
   "duplicate-part-source",
   "duplicate-term-source",
   "duplicate-alias-source",
@@ -205,6 +207,20 @@ export function createFixture(options: FixtureOptions = {}): string {
           ? [{ kind: "related", from: "term:sample", to: relationTarget, sources: ["source:test"] }]
           : [];
   writeJson(join(directory, "relations.json"), { relations });
+  const candidateTerm = {
+    id: "candidate:diabetes",
+    term: "diabetes",
+    normalized: options.issue === "candidate-term-collision" ? "prerootia" : "diabetes",
+    status: "candidate",
+    sources: ["source:test"],
+    sourceVersion: "test-fixture",
+    license: "test fixture license",
+  };
+  writeJson(join(directory, "candidate-terms.json"), {
+    candidateTerms: options.issue === "duplicate-candidate-normalized"
+      ? [candidateTerm, { ...candidateTerm, id: "candidate:diabetes-second" }]
+      : [candidateTerm],
+  });
   return directory;
 }
 

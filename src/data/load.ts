@@ -6,11 +6,13 @@ import { DataError } from "./errors";
 import { compareCodePoints } from "./ordering";
 import {
   aliasesDocumentSchema,
+  candidateTermsDocumentSchema,
   partsDocumentSchema,
   relationsDocumentSchema,
   sourcesDocumentSchema,
   termSchema,
   type Alias,
+  type CandidateTerm,
   type Part,
   type Relation,
   type Source,
@@ -27,6 +29,7 @@ export type LoadedCorpus = {
   readonly parts: readonly Located<Part>[];
   readonly terms: readonly Located<Term>[];
   readonly aliases: readonly Located<Alias>[];
+  readonly candidateTerms: readonly Located<CandidateTerm>[];
   readonly relations: readonly Located<Relation>[];
 };
 
@@ -81,6 +84,7 @@ export function loadCorpus(root: string): LoadedCorpus {
   const sourcePath = join(root, "sources.json");
   const aliasPath = join(root, "aliases.json");
   const relationPath = join(root, "relations.json");
+  const candidateTermsPath = join(root, "candidate-terms.json");
   const sources = parseFile(root, sourcePath, sourcesDocumentSchema).sources.map((value) => ({
     path: displayPath(root, sourcePath),
     value,
@@ -93,6 +97,10 @@ export function loadCorpus(root: string): LoadedCorpus {
     path: displayPath(root, relationPath),
     value,
   }));
+  const candidateTerms = parseFile(root, candidateTermsPath, candidateTermsDocumentSchema).candidateTerms.map((value) => ({
+    path: displayPath(root, candidateTermsPath),
+    value,
+  }));
   return {
     sources,
     parts: [
@@ -103,6 +111,7 @@ export function loadCorpus(root: string): LoadedCorpus {
     ],
     terms: loadTerms(root),
     aliases,
+    candidateTerms,
     relations,
   };
 }
