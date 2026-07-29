@@ -1,0 +1,38 @@
+@media (min-width: 48rem) {
+  .desktop-nav { display: flex; }
+  .mobile-nav { display: none; }
+  .nav-cluster { min-block-size: var(--size-control-lg); padding-inline: var(--space-6); }
+  .page-sheet { inline-size: min(calc(100% - var(--space-12)), var(--layout-paper-max)); padding: var(--space-16) var(--space-8) var(--space-24); border-block-start: 0; border-inline-start: var(--space-1) solid var(--color-blue-400); }
+  .search-row { grid-template-columns: minmax(0, 1fr) auto auto; }
+  .kind-index { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kind-index a:nth-child(odd) { border-inline-end: var(--rule-hairline) solid var(--color-rule-strong); }
+  .evidence-strip { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr); }
+  .filter-set { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .part-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .part-list li:nth-child(odd) { border-inline-end: var(--rule-hairline) solid var(--color-rule-strong); }
+  .basis-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 64rem) {
+  .page-sheet { margin-inline-start: max(var(--space-8), calc((100% - var(--layout-max)) / 2 + var(--space-8))); margin-inline-end: auto; }
+  .morphology-rail { grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr)); gap: var(--space-8); }
+  .segment + .segment::before { position: absolute; inset-block-start: 50%; inset-inline-start: calc(var(--space-8) * -1); inline-size: var(--space-8); block-size: var(--space-8); margin: 0; transform: translateY(-50%); }
+  .filter-set { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .source-index li { display: grid; grid-template-columns: minmax(10rem, 1fr) minmax(0, 2fr); gap: 0 var(--space-8); }
+  .source-index .source-number, .source-index h2 { grid-column: 1; }
+  .source-index > li > p:not(.source-number) { grid-column: 2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: var(--motion-immediate) !important; transition-duration: var(--motion-immediate) !important; }
+  .button:active:not(:disabled) { transform: none; }
+}
+
+@media (forced-colors: active) {
+  * { forced-color-adjust: auto; }
+  a { color: LinkText; }
+  .segment, .status-panel, .lookup-block, .filter-panel, .method-band, .evidence-strip { border: var(--rule-active) solid CanvasText; background: Canvas; color: CanvasText; }
+  .button-primary { background: ButtonFace; color: ButtonText; }
+  .theme-toggle { border-color: currentColor; background: ButtonFace; color: ButtonText; }
+}
