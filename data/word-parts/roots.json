@@ -1,30 +1,850 @@
 {
   "parts": [
-    { "id": "root:aden", "kind": "root", "form": "aden-", "meaning": "gland", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "root:adeno", "kind": "root", "form": "adeno-", "meaning": "gland", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "root:adren", "kind": "root", "form": "adren-", "meaning": "adrenal gland", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "root:adreno", "kind": "root", "form": "adreno-", "meaning": "adrenal gland", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "root:arthr", "kind": "root", "form": "arthr-", "meaning": "joint", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:arthro", "kind": "root", "form": "arthro-", "meaning": "joint", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:card", "kind": "root", "form": "card-", "meaning": "heart", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "root:cardi", "kind": "root", "form": "cardi-", "meaning": "heart", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:cardio", "kind": "root", "form": "cardio-", "meaning": "heart", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:derm", "kind": "root", "form": "derm-", "meaning": "skin", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:dermat", "kind": "root", "form": "dermat-", "meaning": "skin", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "root:dermato", "kind": "root", "form": "dermato-", "meaning": "skin", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:gastr", "kind": "root", "form": "gastr-", "meaning": "stomach", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:gastro", "kind": "root", "form": "gastro-", "meaning": "stomach", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:hepat", "kind": "root", "form": "hepat-", "meaning": "liver", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:hepato", "kind": "root", "form": "hepato-", "meaning": "liver", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:nephr", "kind": "root", "form": "nephr-", "meaning": "kidney", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:nephro", "kind": "root", "form": "nephro-", "meaning": "kidney", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:neur", "kind": "root", "form": "neur-", "meaning": "nerve", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:neuro", "kind": "root", "form": "neuro-", "meaning": "nerve", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:oste", "kind": "root", "form": "oste-", "meaning": "bone", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:osteo", "kind": "root", "form": "osteo-", "meaning": "bone", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:ren", "kind": "root", "form": "ren-", "meaning": "kidney", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "root:reno", "kind": "root", "form": "reno-", "meaning": "kidney", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "root:thromb", "kind": "root", "form": "thromb-", "meaning": "clot", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "root:thrombo", "kind": "root", "form": "thrombo-", "meaning": "clot", "sources": ["source:medlineplus-appendix-a"] }
+    {
+      "id": "root:acr",
+      "kind": "root",
+      "form": "acr-",
+      "meaning": "extremities or height",
+      "sources": [
+        "source:ncbi-medical-terminology-endocrine"
+      ]
+    },
+    {
+      "id": "root:acro",
+      "kind": "root",
+      "form": "acro-",
+      "meaning": "extremities or height",
+      "sources": [
+        "source:ncbi-medical-terminology-endocrine"
+      ]
+    },
+    {
+      "id": "root:aden",
+      "kind": "root",
+      "form": "aden-",
+      "meaning": "gland",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:adeno",
+      "kind": "root",
+      "form": "adeno-",
+      "meaning": "gland",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:adren",
+      "kind": "root",
+      "form": "adren-",
+      "meaning": "adrenal gland",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:adreno",
+      "kind": "root",
+      "form": "adreno-",
+      "meaning": "adrenal gland",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:angi",
+      "kind": "root",
+      "form": "angi-",
+      "meaning": "blood vessel",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:angio",
+      "kind": "root",
+      "form": "angio-",
+      "meaning": "blood vessel",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:ankyl",
+      "kind": "root",
+      "form": "ankyl-",
+      "meaning": "stiff or bent",
+      "sources": [
+        "source:ncbi-medical-terminology-skeletal"
+      ]
+    },
+    {
+      "id": "root:ankylo",
+      "kind": "root",
+      "form": "ankylo-",
+      "meaning": "stiff or bent",
+      "sources": [
+        "source:ncbi-medical-terminology-skeletal"
+      ]
+    },
+    {
+      "id": "root:arthr",
+      "kind": "root",
+      "form": "arthr-",
+      "meaning": "joint",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:arthro",
+      "kind": "root",
+      "form": "arthro-",
+      "meaning": "joint",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:blast",
+      "kind": "root",
+      "form": "blast-",
+      "meaning": "bud or germ cell",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:blephar",
+      "kind": "root",
+      "form": "blephar-",
+      "meaning": "eyelid",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:blepharo",
+      "kind": "root",
+      "form": "blepharo-",
+      "meaning": "eyelid",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:bronch",
+      "kind": "root",
+      "form": "bronch-",
+      "meaning": "bronchus",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:broncho",
+      "kind": "root",
+      "form": "broncho-",
+      "meaning": "bronchus",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:bronchiol",
+      "kind": "root",
+      "form": "bronchiol-",
+      "meaning": "bronchiole",
+      "sources": [
+        "source:open-alberta-respiratory-terminology"
+      ]
+    },
+    {
+      "id": "root:bronchiolo",
+      "kind": "root",
+      "form": "bronchiolo-",
+      "meaning": "bronchiole",
+      "sources": [
+        "source:open-alberta-respiratory-terminology"
+      ]
+    },
+    {
+      "id": "root:burs",
+      "kind": "root",
+      "form": "burs-",
+      "meaning": "bursa",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:capn",
+      "kind": "root",
+      "form": "capn-",
+      "meaning": "carbon dioxide",
+      "sources": [
+        "source:ncbi-medical-terminology-respiratory"
+      ]
+    },
+    {
+      "id": "root:capno",
+      "kind": "root",
+      "form": "capno-",
+      "meaning": "carbon dioxide",
+      "sources": [
+        "source:ncbi-medical-terminology-respiratory"
+      ]
+    },
+    {
+      "id": "root:card",
+      "kind": "root",
+      "form": "card-",
+      "meaning": "heart",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:cardi",
+      "kind": "root",
+      "form": "cardi-",
+      "meaning": "heart",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:cardio",
+      "kind": "root",
+      "form": "cardio-",
+      "meaning": "heart",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:carcin",
+      "kind": "root",
+      "form": "carcin-",
+      "meaning": "cancer",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:carcino",
+      "kind": "root",
+      "form": "carcino-",
+      "meaning": "cancer",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:cephal",
+      "kind": "root",
+      "form": "cephal-",
+      "meaning": "head",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:cephalo",
+      "kind": "root",
+      "form": "cephalo-",
+      "meaning": "head",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:chol",
+      "kind": "root",
+      "form": "chol-",
+      "meaning": "gall or bile",
+      "sources": [
+        "source:ncbi-medical-terminology-digestive"
+      ]
+    },
+    {
+      "id": "root:chole",
+      "kind": "root",
+      "form": "chole-",
+      "meaning": "gall or bile",
+      "sources": [
+        "source:ncbi-medical-terminology-digestive"
+      ]
+    },
+    {
+      "id": "root:cholangi",
+      "kind": "root",
+      "form": "cholangi-",
+      "meaning": "bile duct",
+      "sources": [
+        "source:ncbi-medical-terminology-digestive"
+      ]
+    },
+    {
+      "id": "root:col",
+      "kind": "root",
+      "form": "col-",
+      "meaning": "colon",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:colo",
+      "kind": "root",
+      "form": "colo-",
+      "meaning": "colon",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:cyan",
+      "kind": "root",
+      "form": "cyan-",
+      "meaning": "blue",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:cyano",
+      "kind": "root",
+      "form": "cyano-",
+      "meaning": "blue",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:cyst",
+      "kind": "root",
+      "form": "cyst-",
+      "meaning": "bladder or sac",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:cysto",
+      "kind": "root",
+      "form": "cysto-",
+      "meaning": "bladder or sac",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:dacry",
+      "kind": "root",
+      "form": "dacry-",
+      "meaning": "tear or tear duct",
+      "sources": [
+        "source:ncbi-medical-terminology-sensory"
+      ]
+    },
+    {
+      "id": "root:dacryo",
+      "kind": "root",
+      "form": "dacryo-",
+      "meaning": "tear or tear duct",
+      "sources": [
+        "source:ncbi-medical-terminology-sensory"
+      ]
+    },
+    {
+      "id": "root:derm",
+      "kind": "root",
+      "form": "derm-",
+      "meaning": "skin",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:dermat",
+      "kind": "root",
+      "form": "dermat-",
+      "meaning": "skin",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:dermato",
+      "kind": "root",
+      "form": "dermato-",
+      "meaning": "skin",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:duoden",
+      "kind": "root",
+      "form": "duoden-",
+      "meaning": "duodenum",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:encephal",
+      "kind": "root",
+      "form": "encephal-",
+      "meaning": "brain",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:encephalo",
+      "kind": "root",
+      "form": "encephalo-",
+      "meaning": "brain",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:endometr",
+      "kind": "root",
+      "form": "endometr-",
+      "meaning": "endometrium",
+      "sources": [
+        "source:ncbi-medical-terminology-female-reproductive"
+      ]
+    },
+    {
+      "id": "root:endometrio",
+      "kind": "root",
+      "form": "endometrio-",
+      "meaning": "endometrium",
+      "sources": [
+        "source:ncbi-medical-terminology-female-reproductive"
+      ]
+    },
+    {
+      "id": "root:enter",
+      "kind": "root",
+      "form": "enter-",
+      "meaning": "intestine",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:entero",
+      "kind": "root",
+      "form": "entero-",
+      "meaning": "intestine",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:fibr",
+      "kind": "root",
+      "form": "fibr-",
+      "meaning": "fiber",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:fibro",
+      "kind": "root",
+      "form": "fibro-",
+      "meaning": "fiber",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:gastr",
+      "kind": "root",
+      "form": "gastr-",
+      "meaning": "stomach",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:gastro",
+      "kind": "root",
+      "form": "gastro-",
+      "meaning": "stomach",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:gloss",
+      "kind": "root",
+      "form": "gloss-",
+      "meaning": "tongue",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:gryp",
+      "kind": "root",
+      "form": "gryp-",
+      "meaning": "curved",
+      "sources": [
+        "source:pmc-arthrogryposis-definition"
+      ]
+    },
+    {
+      "id": "root:grypo",
+      "kind": "root",
+      "form": "grypo-",
+      "meaning": "curved",
+      "sources": [
+        "source:pmc-arthrogryposis-definition"
+      ]
+    },
+    {
+      "id": "root:hepat",
+      "kind": "root",
+      "form": "hepat-",
+      "meaning": "liver",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:hepato",
+      "kind": "root",
+      "form": "hepato-",
+      "meaning": "liver",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:hem",
+      "kind": "root",
+      "form": "hem-",
+      "meaning": "blood",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:hemat",
+      "kind": "root",
+      "form": "hemat-",
+      "meaning": "blood",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:hemato",
+      "kind": "root",
+      "form": "hemato-",
+      "meaning": "blood",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:hidr",
+      "kind": "root",
+      "form": "hidr-",
+      "meaning": "sweat",
+      "sources": [
+        "source:ncbi-medical-terminology-integumentary"
+      ]
+    },
+    {
+      "id": "root:hidro",
+      "kind": "root",
+      "form": "hidro-",
+      "meaning": "sweat",
+      "sources": [
+        "source:ncbi-medical-terminology-integumentary"
+      ]
+    },
+    {
+      "id": "root:hyster",
+      "kind": "root",
+      "form": "hyster-",
+      "meaning": "uterus",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:hystero",
+      "kind": "root",
+      "form": "hystero-",
+      "meaning": "uterus",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:kerat",
+      "kind": "root",
+      "form": "kerat-",
+      "meaning": "cornea or skin",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:kerato",
+      "kind": "root",
+      "form": "kerato-",
+      "meaning": "cornea or skin",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:laryng",
+      "kind": "root",
+      "form": "laryng-",
+      "meaning": "larynx",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:laryngo",
+      "kind": "root",
+      "form": "laryngo-",
+      "meaning": "larynx",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:lymph",
+      "kind": "root",
+      "form": "lymph-",
+      "meaning": "lymph",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:lympho",
+      "kind": "root",
+      "form": "lympho-",
+      "meaning": "lymph",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:mast",
+      "kind": "root",
+      "form": "mast-",
+      "meaning": "breast",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:masto",
+      "kind": "root",
+      "form": "masto-",
+      "meaning": "breast",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:my",
+      "kind": "root",
+      "form": "my-",
+      "meaning": "muscle",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:myel",
+      "kind": "root",
+      "form": "myel-",
+      "meaning": "spinal cord",
+      "sources": [
+        "source:ncbi-medical-terminology-nervous"
+      ]
+    },
+    {
+      "id": "root:myelo",
+      "kind": "root",
+      "form": "myelo-",
+      "meaning": "spinal cord",
+      "sources": [
+        "source:ncbi-medical-terminology-nervous"
+      ]
+    },
+    {
+      "id": "root:myo",
+      "kind": "root",
+      "form": "myo-",
+      "meaning": "muscle",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:nephr",
+      "kind": "root",
+      "form": "nephr-",
+      "meaning": "kidney",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:nephro",
+      "kind": "root",
+      "form": "nephro-",
+      "meaning": "kidney",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:neur",
+      "kind": "root",
+      "form": "neur-",
+      "meaning": "nerve",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:neuro",
+      "kind": "root",
+      "form": "neuro-",
+      "meaning": "nerve",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:oste",
+      "kind": "root",
+      "form": "oste-",
+      "meaning": "bone",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:osteo",
+      "kind": "root",
+      "form": "osteo-",
+      "meaning": "bone",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:ot",
+      "kind": "root",
+      "form": "ot-",
+      "meaning": "ear",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:oto",
+      "kind": "root",
+      "form": "oto-",
+      "meaning": "ear",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:ren",
+      "kind": "root",
+      "form": "ren-",
+      "meaning": "kidney",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:reno",
+      "kind": "root",
+      "form": "reno-",
+      "meaning": "kidney",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "root:sarc",
+      "kind": "root",
+      "form": "sarc-",
+      "meaning": "muscular or fleshlike tissue",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:sarco",
+      "kind": "root",
+      "form": "sarco-",
+      "meaning": "muscular or fleshlike tissue",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:thromb",
+      "kind": "root",
+      "form": "thromb-",
+      "meaning": "clot",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:thrombo",
+      "kind": "root",
+      "form": "thrombo-",
+      "meaning": "clot",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "root:tox",
+      "kind": "root",
+      "form": "tox-",
+      "meaning": "poison",
+      "sources": [
+        "source:ncbi-medical-terminology-lymphatic"
+      ]
+    },
+    {
+      "id": "root:toxo",
+      "kind": "root",
+      "form": "toxo-",
+      "meaning": "poison",
+      "sources": [
+        "source:ncbi-medical-terminology-lymphatic"
+      ]
+    }
   ]
 }

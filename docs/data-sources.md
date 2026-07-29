@@ -24,6 +24,8 @@ The common terms route cites the NLM CORE Problem List Subset as the frequency-b
 
 `data/candidate-terms.json` is a discovery queue, not a verified word-part corpus. Candidate terms may be shown in search and on the common terms route, but they do not produce term detail pages or verified analyses until an authored `data/terms/*.json` record is added.
 
+Candidate records that cite `source:mesh-terms` with a MeSH descriptor identifier are source-backed term identities only. Their word parts remain unverified until a separate editorial pass identifies each proposed segment, checks any new or unused part against an authoritative word-part source, adds missing `data/word-parts/*.json` records with citations, and then authors a reconstructing `data/terms/*.json` analysis. Do not infer or publish a word-part meaning from a candidate term alone.
+
 ## Provenance notes
 
 Every authored term, part, alias, and relation has at least one source key. The validation command rejects dangling citations, unknown JSON fields, duplicate IDs, duplicate slugs, duplicate normalized values, invalid segment spans, non-reconstructing analyses, invalid vowel-drop rules, and invalid relations.

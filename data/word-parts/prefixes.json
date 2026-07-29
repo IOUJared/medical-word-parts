@@ -1,8 +1,13 @@
 {
   "parts": [
+    { "id": "prefix:a", "kind": "prefix", "form": "a-", "meaning": "without or lacking", "sources": ["source:ncbi-medical-terminology-male-reproductive"] },
     { "id": "prefix:ad", "kind": "prefix", "form": "ad-", "meaning": "toward", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:an", "kind": "prefix", "form": "an-", "meaning": "without or lacking", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:ana", "kind": "prefix", "form": "ana-", "meaning": "up or apart", "sources": ["source:ncbi-medical-terminology"] },
     { "id": "prefix:brady", "kind": "prefix", "form": "brady-", "meaning": "slow", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:dys", "kind": "prefix", "form": "dys-", "meaning": "difficult, painful, or abnormal", "sources": ["source:ncbi-medical-terminology-respiratory"] },
     { "id": "prefix:endo", "kind": "prefix", "form": "endo-", "meaning": "within", "sources": ["source:medlineplus-appendix-a"] },
+    { "id": "prefix:hemi", "kind": "prefix", "form": "hemi-", "meaning": "half", "sources": ["source:ncbi-medical-terminology-nervous"] },
     { "id": "prefix:hyper", "kind": "prefix", "form": "hyper-", "meaning": "above or excessive", "sources": ["source:medlineplus-appendix-a"] },
     { "id": "prefix:hypo", "kind": "prefix", "form": "hypo-", "meaning": "below or deficient", "sources": ["source:medlineplus-appendix-a"] },
     { "id": "prefix:peri", "kind": "prefix", "form": "peri-", "meaning": "around", "sources": ["source:medlineplus-appendix-a"] },

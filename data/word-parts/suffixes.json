@@ -1,16 +1,319 @@
 {
   "parts": [
-    { "id": "suffix:al", "kind": "suffix", "form": "-al", "meaning": "pertaining to", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "suffix:algia", "kind": "suffix", "form": "-algia", "meaning": "pain", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "suffix:cyte", "kind": "suffix", "form": "-cyte", "meaning": "cell", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "suffix:emia", "kind": "suffix", "form": "-emia", "meaning": "blood condition", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "suffix:ia", "kind": "suffix", "form": "-ia", "meaning": "condition", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "suffix:itis", "kind": "suffix", "form": "-itis", "meaning": "inflammation", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "suffix:kine", "kind": "suffix", "form": "-kine", "meaning": "lexicalized element in cytokine", "sources": ["source:nci-cytokine"] },
-    { "id": "suffix:megaly", "kind": "suffix", "form": "-megaly", "meaning": "enlargement", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "suffix:oma", "kind": "suffix", "form": "-oma", "meaning": "tumor or mass", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "suffix:opathy", "kind": "suffix", "form": "-opathy", "meaning": "disease", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "suffix:plasty", "kind": "suffix", "form": "-plasty", "meaning": "surgical repair", "sources": ["source:medlineplus-appendix-a"] },
-    { "id": "suffix:scopy", "kind": "suffix", "form": "-scopy", "meaning": "visual examination", "sources": ["source:medlineplus-appendix-a"] }
+    {
+      "id": "suffix:al",
+      "kind": "suffix",
+      "form": "-al",
+      "meaning": "pertaining to",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:algesia",
+      "kind": "suffix",
+      "form": "-algesia",
+      "meaning": "sensitivity to pain",
+      "sources": [
+        "source:ncbi-medical-terminology-nervous"
+      ]
+    },
+    {
+      "id": "suffix:algia",
+      "kind": "suffix",
+      "form": "-algia",
+      "meaning": "pain",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:cele",
+      "kind": "suffix",
+      "form": "-cele",
+      "meaning": "hernia or protrusion",
+      "sources": [
+        "source:ncbi-medical-terminology-nervous"
+      ]
+    },
+    {
+      "id": "suffix:cyte",
+      "kind": "suffix",
+      "form": "-cyte",
+      "meaning": "cell",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:dynia",
+      "kind": "suffix",
+      "form": "-dynia",
+      "meaning": "pain or swelling",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:ectomy",
+      "kind": "suffix",
+      "form": "-ectomy",
+      "meaning": "surgical removal",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:emia",
+      "kind": "suffix",
+      "form": "-emia",
+      "meaning": "blood condition",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:gram",
+      "kind": "suffix",
+      "form": "-gram",
+      "meaning": "record",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:graphy",
+      "kind": "suffix",
+      "form": "-graphy",
+      "meaning": "process of recording",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:ia",
+      "kind": "suffix",
+      "form": "-ia",
+      "meaning": "condition",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "suffix:ic",
+      "kind": "suffix",
+      "form": "-ic",
+      "meaning": "pertaining to",
+      "sources": [
+        "source:ncbi-medical-terminology-digestive"
+      ]
+    },
+    {
+      "id": "suffix:itis",
+      "kind": "suffix",
+      "form": "-itis",
+      "meaning": "inflammation",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:kine",
+      "kind": "suffix",
+      "form": "-kine",
+      "meaning": "lexicalized element in cytokine",
+      "sources": [
+        "source:nci-cytokine"
+      ]
+    },
+    {
+      "id": "suffix:logy",
+      "kind": "suffix",
+      "form": "-logy",
+      "meaning": "study of",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:malacia",
+      "kind": "suffix",
+      "form": "-malacia",
+      "meaning": "softening",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:megaly",
+      "kind": "suffix",
+      "form": "-megaly",
+      "meaning": "enlargement",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:metry",
+      "kind": "suffix",
+      "form": "-metry",
+      "meaning": "process of measuring",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:oma",
+      "kind": "suffix",
+      "form": "-oma",
+      "meaning": "tumor or mass",
+      "sources": [
+        "source:ncbi-medical-terminology"
+      ]
+    },
+    {
+      "id": "suffix:opathy",
+      "kind": "suffix",
+      "form": "-opathy",
+      "meaning": "disease",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:osis",
+      "kind": "suffix",
+      "form": "-osis",
+      "meaning": "condition, usually abnormal",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:ostomy",
+      "kind": "suffix",
+      "form": "-ostomy",
+      "meaning": "surgically created opening",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:otomy",
+      "kind": "suffix",
+      "form": "-otomy",
+      "meaning": "cutting into",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:plasia",
+      "kind": "suffix",
+      "form": "-plasia",
+      "meaning": "development or growth",
+      "sources": [
+        "source:ncbi-medical-terminology-male-reproductive"
+      ]
+    },
+    {
+      "id": "suffix:pepsia",
+      "kind": "suffix",
+      "form": "-pepsia",
+      "meaning": "digestion",
+      "sources": [
+        "source:ncbi-medical-terminology-digestive"
+      ]
+    },
+    {
+      "id": "suffix:plasty",
+      "kind": "suffix",
+      "form": "-plasty",
+      "meaning": "surgical repair",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:plegia",
+      "kind": "suffix",
+      "form": "-plegia",
+      "meaning": "paralysis",
+      "sources": [
+        "source:ncbi-medical-terminology-nervous"
+      ]
+    },
+    {
+      "id": "suffix:pnea",
+      "kind": "suffix",
+      "form": "-pnea",
+      "meaning": "breathing",
+      "sources": [
+        "source:ncbi-medical-terminology-respiratory"
+      ]
+    },
+    {
+      "id": "suffix:ptosis",
+      "kind": "suffix",
+      "form": "-ptosis",
+      "meaning": "falling or drooping",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:sclerosis",
+      "kind": "suffix",
+      "form": "-sclerosis",
+      "meaning": "hardening",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:scopy",
+      "kind": "suffix",
+      "form": "-scopy",
+      "meaning": "visual examination",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:spasm",
+      "kind": "suffix",
+      "form": "-spasm",
+      "meaning": "muscle condition",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    },
+    {
+      "id": "suffix:stasis",
+      "kind": "suffix",
+      "form": "-stasis",
+      "meaning": "stopping or controlling",
+      "sources": [
+        "source:ncbi-medical-terminology-cardiovascular"
+      ]
+    },
+    {
+      "id": "suffix:thorax",
+      "kind": "suffix",
+      "form": "-thorax",
+      "meaning": "chest or chest cavity",
+      "sources": [
+        "source:ncbi-medical-terminology-respiratory"
+      ]
+    },
+    {
+      "id": "suffix:uria",
+      "kind": "suffix",
+      "form": "-uria",
+      "meaning": "in the urine",
+      "sources": [
+        "source:medlineplus-appendix-a"
+      ]
+    }
   ]
 }

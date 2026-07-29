@@ -1,6 +1,26 @@
 {
   "parts": [
+    { "id": "combining:albumin-o", "kind": "combiningForm", "form": "albumin/o", "meaning": "albumin", "sources": ["source:ncbi-medical-terminology-urinary"] },
+    { "id": "combining:aort-o", "kind": "combiningForm", "form": "aort/o", "meaning": "aorta", "sources": ["source:ncbi-medical-terminology-cardiovascular"] },
+    { "id": "combining:arteri-o", "kind": "combiningForm", "form": "arteri/o", "meaning": "artery", "sources": ["source:ncbi-medical-terminology-cardiovascular"] },
+    { "id": "combining:appendic-o", "kind": "combiningForm", "form": "appendic/o", "meaning": "appendix", "sources": ["source:ncbi-medical-terminology-digestive"] },
+    { "id": "combining:chol-e", "kind": "combiningForm", "form": "chol/e", "meaning": "gall or bile", "sources": ["source:ncbi-medical-terminology-digestive"] },
+    { "id": "combining:chondr-o", "kind": "combiningForm", "form": "chondr/o", "meaning": "cartilage", "sources": ["source:ncbi-medical-terminology-skeletal"] },
+    { "id": "combining:cyst-o", "kind": "combiningForm", "form": "cyst/o", "meaning": "bladder, sac, or cyst", "sources": ["source:ncbi-medical-terminology-sensory"] },
     { "id": "combining:cyt-o", "kind": "combiningForm", "form": "cyt/o", "meaning": "cell", "sources": ["source:ncbi-medical-terminology"] },
-    { "id": "combining:glyc-o", "kind": "combiningForm", "form": "glyc/o", "meaning": "sugar", "sources": ["source:ncbi-medical-terminology"] }
+    { "id": "combining:dacry-o", "kind": "combiningForm", "form": "dacry/o", "meaning": "tear or tear duct", "sources": ["source:ncbi-medical-terminology-sensory"] },
+    { "id": "combining:endometri-o", "kind": "combiningForm", "form": "endometri/o", "meaning": "endometrium", "sources": ["source:ncbi-medical-terminology-female-reproductive"] },
+    { "id": "combining:epiglott-o", "kind": "combiningForm", "form": "epiglott/o", "meaning": "epiglottis", "sources": ["source:ncbi-medical-terminology-respiratory"] },
+    { "id": "combining:fasci-o", "kind": "combiningForm", "form": "fasci/o", "meaning": "fascia", "sources": ["source:ncbi-medical-terminology-muscular"] },
+    { "id": "combining:gangli-o", "kind": "combiningForm", "form": "gangli/o", "meaning": "ganglion", "sources": ["source:ncbi-medical-terminology-nervous"] },
+    { "id": "combining:gli-o", "kind": "combiningForm", "form": "gli/o", "meaning": "glia or gluey substance", "sources": ["source:ncbi-medical-terminology-nervous"] },
+    { "id": "combining:glomerul-o", "kind": "combiningForm", "form": "glomerul/o", "meaning": "glomerulus", "sources": ["source:ncbi-medical-terminology-urinary"] },
+    { "id": "combining:glyc-o", "kind": "combiningForm", "form": "glyc/o", "meaning": "sugar", "sources": ["source:ncbi-medical-terminology"] },
+    { "id": "combining:hem-o", "kind": "combiningForm", "form": "hem/o", "meaning": "blood", "sources": ["source:ncbi-medical-terminology-respiratory"] },
+    { "id": "combining:phak-o", "kind": "combiningForm", "form": "phak/o", "meaning": "lens", "sources": ["source:ncbi-medical-terminology-sensory"] },
+    { "id": "combining:phas-o", "kind": "combiningForm", "form": "phas/o", "meaning": "speech", "sources": ["source:ncbi-medical-terminology-nervous"] },
+    { "id": "combining:phon-o", "kind": "combiningForm", "form": "phon/o", "meaning": "sound or voice", "sources": ["source:ncbi-medical-terminology-respiratory"] },
+    { "id": "combining:pneumon-o", "kind": "combiningForm", "form": "pneumon/o", "meaning": "lung or air", "sources": ["source:ncbi-medical-terminology-respiratory"] },
+    { "id": "combining:ton-o", "kind": "combiningForm", "form": "ton/o", "meaning": "tension or pressure", "sources": ["source:ncbi-medical-terminology-sensory"] }
   ]
 }
