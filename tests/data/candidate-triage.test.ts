@@ -10,7 +10,7 @@ import {
   createCandidateTriageReport,
   isProtectedTriageOutputPath,
 } from "../../src/data/candidate-triage";
-import type { Corpus } from "../../src/data";
+import { loadCorpus, validateCorpus, type Corpus } from "../../src/data";
 
 const repositoryRoot = process.cwd();
 const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
@@ -95,7 +95,7 @@ describe("candidate verification triage", () => {
     expect(report.summary).toEqual({
       verifiedTermCount: 1,
       candidateTermCount: 9,
-      pendingReviewCandidateCount: 6,
+      pendingReviewCandidateCount: 8,
       deferredCandidateCount: 1,
       categoryCounts: {
         verified_collision: 1,
@@ -130,6 +130,16 @@ describe("candidate verification triage", () => {
     });
     expect(candidateTriageReportJson(report)).not.toContain("before");
     expect(candidateTriageReportJson(report)).not.toContain("condition");
+  });
+
+  it("counts every non-deferred imported candidate as pending review", () => {
+    const report = createCandidateTriageReport(validateCorpus(loadCorpus("data")));
+
+    expect(report.summary).toMatchObject({
+      candidateTermCount: 1057,
+      pendingReviewCandidateCount: 988,
+      deferredCandidateCount: 69,
+    });
   });
 
   it("groups unresolved surfaces and ranks candidates for batch review", () => {

@@ -105,6 +105,12 @@ export const corpus = {
       "url": "https://www.ncbi.nlm.nih.gov/books/NBK607447/"
     },
     {
+      "id": "source:ncbi-medical-terminology-whole-body",
+      "publisher": "National Library of Medicine, Open Resources for Nursing",
+      "title": "Medical Terminology, 2nd ed., Chapter 2: Medical Language Related to the Whole Body",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK607445/"
+    },
+    {
       "id": "source:nci-adenoma",
       "publisher": "National Cancer Institute",
       "title": "Adenoma",

@@ -84,6 +84,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:absorption",
+    "term": "absorption",
+    "normalized": "absorption",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:acantholysis",
     "term": "Acantholysis",
     "normalized": "acantholysis",
@@ -224,6 +235,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:actin",
+    "term": "actin",
+    "normalized": "actin",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:actinobacillosis",
     "term": "Actinobacillosis",
     "normalized": "actinobacillosis",
@@ -362,6 +384,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D000270"
     }
+  },
+  {
+    "id": "candidate:adipocyte",
+    "term": "adipocyte",
+    "normalized": "adipocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:adiposis-dolorosa",
@@ -1008,6 +1041,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:anabolism",
+    "term": "anabolism",
+    "normalized": "anabolism",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:anal-gland-neoplasms",
     "term": "Anal Gland Neoplasms",
     "normalized": "anal gland neoplasms",
@@ -1062,6 +1106,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D000712"
     }
+  },
+  {
+    "id": "candidate:anatomy",
+    "term": "anatomy",
+    "normalized": "anatomy",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:ancylostomiasis",
@@ -1873,6 +1928,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:assimilation",
+    "term": "assimilation",
+    "normalized": "assimilation",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:asthenia",
     "term": "Asthenia",
     "normalized": "asthenia",
@@ -2120,6 +2186,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D001361"
     }
+  },
+  {
+    "id": "candidate:axon",
+    "term": "axon",
+    "normalized": "axon",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:babesiosis",
@@ -3718,6 +3795,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:cardiomyocyte",
+    "term": "cardiomyocyte",
+    "normalized": "cardiomyocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:cardiovascular-diseases",
     "term": "Cardiovascular Diseases",
     "normalized": "cardiovascular diseases",
@@ -3842,6 +3930,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D002372"
     }
+  },
+  {
+    "id": "candidate:catabolism",
+    "term": "catabolism",
+    "normalized": "catabolism",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:catalepsy",
@@ -4082,6 +4181,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:cerebellum",
+    "term": "cerebellum",
+    "normalized": "cerebellum",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:cerebral-arterial-diseases",
     "term": "Cerebral Arterial Diseases",
     "normalized": "cerebral arterial diseases",
@@ -4192,6 +4302,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D002561"
     }
+  },
+  {
+    "id": "candidate:cerebrum",
+    "term": "cerebrum",
+    "normalized": "cerebrum",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:cervical-rib-syndrome",
@@ -4514,6 +4635,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D002805"
     }
+  },
+  {
+    "id": "candidate:chondrocyte",
+    "term": "chondrocyte",
+    "normalized": "chondrocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:chondrodysplasia-punctata",
@@ -5290,6 +5422,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:connective-tissue",
+    "term": "connective tissue",
+    "normalized": "connective tissue",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:connective-tissue-diseases",
     "term": "Connective Tissue Diseases",
     "normalized": "connective tissue diseases",
@@ -5330,6 +5473,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D003248"
     }
+  },
+  {
+    "id": "candidate:contraction",
+    "term": "contraction",
+    "normalized": "contraction",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:contracture",
@@ -5919,6 +6073,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:cytology",
+    "term": "cytology",
+    "normalized": "cytology",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:cytomegalovirus-infections",
     "term": "Cytomegalovirus Infections",
     "normalized": "cytomegalovirus infections",
@@ -6031,6 +6196,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:deglutition",
+    "term": "deglutition",
+    "normalized": "deglutition",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:deglutition-disorders",
     "term": "Deglutition Disorders",
     "normalized": "deglutition disorders",
@@ -6113,6 +6289,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D003711"
     }
+  },
+  {
+    "id": "candidate:dendrite",
+    "term": "dendrite",
+    "normalized": "dendrite",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:dengue",
@@ -6367,6 +6554,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:depolarization",
+    "term": "depolarization",
+    "normalized": "depolarization",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:depression",
     "term": "depression",
     "normalized": "depression",
@@ -6420,6 +6618,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D003882"
     }
+  },
+  {
+    "id": "candidate:dermis",
+    "term": "dermis",
+    "normalized": "dermis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:dermoid-cyst",
@@ -6592,6 +6801,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:diaphysis",
+    "term": "diaphysis",
+    "normalized": "diaphysis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:diarrhea",
     "term": "Diarrhea",
     "normalized": "diarrhea",
@@ -6618,6 +6838,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D003970"
     }
+  },
+  {
+    "id": "candidate:diastole",
+    "term": "diastole",
+    "normalized": "diastole",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:dicrocoeliasis",
@@ -6674,6 +6905,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D002549"
     }
+  },
+  {
+    "id": "candidate:diffusion",
+    "term": "diffusion",
+    "normalized": "diffusion",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-respiratory"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:digeorge-syndrome",
@@ -6870,6 +7112,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D004216"
     }
+  },
+  {
+    "id": "candidate:diuresis",
+    "term": "diuresis",
+    "normalized": "diuresis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-urinary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:diverticulitis",
@@ -7837,6 +8090,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:endocardium",
+    "term": "endocardium",
+    "normalized": "endocardium",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:endocrine-gland-neoplasms",
     "term": "Endocrine Gland Neoplasms",
     "normalized": "endocrine gland neoplasms",
@@ -7891,6 +8155,28 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D004719"
     }
+  },
+  {
+    "id": "candidate:endomysium",
+    "term": "endomysium",
+    "normalized": "endomysium",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:endosteum",
+    "term": "endosteum",
+    "normalized": "endosteum",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:entamoebiasis",
@@ -8019,6 +8305,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:epicardium",
+    "term": "epicardium",
+    "normalized": "epicardium",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:epidermal-cyst",
     "term": "Epidermal Cyst",
     "normalized": "epidermal cyst",
@@ -8031,6 +8328,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D004814"
     }
+  },
+  {
+    "id": "candidate:epidermis",
+    "term": "epidermis",
+    "normalized": "epidermis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:epidermodysplasia-verruciformis",
@@ -8088,6 +8396,28 @@ export const candidateTerms = [
     "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
   },
   {
+    "id": "candidate:epimysium",
+    "term": "epimysium",
+    "normalized": "epimysium",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:epiphysis",
+    "term": "epiphysis",
+    "normalized": "epiphysis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:epispadias",
     "term": "Epispadias",
     "normalized": "epispadias",
@@ -8114,6 +8444,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D004844"
     }
+  },
+  {
+    "id": "candidate:epithelial",
+    "term": "epithelial",
+    "normalized": "epithelial",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:equine-infectious-anemia",
@@ -8284,6 +8625,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:erythrocyte",
+    "term": "erythrocyte",
+    "normalized": "erythrocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:erythromelalgia",
     "term": "Erythromelalgia",
     "normalized": "erythromelalgia",
@@ -8310,6 +8662,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D004919"
     }
+  },
+  {
+    "id": "candidate:erythropoiesis",
+    "term": "erythropoiesis",
+    "normalized": "erythropoiesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:escherichia-coli-infections",
@@ -8576,6 +8939,28 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D005099"
     }
+  },
+  {
+    "id": "candidate:expiration",
+    "term": "expiration",
+    "normalized": "expiration",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-respiratory"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:extracellular",
+    "term": "extracellular",
+    "normalized": "extracellular",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:extravasation-of-diagnostic-and-therapeutic-materials",
@@ -9278,6 +9663,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:fertilization",
+    "term": "fertilization",
+    "normalized": "fertilization",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-female-reproductive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:fetal-death",
     "term": "Fetal Death",
     "normalized": "fetal death",
@@ -9432,6 +9828,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:fibroblast",
+    "term": "fibroblast",
+    "normalized": "fibroblast",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:fibrocystic-breast-disease",
     "term": "Fibrocystic Breast Disease",
     "normalized": "fibrocystic breast disease",
@@ -9486,6 +9893,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D005368"
     }
+  },
+  {
+    "id": "candidate:filtration",
+    "term": "filtration",
+    "normalized": "filtration",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-urinary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:finger-injuries",
@@ -10512,6 +10930,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:gluconeogenesis",
+    "term": "gluconeogenesis",
+    "normalized": "gluconeogenesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:glucosephosphate-dehydrogenase-deficiency",
     "term": "Glucosephosphate Dehydrogenase Deficiency",
     "normalized": "glucosephosphate dehydrogenase deficiency",
@@ -10652,6 +11081,28 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:glycogenesis",
+    "term": "glycogenesis",
+    "normalized": "glycogenesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:glycogenolysis",
+    "term": "glycogenolysis",
+    "normalized": "glycogenolysis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:glycosuria",
     "term": "Glycosuria",
     "normalized": "glycosuria",
@@ -10720,6 +11171,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D006059"
     }
+  },
+  {
+    "id": "candidate:gonadotropin",
+    "term": "gonadotropin",
+    "normalized": "gonadotropin",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-endocrine"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:gonorrhea",
@@ -11365,6 +11827,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:hematopoiesis",
+    "term": "hematopoiesis",
+    "normalized": "hematopoiesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:hemianopsia",
     "term": "Hemianopsia",
     "normalized": "hemianopsia",
@@ -11657,6 +12130,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D006486"
     }
+  },
+  {
+    "id": "candidate:hemostasis",
+    "term": "hemostasis",
+    "normalized": "hemostasis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:hepatic-encephalopathy",
@@ -11995,6 +12479,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:histology",
+    "term": "histology",
+    "normalized": "histology",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:histoplasmosis",
     "term": "Histoplasmosis",
     "normalized": "histoplasmosis",
@@ -12049,6 +12544,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D006689"
     }
+  },
+  {
+    "id": "candidate:homeostasis",
+    "term": "homeostasis",
+    "normalized": "homeostasis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:homocystinuria",
@@ -12557,6 +13063,28 @@ export const candidateTerms = [
     ]
   },
   {
+    "id": "candidate:hypodermis",
+    "term": "hypodermis",
+    "normalized": "hypodermis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:hypothalamus",
+    "term": "hypothalamus",
+    "normalized": "hypothalamus",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:hypothyroidism",
     "term": "hypothyroidism",
     "normalized": "hypothyroidism",
@@ -12582,6 +13110,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D000860"
     }
+  },
+  {
+    "id": "candidate:implantation",
+    "term": "implantation",
+    "normalized": "implantation",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-female-reproductive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:influenza",
@@ -12612,6 +13151,39 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D005585"
     }
+  },
+  {
+    "id": "candidate:inspiration",
+    "term": "inspiration",
+    "normalized": "inspiration",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-respiratory"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:interstitial",
+    "term": "interstitial",
+    "normalized": "interstitial",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:intracellular",
+    "term": "intracellular",
+    "normalized": "intracellular",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:intracranial-aneurysm",
@@ -12684,6 +13256,61 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:keratinocyte",
+    "term": "keratinocyte",
+    "normalized": "keratinocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:lactation",
+    "term": "lactation",
+    "normalized": "lactation",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-female-reproductive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:leukocyte",
+    "term": "leukocyte",
+    "normalized": "leukocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:leukopoiesis",
+    "term": "leukopoiesis",
+    "normalized": "leukopoiesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:lipolysis",
+    "term": "lipolysis",
+    "normalized": "lipolysis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:marijuana-abuse",
     "term": "Marijuana Abuse",
     "normalized": "marijuana abuse",
@@ -12698,6 +13325,39 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:mastication",
+    "term": "mastication",
+    "normalized": "mastication",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:melanocyte",
+    "term": "melanocyte",
+    "normalized": "melanocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:meninges",
+    "term": "meninges",
+    "normalized": "meninges",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:mental-fatigue",
     "term": "Mental Fatigue",
     "normalized": "mental fatigue",
@@ -12710,6 +13370,39 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D005222"
     }
+  },
+  {
+    "id": "candidate:metabolism",
+    "term": "metabolism",
+    "normalized": "metabolism",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:metaphysis",
+    "term": "metaphysis",
+    "normalized": "metaphysis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:micturition",
+    "term": "micturition",
+    "normalized": "micturition",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-urinary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:migraine",
@@ -12741,6 +13434,17 @@ export const candidateTerms = [
     ]
   },
   {
+    "id": "candidate:myocardium",
+    "term": "myocardium",
+    "normalized": "myocardium",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:myoclonic-cerebellar-dyssynergia",
     "term": "Myoclonic Cerebellar Dyssynergia",
     "normalized": "myoclonic cerebellar dyssynergia",
@@ -12755,6 +13459,39 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:myocyte",
+    "term": "myocyte",
+    "normalized": "myocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:myofibril",
+    "term": "myofibril",
+    "normalized": "myofibril",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:myosin",
+    "term": "myosin",
+    "normalized": "myosin",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:nephrotic-syndrome",
     "term": "nephrotic syndrome",
     "normalized": "nephrotic syndrome",
@@ -12766,6 +13503,39 @@ export const candidateTerms = [
     ],
     "sourceVersion": "2026 candidate seed",
     "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:neuroglia",
+    "term": "neuroglia",
+    "normalized": "neuroglia",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:neuron",
+    "term": "neuron",
+    "normalized": "neuron",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:neurotransmitter",
+    "term": "neurotransmitter",
+    "normalized": "neurotransmitter",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:obesity",
@@ -12795,6 +13565,17 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:oogenesis",
+    "term": "oogenesis",
+    "normalized": "oogenesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-female-reproductive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:oral-hemorrhage",
     "term": "Oral Hemorrhage",
     "normalized": "oral hemorrhage",
@@ -12809,6 +13590,83 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:osmosis",
+    "term": "osmosis",
+    "normalized": "osmosis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-urinary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:ossification",
+    "term": "ossification",
+    "normalized": "ossification",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:osteoblast",
+    "term": "osteoblast",
+    "normalized": "osteoblast",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:osteoclast",
+    "term": "osteoclast",
+    "normalized": "osteoclast",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:osteocyte",
+    "term": "osteocyte",
+    "normalized": "osteocyte",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:osteogenesis",
+    "term": "osteogenesis",
+    "normalized": "osteogenesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:osteon",
+    "term": "osteon",
+    "normalized": "osteon",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:osteoporosis",
     "term": "osteoporosis",
     "normalized": "osteoporosis",
@@ -12820,6 +13678,28 @@ export const candidateTerms = [
     ],
     "sourceVersion": "2026 candidate seed",
     "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:ovulation",
+    "term": "ovulation",
+    "normalized": "ovulation",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-female-reproductive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:oxygenation",
+    "term": "oxygenation",
+    "normalized": "oxygenation",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-respiratory"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:pantothenate-kinase-associated-neurodegeneration",
@@ -12864,6 +13744,72 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:perfusion",
+    "term": "perfusion",
+    "normalized": "perfusion",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:pericardium",
+    "term": "pericardium",
+    "normalized": "pericardium",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:perichondrium",
+    "term": "perichondrium",
+    "normalized": "perichondrium",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:perimysium",
+    "term": "perimysium",
+    "normalized": "perimysium",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:periosteum",
+    "term": "periosteum",
+    "normalized": "periosteum",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-skeletal"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:peristalsis",
+    "term": "peristalsis",
+    "normalized": "peristalsis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-digestive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:peritonsillar-abscess",
     "term": "Peritonsillar Abscess",
     "normalized": "peritonsillar abscess",
@@ -12890,6 +13836,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D003557"
     }
+  },
+  {
+    "id": "candidate:physiology",
+    "term": "physiology",
+    "normalized": "physiology",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-whole-body"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:pneumonia",
@@ -12975,6 +13932,28 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:reabsorption",
+    "term": "reabsorption",
+    "normalized": "reabsorption",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-urinary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:relaxation",
+    "term": "relaxation",
+    "normalized": "relaxation",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:renal-aminoacidurias",
     "term": "Renal Aminoacidurias",
     "normalized": "renal aminoacidurias",
@@ -12989,6 +13968,28 @@ export const candidateTerms = [
     }
   },
   {
+    "id": "candidate:repolarization",
+    "term": "repolarization",
+    "normalized": "repolarization",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:respiration",
+    "term": "respiration",
+    "normalized": "respiration",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-respiratory"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:rheumatoid-arthritis",
     "term": "rheumatoid arthritis",
     "normalized": "rheumatoid arthritis",
@@ -13000,6 +14001,61 @@ export const candidateTerms = [
     ],
     "sourceVersion": "2026 candidate seed",
     "license": "Wikidata CC0; Disease Ontology CC0; MeSH free reuse with NLM acknowledgement"
+  },
+  {
+    "id": "candidate:sarcolemma",
+    "term": "sarcolemma",
+    "normalized": "sarcolemma",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:sarcomere",
+    "term": "sarcomere",
+    "normalized": "sarcomere",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:sarcoplasm",
+    "term": "sarcoplasm",
+    "normalized": "sarcoplasm",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-muscular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:sebaceous-gland",
+    "term": "sebaceous gland",
+    "normalized": "sebaceous gland",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:secretion",
+    "term": "secretion",
+    "normalized": "secretion",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-urinary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:sinusitis",
@@ -13027,6 +14083,17 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D003074"
     }
+  },
+  {
+    "id": "candidate:spermatogenesis",
+    "term": "spermatogenesis",
+    "normalized": "spermatogenesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-male-reproductive"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:spider-bites",
@@ -13059,6 +14126,39 @@ export const candidateTerms = [
     ]
   },
   {
+    "id": "candidate:sudoriferous-gland",
+    "term": "sudoriferous gland",
+    "normalized": "sudoriferous gland",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-integumentary"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:synapse",
+    "term": "synapse",
+    "normalized": "synapse",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:systole",
+    "term": "systole",
+    "normalized": "systole",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
     "id": "candidate:testicular-hydrocele",
     "term": "Testicular Hydrocele",
     "normalized": "testicular hydrocele",
@@ -13071,6 +14171,28 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D006848"
     }
+  },
+  {
+    "id": "candidate:thalamus",
+    "term": "thalamus",
+    "normalized": "thalamus",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-nervous"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:thrombopoiesis",
+    "term": "thrombopoiesis",
+    "normalized": "thrombopoiesis",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:tissue-adhesions",
@@ -13269,6 +14391,39 @@ export const candidateTerms = [
     "externalIds": {
       "meshDescriptor": "D002575"
     }
+  },
+  {
+    "id": "candidate:vasoconstriction",
+    "term": "vasoconstriction",
+    "normalized": "vasoconstriction",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:vasodilation",
+    "term": "vasodilation",
+    "normalized": "vasodilation",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-cardiovascular"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "candidate:ventilation",
+    "term": "ventilation",
+    "normalized": "ventilation",
+    "status": "candidate",
+    "sources": [
+      "source:ncbi-medical-terminology-respiratory"
+    ],
+    "sourceVersion": "Medical Terminology, 2nd ed.",
+    "license": "CC BY 4.0"
   },
   {
     "id": "candidate:vestibulocochlear-nerve-diseases",

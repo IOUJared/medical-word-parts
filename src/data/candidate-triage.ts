@@ -182,7 +182,7 @@ export function createCandidateTriageReport(corpus: Corpus): CandidateVerificati
     summary: {
       verifiedTermCount: corpus.terms.length,
       candidateTermCount: corpus.candidateTerms.length,
-      pendingReviewCandidateCount: batchReview.rankedCandidates.length,
+      pendingReviewCandidateCount: corpus.candidateTerms.length - batchReview.deferredCandidates.length,
       deferredCandidateCount: batchReview.deferredCandidates.length,
       categoryCounts,
     },

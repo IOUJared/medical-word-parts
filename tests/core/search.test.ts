@@ -25,6 +25,20 @@ describe("deterministic corpus search", () => {
     });
   });
 
+  it.each([
+    ["homeostasis", "candidate:homeostasis"],
+    ["epidermis", "candidate:epidermis"],
+    ["vasoconstriction", "candidate:vasoconstriction"],
+  ] as const)("Given exact candidate query %s, when searched, then the candidate ranks first", (query, id) => {
+    const results = searchCorpus({ query });
+
+    expect(results[0]).toMatchObject({
+      kind: "candidateTerm",
+      id,
+      status: "candidate",
+    });
+  });
+
   it("Given a verified term and a candidate prefix match, when searched, then verified results rank first", () => {
     const results = searchCorpus({ query: "neph" });
 

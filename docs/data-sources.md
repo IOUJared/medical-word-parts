@@ -10,6 +10,7 @@ The version-controlled files in `data/` are the only authored corpus inputs. `sr
 | --- | --- | --- |
 | `source:medlineplus-appendix-a` | National Library of Medicine, NIH | General word-part teaching records and contrast relations. |
 | `source:ncbi-medical-terminology` | National Library of Medicine, Open Resources for Nursing | Word-part terminology records and spelling variants. |
+| `source:ncbi-medical-terminology-whole-body` | National Library of Medicine, Open Resources for Nursing | Chapter 2 provenance for the anatomy and physiology candidate queue. |
 | `source:nci-cytokine` | National Cancer Institute | The lexicalized cytokine note and the `-kine` citation. |
 | `source:nci-adenoma` | National Cancer Institute | The adenoma term citation. |
 | `source:nci-osteoplasty` | National Cancer Institute | The osteoplasty term citation. |
@@ -39,4 +40,4 @@ Some records carry editorial notes because the corpus is teaching material, not 
 
 ## Rebuild audit
 
-Run `npm run data:build`, then `npm run data:validate`, then `npm run data:test` after editing authored corpus files. Generation uses lexical ordering only and contains no clock, random, network, or environment-derived content. Re-running the build must leave `src/generated/corpus.ts`, `src/generated/index.ts`, `src/generated/routes.ts`, and `src/generated/segmentation.ts` byte-identical.
+Run `npm run data:build`, then `npm run data:validate`, then `npm run data:test` after editing authored corpus files. Generation uses lexical ordering only and contains no clock, random, network, or environment-derived content. Re-running the build must leave `src/generated/candidates.ts`, `src/generated/corpus.ts`, `src/generated/index.ts`, `src/generated/routes.ts`, and `src/generated/segmentation.ts` byte-identical.

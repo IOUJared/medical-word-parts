@@ -15,7 +15,7 @@ let generatedDirectory = "";
 const generatedNames = ["candidates.ts", "corpus.ts", "index.ts", "routes.ts", "segmentation.ts"] as const;
 const generatedHeader = "// GENERATED FILE. DO NOT EDIT. Run npm run data:build to regenerate.\n\n";
 const verifiedTermTarget = 196;
-const candidateTermTarget = 952;
+const candidateTermTarget = 1_057;
 
 function build(): { readonly status: number | null; readonly output: string } {
   const outcome = spawnSync(npmCommand, ["run", "data:build", "--", "--output", generatedDirectory], {

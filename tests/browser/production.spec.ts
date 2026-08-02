@@ -22,6 +22,18 @@ test("known search routes canonically and survives a direct refresh", async ({ p
   await expect(page.getByRole("heading", { level: 1, name: "adrenal" })).toBeVisible();
 });
 
+test("candidate-only terms remain on discovery queue and do not resolve to a term page", async ({ page }) => {
+  for (const term of ["homeostasis", "epidermis", "vasoconstriction"] as const) {
+    const response = await page.goto(appUrl(`/term/${term}/`), { waitUntil: "networkidle" });
+    expect(response?.status()).toBe(404);
+    await expect(page.getByText("Not found")).toBeVisible();
+    await expect(page.locator("a[href*='github.com/IOUJared/medical-word-parts/issues/new']")).toHaveCount(0);
+    await page.goto(appUrl(`/common-medical-terms/?term=${term}`), { waitUntil: "networkidle" });
+    await expect(page.getByText("Candidate only - no verified word parts yet").first()).toBeVisible();
+    await expect(page.getByText(term)).toBeVisible();
+  }
+});
+
 test("representative verified terms begin with canonical identity followed by complete primary morphology", async ({ page }) => {
   for (const slug of [
     "achondroplasia",
