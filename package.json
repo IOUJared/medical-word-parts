@@ -16,6 +16,8 @@
     "data:test": "vitest run tests/data",
     "candidate:triage": "tsx scripts/candidate-verification-triage.ts",
     "candidate:triage:check": "tsx scripts/candidate-verification-triage.ts --check",
+    "candidate:definitions": "tsx scripts/candidate-definition-batch.ts",
+    "candidate:definitions:check": "tsx scripts/candidate-definition-batch.ts --check",
     "candidate:promote:draft": "tsx scripts/candidate-promotion-draft.ts",
     "analyzer:build": "tsx scripts/browser-bundle.ts analyzer",
     "analyzer:validate": "tsx scripts/browser-bundle.ts analyzer --check",

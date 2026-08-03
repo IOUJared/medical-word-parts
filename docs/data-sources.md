@@ -41,3 +41,7 @@ Some records carry editorial notes because the corpus is teaching material, not 
 ## Rebuild audit
 
 Run `npm run data:build`, then `npm run data:validate`, then `npm run data:test` after editing authored corpus files. Generation uses lexical ordering only and contains no clock, random, network, or environment-derived content. Re-running the build must leave `src/generated/candidates.ts`, `src/generated/corpus.ts`, `src/generated/index.ts`, `src/generated/routes.ts`, and `src/generated/segmentation.ts` byte-identical.
+
+## Candidate verification workflow
+
+Run `npm run candidate:triage` to rank the candidate queue by known and unresolved word-part coverage. Run `npm run candidate:definitions -- --batch-size 100 --batch 1` to build `.artifacts/candidate-definition-batch.json` for the first 100 pending candidates; increment `--batch` for the next 100-word chunk. Descriptor-backed MeSH candidates get source scope-note definitions in bulk, while candidates without machine-readable descriptor IDs get source-review leads. Use `npm run candidate:definitions:check -- --batch-size 100 --batch 1` before relying on a saved batch.
