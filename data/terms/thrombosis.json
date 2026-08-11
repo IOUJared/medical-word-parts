@@ -1,0 +1,34 @@
+{
+  "id": "term:thrombosis",
+  "slug": "thrombosis",
+  "term": "thrombosis",
+  "normalized": "thrombosis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D013927"
+  },
+  "note": "NLM MeSH descriptor D013927 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:thrombosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:thromb",
+          "surface": "thromb",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:osis",
+          "surface": "osis",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

@@ -41,6 +41,7 @@ describe("corpus relations", () => {
     expect(results.map((term) => term.id)).toEqual([
       "term:bradycardia",
       "term:endocarditis",
+      "term:myocarditis",
       "term:pericarditis",
       "term:tachycardia",
     ]);

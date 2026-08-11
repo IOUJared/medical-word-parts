@@ -31,17 +31,20 @@ describe("deterministic corpus search", () => {
   it("Given verified term and part prefix matches, when searched, then verified results rank first", () => {
     const results = searchCorpus({ query: "neph" });
 
-    expect(results.map((result) => result.id).slice(0, 7)).toEqual([
+    expect(results.map((result) => result.id).slice(0, 10)).toEqual([
       "term:nephralgia",
       "term:nephrectomy",
       "term:nephritis",
+      "term:nephrology",
       "term:nephroma",
       "term:nephropathy",
+      "term:nephrosclerosis",
+      "term:nephrosis",
       "term:nephrostomy",
       "term:nephrotomy",
     ]);
-    expect(results.map((result) => result.id).slice(7, 9)).toEqual(["root:nephr", "root:nephro"]);
-    expect(results.map((result) => result.id).slice(9)).toEqual(["term:glomerulonephritis"]);
+    expect(results.map((result) => result.id).slice(10, 12)).toEqual(["root:nephr", "root:nephro"]);
+    expect(results.map((result) => result.id).slice(12)).toEqual(["term:glomerulonephritis", "term:perinephritis"]);
   });
 
   it("Given an alias spelling, when searched, then its canonical term carries alias evidence", () => {
@@ -79,9 +82,12 @@ describe("deterministic corpus search", () => {
   it("Given a shared prefix, when searched, then exact matches precede prefix matches", () => {
     const results = searchCorpus({ query: "hypo" });
 
-    expect(results.map((result) => result.id).slice(0, 2)).toEqual([
+    expect(results.map((result) => result.id)).toEqual([
       "prefix:hypo",
+      "term:hypoalbuminemia",
+      "term:hypocapnia",
       "term:hypoglycemia",
+      "term:hypohidrosis",
     ]);
     expect(results[1]?.matchedBy.kind).toBe("prefix");
   });

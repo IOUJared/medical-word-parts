@@ -1,0 +1,47 @@
+{
+  "id": "term:endocytosis",
+  "slug": "endocytosis",
+  "term": "endocytosis",
+  "normalized": "endocytosis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D004705"
+  },
+  "note": "NLM MeSH descriptor D004705 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:endocytosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "prefix:endo",
+          "surface": "endo",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "combining:cyt-o",
+          "surface": "cyt",
+          "start": 4,
+          "end": 7,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:osis",
+          "surface": "osis",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

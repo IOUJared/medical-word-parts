@@ -1,0 +1,35 @@
+{
+  "id": "term:analgesia",
+  "slug": "analgesia",
+  "term": "analgesia",
+  "normalized": "analgesia",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-nervous"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D000698"
+  },
+  "note": "NLM MeSH descriptor D000698 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:analgesia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "prefix:an",
+          "surface": "an",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "partId": "suffix:algesia",
+          "surface": "algesia",
+          "start": 2,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

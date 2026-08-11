@@ -1,0 +1,47 @@
+{
+  "id": "term:hypoalbuminemia",
+  "slug": "hypoalbuminemia",
+  "term": "hypoalbuminemia",
+  "normalized": "hypoalbuminemia",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-urinary"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D034141"
+  },
+  "note": "NLM MeSH descriptor D034141 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:hypoalbuminemia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "prefix:hypo",
+          "surface": "hypo",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "combining:albumin-o",
+          "surface": "albumin",
+          "start": 4,
+          "end": 11,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:emia",
+          "surface": "emia",
+          "start": 11,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}

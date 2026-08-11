@@ -1,0 +1,35 @@
+{
+  "id": "term:cystocele",
+  "slug": "cystocele",
+  "term": "cystocele",
+  "normalized": "cystocele",
+  "sources": [
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-nervous",
+    "source:ncbi-medical-terminology-sensory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D052858"
+  },
+  "note": "NLM MeSH descriptor D052858 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:cystocele-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "combining:cyst-o",
+          "surface": "cysto",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:cele",
+          "surface": "cele",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

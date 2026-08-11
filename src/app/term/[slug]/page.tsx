@@ -44,7 +44,7 @@ export default async function TermDetailPage({ params }: PageProps) {
   return <div className="page-sheet term-page">
     <section className="term-opening" aria-labelledby="term-heading">
       <p className="overline">Verified corpus entry</p>
-      <h1 id="term-heading">{result.term.term}</h1>
+      <h1 className={result.term.term.length >= 19 ? "long-term" : undefined} id="term-heading">{result.term.term}</h1>
     </section>
     <MorphologyRail analysis={result.primary} headingId="term-primary-morphology-heading" reconstructedTerm={result.term.term} />
     <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: result.term.term }]} />

@@ -1,0 +1,47 @@
+{
+  "id": "term:dermatofibrosarcoma",
+  "slug": "dermatofibrosarcoma",
+  "term": "dermatofibrosarcoma",
+  "normalized": "dermatofibrosarcoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D018223"
+  },
+  "note": "NLM MeSH descriptor D018223 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:dermatofibrosarcoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:dermato",
+          "surface": "dermato",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "root:fibro",
+          "surface": "fibro",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "partId": "root:sarc",
+          "surface": "sarc",
+          "start": 12,
+          "end": 16
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 16,
+          "end": 19
+        }
+      ]
+    }
+  ]
+}

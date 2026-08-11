@@ -92,12 +92,17 @@ export const analysisSchema = z.strictObject({
     segments: z.array(segmentSchema).min(1),
   });
 
+const termExternalIdsSchema = z.strictObject({
+    meshDescriptor: z.string().regex(/^D\d+$/, "MeSH descriptor ID must use the D namespace"),
+  });
+
 export const termSchema = z.strictObject({
     id: termId,
     slug: normalizedWord,
     term: normalizedWord,
     normalized: normalizedWord,
     sources: citationIds,
+    externalIds: termExternalIdsSchema.optional(),
     note: z.string().min(1),
     analyses: z.array(analysisSchema).min(1),
   });

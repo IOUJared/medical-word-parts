@@ -137,7 +137,7 @@ describe("candidate verification triage", () => {
     const report = createCandidateTriageReport(validateCorpus(loadCorpus("data")));
 
     expect(report.summary).toMatchObject({
-      verifiedTermCount: 204,
+      verifiedTermCount: 298,
       candidateTermCount: 0,
       pendingReviewCandidateCount: 0,
       deferredCandidateCount: 0,

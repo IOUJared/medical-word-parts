@@ -1,3 +1,7 @@
+@media (max-width: 47.999rem) {
+  .term-opening .long-term, .reconstruction.long-term { font-size: 2rem; letter-spacing: -0.025em; }
+}
+
 @media (min-width: 48rem) {
   .desktop-nav { display: flex; }
   .mobile-nav { display: none; }

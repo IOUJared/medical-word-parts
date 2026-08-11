@@ -1,0 +1,35 @@
+{
+  "id": "term:lymphocele",
+  "slug": "lymphocele",
+  "term": "lymphocele",
+  "normalized": "lymphocele",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-nervous"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D008210"
+  },
+  "note": "NLM MeSH descriptor D008210 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:lymphocele-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:lympho",
+          "surface": "lympho",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:cele",
+          "surface": "cele",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 
-import { build } from "esbuild";
+import { build, type Plugin } from "esbuild";
+
+import { corpus } from "../src/generated/corpus";
 
 type BundleTarget = "analyzer" | "parts" | "site" | "theme";
 
@@ -50,6 +52,49 @@ function bundleArguments(arguments_: readonly string[]): BundleArguments {
   throw new BrowserBundleError("Use [--check] [--output <file>] after the bundle target");
 }
 
+function analyzerCorpusPlugin(): Plugin {
+  const data = {
+    aliases: corpus.aliases,
+    parts: corpus.parts,
+    sources: corpus.sources,
+    terms: corpus.terms.map((term) => [
+      term.id,
+      term.slug,
+      term.term,
+      term.normalized,
+      term.sources,
+      term.analyses.map((analysis) => [
+        analysis.id,
+        analysis.primary,
+        "qualification" in analysis ? analysis.qualification : null,
+        analysis.segments.map((segment) => [
+          segment.partId,
+          segment.surface,
+          segment.start,
+          segment.end,
+          "transformations" in segment ? segment.transformations : null,
+        ]),
+      ]),
+    ]),
+  };
+  const contents = `const data=${JSON.stringify(data)};
+const terms=data.terms.map(([id,slug,term,normalized,sources,analysisData])=>({id,slug,term,normalized,sources,note:"",analyses:analysisData.map(([analysisId,primary,qualification,segmentData])=>({id:analysisId,primary,...qualification===null?{}:{qualification},segments:segmentData.map(([partId,surface,start,end,transformations])=>({partId,surface,start,end,...transformations===null?{}:{transformations}}))}))}));
+export const corpus={sources:data.sources,parts:data.parts,terms,aliases:data.aliases,relations:[]};`;
+  return {
+    name: "analyzer-corpus",
+    setup(buildContext) {
+      buildContext.onResolve({ filter: /^\.\.\/generated\/corpus$/ }, () => ({
+        namespace: "analyzer-corpus",
+        path: "corpus",
+      }));
+      buildContext.onLoad({ filter: /^corpus$/, namespace: "analyzer-corpus" }, () => ({
+        contents,
+        loader: "js",
+      }));
+    },
+  };
+}
+
 async function renderBundle(spec: BundleSpec): Promise<string> {
   const result = await build({
     bundle: true,
@@ -65,6 +110,7 @@ async function renderBundle(spec: BundleSpec): Promise<string> {
     minify: true,
     outfile: `${spec.target}.js`,
     platform: "browser",
+    plugins: spec.target === "analyzer" ? [analyzerCorpusPlugin()] : [],
     sourcemap: false,
     splitting: false,
     target: "es2022",

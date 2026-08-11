@@ -1,0 +1,47 @@
+{
+  "id": "term:dysphonia",
+  "slug": "dysphonia",
+  "term": "dysphonia",
+  "normalized": "dysphonia",
+  "sources": [
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology",
+    "source:ncbi-medical-terminology-respiratory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D055154"
+  },
+  "note": "NLM MeSH descriptor D055154 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:dysphonia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "prefix:dys",
+          "surface": "dys",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "combining:phon-o",
+          "surface": "phon",
+          "start": 3,
+          "end": 7,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:ia",
+          "surface": "ia",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

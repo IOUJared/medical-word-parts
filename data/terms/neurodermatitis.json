@@ -1,0 +1,41 @@
+{
+  "id": "term:neurodermatitis",
+  "slug": "neurodermatitis",
+  "term": "neurodermatitis",
+  "normalized": "neurodermatitis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D009450"
+  },
+  "note": "NLM MeSH descriptor D009450 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:neurodermatitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:neuro",
+          "surface": "neuro",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:dermat",
+          "surface": "dermat",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 11,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}

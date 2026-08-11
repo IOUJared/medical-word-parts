@@ -1,0 +1,41 @@
+{
+  "id": "term:myofibroma",
+  "slug": "myofibroma",
+  "term": "myofibroma",
+  "normalized": "myofibroma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D047708"
+  },
+  "note": "NLM MeSH descriptor D047708 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:myofibroma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:myo",
+          "surface": "myo",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "root:fibr",
+          "surface": "fibr",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

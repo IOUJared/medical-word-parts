@@ -1,0 +1,42 @@
+{
+  "id": "term:hypocapnia",
+  "slug": "hypocapnia",
+  "term": "hypocapnia",
+  "normalized": "hypocapnia",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology",
+    "source:ncbi-medical-terminology-respiratory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D016857"
+  },
+  "note": "NLM MeSH descriptor D016857 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:hypocapnia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "prefix:hypo",
+          "surface": "hypo",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "root:capn",
+          "surface": "capn",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "partId": "suffix:ia",
+          "surface": "ia",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

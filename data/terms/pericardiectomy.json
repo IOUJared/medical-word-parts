@@ -1,0 +1,40 @@
+{
+  "id": "term:pericardiectomy",
+  "slug": "pericardiectomy",
+  "term": "pericardiectomy",
+  "normalized": "pericardiectomy",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D010492"
+  },
+  "note": "NLM MeSH descriptor D010492 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:pericardiectomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "prefix:peri",
+          "surface": "peri",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "root:cardi",
+          "surface": "cardi",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "partId": "suffix:ectomy",
+          "surface": "ectomy",
+          "start": 9,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}

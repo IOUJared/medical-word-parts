@@ -1,0 +1,41 @@
+{
+  "id": "term:adenomyosis",
+  "slug": "adenomyosis",
+  "term": "adenomyosis",
+  "normalized": "adenomyosis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D062788"
+  },
+  "note": "NLM MeSH descriptor D062788 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:adenomyosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:adeno",
+          "surface": "adeno",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:my",
+          "surface": "my",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "partId": "suffix:osis",
+          "surface": "osis",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "term:angiocardiography",
+  "slug": "angiocardiography",
+  "term": "angiocardiography",
+  "normalized": "angiocardiography",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D000790"
+  },
+  "note": "NLM MeSH descriptor D000790 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:angiocardiography-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:angio",
+          "surface": "angio",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:cardio",
+          "surface": "cardio",
+          "start": 5,
+          "end": 11
+        },
+        {
+          "partId": "suffix:graphy",
+          "surface": "graphy",
+          "start": 11,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}

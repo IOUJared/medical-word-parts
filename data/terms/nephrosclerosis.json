@@ -1,0 +1,34 @@
+{
+  "id": "term:nephrosclerosis",
+  "slug": "nephrosclerosis",
+  "term": "nephrosclerosis",
+  "normalized": "nephrosclerosis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D009400"
+  },
+  "note": "NLM MeSH descriptor D009400 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:nephrosclerosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:nephro",
+          "surface": "nephro",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:sclerosis",
+          "surface": "sclerosis",
+          "start": 6,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}

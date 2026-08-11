@@ -1,0 +1,28 @@
+{
+  "id": "term:thorax",
+  "slug": "thorax",
+  "term": "thorax",
+  "normalized": "thorax",
+  "sources": [
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-respiratory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D013909"
+  },
+  "note": "NLM MeSH descriptor D013909 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:thorax-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "suffix:thorax",
+          "surface": "thorax",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  ]
+}

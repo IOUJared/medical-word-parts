@@ -1,0 +1,28 @@
+{
+  "id": "term:ostomy",
+  "slug": "ostomy",
+  "term": "ostomy",
+  "normalized": "ostomy",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D010030"
+  },
+  "note": "NLM MeSH descriptor D010030 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:ostomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "suffix:ostomy",
+          "surface": "ostomy",
+          "start": 0,
+          "end": 6
+        }
+      ]
+    }
+  ]
+}

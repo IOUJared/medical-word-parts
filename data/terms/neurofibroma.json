@@ -1,0 +1,41 @@
+{
+  "id": "term:neurofibroma",
+  "slug": "neurofibroma",
+  "term": "neurofibroma",
+  "normalized": "neurofibroma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D009455"
+  },
+  "note": "NLM MeSH descriptor D009455 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:neurofibroma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:neuro",
+          "surface": "neuro",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:fibr",
+          "surface": "fibr",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

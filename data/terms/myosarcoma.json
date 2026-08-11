@@ -1,0 +1,41 @@
+{
+  "id": "term:myosarcoma",
+  "slug": "myosarcoma",
+  "term": "myosarcoma",
+  "normalized": "myosarcoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D009217"
+  },
+  "note": "NLM MeSH descriptor D009217 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:myosarcoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:myo",
+          "surface": "myo",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "root:sarc",
+          "surface": "sarc",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

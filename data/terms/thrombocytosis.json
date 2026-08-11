@@ -1,0 +1,47 @@
+{
+  "id": "term:thrombocytosis",
+  "slug": "thrombocytosis",
+  "term": "thrombocytosis",
+  "normalized": "thrombocytosis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D013922"
+  },
+  "note": "NLM MeSH descriptor D013922 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:thrombocytosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:thrombo",
+          "surface": "thrombo",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "combining:cyt-o",
+          "surface": "cyt",
+          "start": 7,
+          "end": 10,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:osis",
+          "surface": "osis",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    }
+  ]
+}

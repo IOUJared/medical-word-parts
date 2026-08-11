@@ -1,0 +1,35 @@
+{
+  "id": "term:colectomy",
+  "slug": "colectomy",
+  "term": "colectomy",
+  "normalized": "colectomy",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D003082"
+  },
+  "note": "NLM MeSH descriptor D003082 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:colectomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:col",
+          "surface": "col",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "suffix:ectomy",
+          "surface": "ectomy",
+          "start": 3,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

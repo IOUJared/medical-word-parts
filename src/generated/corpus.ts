@@ -1910,6 +1910,88 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:adenomyoma",
+      "slug": "adenomyoma",
+      "term": "adenomyoma",
+      "normalized": "adenomyoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018194"
+      },
+      "note": "NLM MeSH descriptor D018194 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:adenomyoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:adeno",
+              "surface": "adeno",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:my",
+              "surface": "my",
+              "start": 5,
+              "end": 7
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 7,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:adenomyosis",
+      "slug": "adenomyosis",
+      "term": "adenomyosis",
+      "normalized": "adenomyosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D062788"
+      },
+      "note": "NLM MeSH descriptor D062788 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:adenomyosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:adeno",
+              "surface": "adeno",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:my",
+              "surface": "my",
+              "start": 5,
+              "end": 7
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 7,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:adrenal",
       "slug": "adrenal",
       "term": "adrenal",
@@ -1996,6 +2078,41 @@ export const corpus = {
               "surface": "uria",
               "start": 7,
               "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:analgesia",
+      "slug": "analgesia",
+      "term": "analgesia",
+      "normalized": "analgesia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-nervous"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D000698"
+      },
+      "note": "NLM MeSH descriptor D000698 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:analgesia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:an",
+              "surface": "an",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "partId": "suffix:algesia",
+              "surface": "algesia",
+              "start": 2,
+              "end": 9
             }
           ]
         }
@@ -2090,6 +2207,87 @@ export const corpus = {
               "surface": "itis",
               "start": 4,
               "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:angiocardiography",
+      "slug": "angiocardiography",
+      "term": "angiocardiography",
+      "normalized": "angiocardiography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D000790"
+      },
+      "note": "NLM MeSH descriptor D000790 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:angiocardiography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:angio",
+              "surface": "angio",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:cardio",
+              "surface": "cardio",
+              "start": 5,
+              "end": 11
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 11,
+              "end": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:angiofibroma",
+      "slug": "angiofibroma",
+      "term": "angiofibroma",
+      "normalized": "angiofibroma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018322"
+      },
+      "note": "NLM MeSH descriptor D018322 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:angiofibroma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:angio",
+              "surface": "angio",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:fibr",
+              "surface": "fibr",
+              "start": 5,
+              "end": 9
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 9,
+              "end": 12
             }
           ]
         }
@@ -2283,6 +2481,82 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:angioscopy",
+      "slug": "angioscopy",
+      "term": "angioscopy",
+      "normalized": "angioscopy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D017546"
+      },
+      "note": "NLM MeSH descriptor D017546 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:angioscopy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:angio",
+              "surface": "angio",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:scopy",
+              "surface": "scopy",
+              "start": 5,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:ankyloglossia",
+      "slug": "ankyloglossia",
+      "term": "ankyloglossia",
+      "normalized": "ankyloglossia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology",
+        "source:ncbi-medical-terminology-skeletal"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D000072676"
+      },
+      "note": "NLM MeSH descriptor D000072676 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:ankyloglossia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:ankylo",
+              "surface": "ankylo",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "root:gloss",
+              "surface": "gloss",
+              "start": 6,
+              "end": 11
+            },
+            {
+              "partId": "suffix:ia",
+              "surface": "ia",
+              "start": 11,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:ankylosis",
       "slug": "ankylosis",
       "term": "ankylosis",
@@ -2376,6 +2650,41 @@ export const corpus = {
               "surface": "itis",
               "start": 4,
               "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:aortography",
+      "slug": "aortography",
+      "term": "aortography",
+      "normalized": "aortography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-cardiovascular"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D001027"
+      },
+      "note": "NLM MeSH descriptor D001027 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:aortography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:aort-o",
+              "surface": "aorto",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 5,
+              "end": 11
             }
           ]
         }
@@ -2702,6 +3011,40 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:arthrography",
+      "slug": "arthrography",
+      "term": "arthrography",
+      "normalized": "arthrography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D001175"
+      },
+      "note": "NLM MeSH descriptor D001175 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:arthrography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:arthro",
+              "surface": "arthro",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 6,
+              "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:arthrogryposis",
       "slug": "arthrogryposis",
       "term": "arthrogryposis",
@@ -2885,6 +3228,40 @@ export const corpus = {
               "surface": "itis",
               "start": 7,
               "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:blepharoplasty",
+      "slug": "blepharoplasty",
+      "term": "blepharoplasty",
+      "normalized": "blepharoplasty",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D019882"
+      },
+      "note": "NLM MeSH descriptor D019882 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:blepharoplasty-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:blepharo",
+              "surface": "blepharo",
+              "start": 0,
+              "end": 8
+            },
+            {
+              "partId": "suffix:plasty",
+              "surface": "plasty",
+              "start": 8,
+              "end": 14
             }
           ]
         }
@@ -3275,6 +3652,41 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:capnography",
+      "slug": "capnography",
+      "term": "capnography",
+      "normalized": "capnography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D019296"
+      },
+      "note": "NLM MeSH descriptor D019296 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:capnography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:capno",
+              "surface": "capno",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 5,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:carcinoma",
       "slug": "carcinoma",
       "term": "carcinoma",
@@ -3339,6 +3751,40 @@ export const corpus = {
               "surface": "oma",
               "start": 11,
               "end": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:cardiology",
+      "slug": "cardiology",
+      "term": "cardiology",
+      "normalized": "cardiology",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D002309"
+      },
+      "note": "NLM MeSH descriptor D002309 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:cardiology-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:cardio",
+              "surface": "cardio",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:logy",
+              "surface": "logy",
+              "start": 6,
+              "end": 10
             }
           ]
         }
@@ -3592,6 +4038,54 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:cholecystectomy",
+      "slug": "cholecystectomy",
+      "term": "cholecystectomy",
+      "normalized": "cholecystectomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-digestive",
+        "source:ncbi-medical-terminology-sensory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D002763"
+      },
+      "note": "NLM MeSH descriptor D002763 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:cholecystectomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:chol-e",
+              "surface": "chole",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "combining:cyst-o",
+              "surface": "cyst",
+              "start": 5,
+              "end": 9,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:ectomy",
+              "surface": "ectomy",
+              "start": 9,
+              "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:cholecystitis",
       "slug": "cholecystitis",
       "term": "cholecystitis",
@@ -3624,6 +4118,96 @@ export const corpus = {
               "surface": "itis",
               "start": 9,
               "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:cholecystography",
+      "slug": "cholecystography",
+      "term": "cholecystography",
+      "normalized": "cholecystography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-digestive",
+        "source:ncbi-medical-terminology-sensory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D002765"
+      },
+      "note": "NLM MeSH descriptor D002765 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:cholecystography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:chol-e",
+              "surface": "chole",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "combining:cyst-o",
+              "surface": "cysto",
+              "start": 5,
+              "end": 10
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 10,
+              "end": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:cholecystostomy",
+      "slug": "cholecystostomy",
+      "term": "cholecystostomy",
+      "normalized": "cholecystostomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-digestive",
+        "source:ncbi-medical-terminology-sensory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D002767"
+      },
+      "note": "NLM MeSH descriptor D002767 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:cholecystostomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:chol-e",
+              "surface": "chole",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "combining:cyst-o",
+              "surface": "cyst",
+              "start": 5,
+              "end": 9,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:ostomy",
+              "surface": "ostomy",
+              "start": 9,
+              "end": 15
             }
           ]
         }
@@ -3807,6 +4391,41 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:colectomy",
+      "slug": "colectomy",
+      "term": "colectomy",
+      "normalized": "colectomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D003082"
+      },
+      "note": "NLM MeSH descriptor D003082 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:colectomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:col",
+              "surface": "col",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "suffix:ectomy",
+              "surface": "ectomy",
+              "start": 3,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:colic",
       "slug": "colic",
       "term": "colic",
@@ -3864,6 +4483,41 @@ export const corpus = {
               "surface": "itis",
               "start": 3,
               "end": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:colostomy",
+      "slug": "colostomy",
+      "term": "colostomy",
+      "normalized": "colostomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D003125"
+      },
+      "note": "NLM MeSH descriptor D003125 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:colostomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:col",
+              "surface": "col",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "suffix:ostomy",
+              "surface": "ostomy",
+              "start": 3,
+              "end": 9
             }
           ]
         }
@@ -4037,6 +4691,76 @@ export const corpus = {
               "surface": "itis",
               "start": 4,
               "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:cystocele",
+      "slug": "cystocele",
+      "term": "cystocele",
+      "normalized": "cystocele",
+      "sources": [
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-nervous",
+        "source:ncbi-medical-terminology-sensory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D052858"
+      },
+      "note": "NLM MeSH descriptor D052858 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:cystocele-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:cyst-o",
+              "surface": "cysto",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:cele",
+              "surface": "cele",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:cystography",
+      "slug": "cystography",
+      "term": "cystography",
+      "normalized": "cystography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-sensory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D000070621"
+      },
+      "note": "NLM MeSH descriptor D000070621 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:cystography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:cyst-o",
+              "surface": "cysto",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 5,
+              "end": 11
             }
           ]
         }
@@ -4268,6 +4992,47 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:dacryocystography",
+      "slug": "dacryocystography",
+      "term": "dacryocystography",
+      "normalized": "dacryocystography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-sensory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D000090104"
+      },
+      "note": "NLM MeSH descriptor D000090104 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:dacryocystography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:dacry-o",
+              "surface": "dacryo",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "combining:cyst-o",
+              "surface": "cysto",
+              "start": 6,
+              "end": 11
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 11,
+              "end": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:dermatitis",
       "slug": "dermatitis",
       "term": "dermatitis",
@@ -4292,6 +5057,53 @@ export const corpus = {
               "surface": "itis",
               "start": 6,
               "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:dermatofibrosarcoma",
+      "slug": "dermatofibrosarcoma",
+      "term": "dermatofibrosarcoma",
+      "normalized": "dermatofibrosarcoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018223"
+      },
+      "note": "NLM MeSH descriptor D018223 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:dermatofibrosarcoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:dermato",
+              "surface": "dermato",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "partId": "root:fibro",
+              "surface": "fibro",
+              "start": 7,
+              "end": 12
+            },
+            {
+              "partId": "root:sarc",
+              "surface": "sarc",
+              "start": 12,
+              "end": 16
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 16,
+              "end": 19
             }
           ]
         }
@@ -4533,6 +5345,53 @@ export const corpus = {
               "partId": "suffix:pepsia",
               "surface": "pepsia",
               "start": 3,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:dysphonia",
+      "slug": "dysphonia",
+      "term": "dysphonia",
+      "normalized": "dysphonia",
+      "sources": [
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D055154"
+      },
+      "note": "NLM MeSH descriptor D055154 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:dysphonia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:dys",
+              "surface": "dys",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "combining:phon-o",
+              "surface": "phon",
+              "start": 3,
+              "end": 7,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:ia",
+              "surface": "ia",
+              "start": 7,
               "end": 9
             }
           ]
@@ -4782,6 +5641,121 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:endocytosis",
+      "slug": "endocytosis",
+      "term": "endocytosis",
+      "normalized": "endocytosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D004705"
+      },
+      "note": "NLM MeSH descriptor D004705 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:endocytosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:endo",
+              "surface": "endo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "combining:cyt-o",
+              "surface": "cyt",
+              "start": 4,
+              "end": 7,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 7,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:endoderm",
+      "slug": "endoderm",
+      "term": "endoderm",
+      "normalized": "endoderm",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D004707"
+      },
+      "note": "NLM MeSH descriptor D004707 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:endoderm-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:endo",
+              "surface": "endo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:derm",
+              "surface": "derm",
+              "start": 4,
+              "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:endolymph",
+      "slug": "endolymph",
+      "term": "endolymph",
+      "normalized": "endolymph",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D004710"
+      },
+      "note": "NLM MeSH descriptor D004710 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:endolymph-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:endo",
+              "surface": "endo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:lymph",
+              "surface": "lymph",
+              "start": 4,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:endometriosis",
       "slug": "endometriosis",
       "term": "endometriosis",
@@ -4845,6 +5819,81 @@ export const corpus = {
               "surface": "itis",
               "start": 8,
               "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:endoscopy",
+      "slug": "endoscopy",
+      "term": "endoscopy",
+      "normalized": "endoscopy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D004724"
+      },
+      "note": "NLM MeSH descriptor D004724 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:endoscopy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:endo",
+              "surface": "endo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "suffix:scopy",
+              "surface": "scopy",
+              "start": 4,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:endotoxemia",
+      "slug": "endotoxemia",
+      "term": "endotoxemia",
+      "normalized": "endotoxemia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-lymphatic"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D019446"
+      },
+      "note": "NLM MeSH descriptor D019446 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:endotoxemia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:endo",
+              "surface": "endo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:tox",
+              "surface": "tox",
+              "start": 4,
+              "end": 7
+            },
+            {
+              "partId": "suffix:emia",
+              "surface": "emia",
+              "start": 7,
+              "end": 11
             }
           ]
         }
@@ -5181,6 +6230,88 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:fasciotomy",
+      "slug": "fasciotomy",
+      "term": "fasciotomy",
+      "normalized": "fasciotomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-muscular"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D000071938"
+      },
+      "note": "NLM MeSH descriptor D000071938 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:fasciotomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:fasci-o",
+              "surface": "fasci",
+              "start": 0,
+              "end": 5,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:otomy",
+              "surface": "otomy",
+              "start": 5,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:fibroadenoma",
+      "slug": "fibroadenoma",
+      "term": "fibroadenoma",
+      "normalized": "fibroadenoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018226"
+      },
+      "note": "NLM MeSH descriptor D018226 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:fibroadenoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:fibro",
+              "surface": "fibro",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:aden",
+              "surface": "aden",
+              "start": 5,
+              "end": 9
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 9,
+              "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:fibroblast",
       "slug": "fibroblast",
       "term": "fibroblast",
@@ -5479,6 +6610,86 @@ export const corpus = {
               "surface": "itis",
               "start": 11,
               "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:gastroenterology",
+      "slug": "gastroenterology",
+      "term": "gastroenterology",
+      "normalized": "gastroenterology",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D005762"
+      },
+      "note": "NLM MeSH descriptor D005762 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:gastroenterology-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:gastro",
+              "surface": "gastro",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "root:entero",
+              "surface": "entero",
+              "start": 6,
+              "end": 12
+            },
+            {
+              "partId": "suffix:logy",
+              "surface": "logy",
+              "start": 12,
+              "end": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:gastroenterostomy",
+      "slug": "gastroenterostomy",
+      "term": "gastroenterostomy",
+      "normalized": "gastroenterostomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D005763"
+      },
+      "note": "NLM MeSH descriptor D005763 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:gastroenterostomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:gastro",
+              "surface": "gastro",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "root:enter",
+              "surface": "enter",
+              "start": 6,
+              "end": 11
+            },
+            {
+              "partId": "suffix:ostomy",
+              "surface": "ostomy",
+              "start": 11,
+              "end": 17
             }
           ]
         }
@@ -5848,6 +7059,53 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:hemangioblastoma",
+      "slug": "hemangioblastoma",
+      "term": "hemangioblastoma",
+      "normalized": "hemangioblastoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018325"
+      },
+      "note": "NLM MeSH descriptor D018325 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hemangioblastoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:hem",
+              "surface": "hem",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "root:angio",
+              "surface": "angio",
+              "start": 3,
+              "end": 8
+            },
+            {
+              "partId": "root:blast",
+              "surface": "blast",
+              "start": 8,
+              "end": 13
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 13,
+              "end": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:hemangioma",
       "slug": "hemangioma",
       "term": "hemangioma",
@@ -5997,6 +7255,40 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:hematology",
+      "slug": "hematology",
+      "term": "hematology",
+      "normalized": "hematology",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D006405"
+      },
+      "note": "NLM MeSH descriptor D006405 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hematology-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:hemato",
+              "surface": "hemato",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:logy",
+              "surface": "logy",
+              "start": 6,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:hematoma",
       "slug": "hematoma",
       "term": "hematoma",
@@ -6084,6 +7376,41 @@ export const corpus = {
               "surface": "plegia",
               "start": 4,
               "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:hemolymph",
+      "slug": "hemolymph",
+      "term": "hemolymph",
+      "normalized": "hemolymph",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D006458"
+      },
+      "note": "NLM MeSH descriptor D006458 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hemolymph-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:hem-o",
+              "surface": "hemo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:lymph",
+              "surface": "lymph",
+              "start": 4,
+              "end": 9
             }
           ]
         }
@@ -6205,6 +7532,47 @@ export const corpus = {
               "surface": "itis",
               "start": 5,
               "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:hepatoblastoma",
+      "slug": "hepatoblastoma",
+      "term": "hepatoblastoma",
+      "normalized": "hepatoblastoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018197"
+      },
+      "note": "NLM MeSH descriptor D018197 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hepatoblastoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:hepato",
+              "surface": "hepato",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "root:blast",
+              "surface": "blast",
+              "start": 6,
+              "end": 11
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 11,
+              "end": 14
             }
           ]
         }
@@ -6355,6 +7723,48 @@ export const corpus = {
               "surface": "otomy",
               "start": 5,
               "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:hidradenitis",
+      "slug": "hidradenitis",
+      "term": "hidradenitis",
+      "normalized": "hidradenitis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology",
+        "source:ncbi-medical-terminology-integumentary"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D016575"
+      },
+      "note": "NLM MeSH descriptor D016575 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hidradenitis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:hidr",
+              "surface": "hidr",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:aden",
+              "surface": "aden",
+              "start": 4,
+              "end": 8
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 8,
+              "end": 12
             }
           ]
         }
@@ -6542,6 +7952,130 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:hyperplasia",
+      "slug": "hyperplasia",
+      "term": "hyperplasia",
+      "normalized": "hyperplasia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-male-reproductive"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D006965"
+      },
+      "note": "NLM MeSH descriptor D006965 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hyperplasia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:hyper",
+              "surface": "hyper",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:plasia",
+              "surface": "plasia",
+              "start": 5,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:hypoalbuminemia",
+      "slug": "hypoalbuminemia",
+      "term": "hypoalbuminemia",
+      "normalized": "hypoalbuminemia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-urinary"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D034141"
+      },
+      "note": "NLM MeSH descriptor D034141 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hypoalbuminemia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:hypo",
+              "surface": "hypo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "combining:albumin-o",
+              "surface": "albumin",
+              "start": 4,
+              "end": 11,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:emia",
+              "surface": "emia",
+              "start": 11,
+              "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:hypocapnia",
+      "slug": "hypocapnia",
+      "term": "hypocapnia",
+      "normalized": "hypocapnia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D016857"
+      },
+      "note": "NLM MeSH descriptor D016857 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hypocapnia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:hypo",
+              "surface": "hypo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:capn",
+              "surface": "capn",
+              "start": 4,
+              "end": 8
+            },
+            {
+              "partId": "suffix:ia",
+              "surface": "ia",
+              "start": 8,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:hypoglycemia",
       "slug": "hypoglycemia",
       "term": "hypoglycemia",
@@ -6576,6 +8110,47 @@ export const corpus = {
             {
               "partId": "suffix:emia",
               "surface": "emia",
+              "start": 8,
+              "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:hypohidrosis",
+      "slug": "hypohidrosis",
+      "term": "hypohidrosis",
+      "normalized": "hypohidrosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-integumentary"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D007007"
+      },
+      "note": "NLM MeSH descriptor D007007 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:hypohidrosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:hypo",
+              "surface": "hypo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:hidr",
+              "surface": "hidr",
+              "start": 4,
+              "end": 8
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
               "start": 8,
               "end": 12
             }
@@ -6764,6 +8339,108 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:keratectomy",
+      "slug": "keratectomy",
+      "term": "keratectomy",
+      "normalized": "keratectomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D000074431"
+      },
+      "note": "NLM MeSH descriptor D000074431 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:keratectomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:kerat",
+              "surface": "kerat",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:ectomy",
+              "surface": "ectomy",
+              "start": 5,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:keratitis",
+      "slug": "keratitis",
+      "term": "keratitis",
+      "normalized": "keratitis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D007634"
+      },
+      "note": "NLM MeSH descriptor D007634 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:keratitis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:kerat",
+              "surface": "kerat",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:keratosis",
+      "slug": "keratosis",
+      "term": "keratosis",
+      "normalized": "keratosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D007642"
+      },
+      "note": "NLM MeSH descriptor D007642 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:keratosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:kerat",
+              "surface": "kerat",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:laryngectomy",
       "slug": "laryngectomy",
       "term": "laryngectomy",
@@ -6818,6 +8495,41 @@ export const corpus = {
               "surface": "itis",
               "start": 6,
               "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:laryngocele",
+      "slug": "laryngocele",
+      "term": "laryngocele",
+      "normalized": "laryngocele",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-nervous"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D059608"
+      },
+      "note": "NLM MeSH descriptor D059608 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:laryngocele-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:laryngo",
+              "surface": "laryngo",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "partId": "suffix:cele",
+              "surface": "cele",
+              "start": 7,
+              "end": 11
             }
           ]
         }
@@ -6944,6 +8656,267 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:lymph",
+      "slug": "lymph",
+      "term": "lymph",
+      "normalized": "lymph",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D008196"
+      },
+      "note": "NLM MeSH descriptor D008196 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:lymph-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:lymph",
+              "surface": "lymph",
+              "start": 0,
+              "end": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:lymphadenitis",
+      "slug": "lymphadenitis",
+      "term": "lymphadenitis",
+      "normalized": "lymphadenitis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D008199"
+      },
+      "note": "NLM MeSH descriptor D008199 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:lymphadenitis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:lymph",
+              "surface": "lymph",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:aden",
+              "surface": "aden",
+              "start": 5,
+              "end": 9
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 9,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:lymphadenopathy",
+      "slug": "lymphadenopathy",
+      "term": "lymphadenopathy",
+      "normalized": "lymphadenopathy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D000072281"
+      },
+      "note": "NLM MeSH descriptor D000072281 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:lymphadenopathy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:lymph",
+              "surface": "lymph",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:aden",
+              "surface": "aden",
+              "start": 5,
+              "end": 9
+            },
+            {
+              "partId": "suffix:opathy",
+              "surface": "opathy",
+              "start": 9,
+              "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:lymphocele",
+      "slug": "lymphocele",
+      "term": "lymphocele",
+      "normalized": "lymphocele",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-nervous"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D008210"
+      },
+      "note": "NLM MeSH descriptor D008210 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:lymphocele-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:lympho",
+              "surface": "lympho",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:cele",
+              "surface": "cele",
+              "start": 6,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:lymphocytosis",
+      "slug": "lymphocytosis",
+      "term": "lymphocytosis",
+      "normalized": "lymphocytosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D008218"
+      },
+      "note": "NLM MeSH descriptor D008218 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:lymphocytosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:lympho",
+              "surface": "lympho",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "combining:cyt-o",
+              "surface": "cyt",
+              "start": 6,
+              "end": 9,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 9,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:lymphography",
+      "slug": "lymphography",
+      "term": "lymphography",
+      "normalized": "lymphography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D008220"
+      },
+      "note": "NLM MeSH descriptor D008220 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:lymphography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:lympho",
+              "surface": "lympho",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 6,
+              "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:lymphoma",
+      "slug": "lymphoma",
+      "term": "lymphoma",
+      "normalized": "lymphoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D008223"
+      },
+      "note": "NLM MeSH descriptor D008223 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:lymphoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:lymph",
+              "surface": "lymph",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 5,
+              "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:mastalgia",
       "slug": "mastalgia",
       "term": "mastalgia",
@@ -7028,6 +9001,40 @@ export const corpus = {
               "surface": "itis",
               "start": 4,
               "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:mastodynia",
+      "slug": "mastodynia",
+      "term": "mastodynia",
+      "normalized": "mastodynia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D059373"
+      },
+      "note": "NLM MeSH descriptor D059373 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:mastodynia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:masto",
+              "surface": "masto",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:dynia",
+              "surface": "dynia",
+              "start": 5,
+              "end": 10
             }
           ]
         }
@@ -7154,6 +9161,117 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:myelitis",
+      "slug": "myelitis",
+      "term": "myelitis",
+      "normalized": "myelitis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-nervous"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009187"
+      },
+      "note": "NLM MeSH descriptor D009187 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:myelitis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:myel",
+              "surface": "myel",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 4,
+              "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:myelography",
+      "slug": "myelography",
+      "term": "myelography",
+      "normalized": "myelography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-nervous"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009192"
+      },
+      "note": "NLM MeSH descriptor D009192 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:myelography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:myelo",
+              "surface": "myelo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 5,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:myocarditis",
+      "slug": "myocarditis",
+      "term": "myocarditis",
+      "normalized": "myocarditis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009205"
+      },
+      "note": "NLM MeSH descriptor D009205 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:myocarditis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:myo",
+              "surface": "myo",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "root:card",
+              "surface": "card",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 7,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:myocyte",
       "slug": "myocyte",
       "term": "myocyte",
@@ -7184,6 +9302,47 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:myofibroma",
+      "slug": "myofibroma",
+      "term": "myofibroma",
+      "normalized": "myofibroma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D047708"
+      },
+      "note": "NLM MeSH descriptor D047708 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:myofibroma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:myo",
+              "surface": "myo",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "root:fibr",
+              "surface": "fibr",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 7,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:myogram",
       "slug": "myogram",
       "term": "myogram",
@@ -7208,6 +9367,40 @@ export const corpus = {
               "surface": "gram",
               "start": 3,
               "end": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:myography",
+      "slug": "myography",
+      "term": "myography",
+      "normalized": "myography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009213"
+      },
+      "note": "NLM MeSH descriptor D009213 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:myography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:myo",
+              "surface": "myo",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 3,
+              "end": 9
             }
           ]
         }
@@ -7304,6 +9497,47 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:myosarcoma",
+      "slug": "myosarcoma",
+      "term": "myosarcoma",
+      "normalized": "myosarcoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009217"
+      },
+      "note": "NLM MeSH descriptor D009217 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:myosarcoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:myo",
+              "surface": "myo",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "root:sarc",
+              "surface": "sarc",
+              "start": 3,
+              "end": 7
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 7,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:myotomy",
       "slug": "myotomy",
       "term": "myotomy",
@@ -7328,6 +9562,54 @@ export const corpus = {
               "surface": "otomy",
               "start": 2,
               "end": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:myotonia",
+      "slug": "myotonia",
+      "term": "myotonia",
+      "normalized": "myotonia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology",
+        "source:ncbi-medical-terminology-sensory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009222"
+      },
+      "note": "NLM MeSH descriptor D009222 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:myotonia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:myo",
+              "surface": "myo",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "combining:ton-o",
+              "surface": "ton",
+              "start": 3,
+              "end": 6,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:ia",
+              "surface": "ia",
+              "start": 6,
+              "end": 8
             }
           ]
         }
@@ -7424,6 +9706,40 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:nephrology",
+      "slug": "nephrology",
+      "term": "nephrology",
+      "normalized": "nephrology",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009398"
+      },
+      "note": "NLM MeSH descriptor D009398 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:nephrology-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:nephro",
+              "surface": "nephro",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:logy",
+              "surface": "logy",
+              "start": 6,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:nephroma",
       "slug": "nephroma",
       "term": "nephroma",
@@ -7478,6 +9794,74 @@ export const corpus = {
               "surface": "opathy",
               "start": 5,
               "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:nephrosclerosis",
+      "slug": "nephrosclerosis",
+      "term": "nephrosclerosis",
+      "normalized": "nephrosclerosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009400"
+      },
+      "note": "NLM MeSH descriptor D009400 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:nephrosclerosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:nephro",
+              "surface": "nephro",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:sclerosis",
+              "surface": "sclerosis",
+              "start": 6,
+              "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:nephrosis",
+      "slug": "nephrosis",
+      "term": "nephrosis",
+      "normalized": "nephrosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009401"
+      },
+      "note": "NLM MeSH descriptor D009401 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:nephrosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:nephr",
+              "surface": "nephr",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 5,
+              "end": 9
             }
           ]
         }
@@ -7604,6 +9988,223 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:neuroblastoma",
+      "slug": "neuroblastoma",
+      "term": "neuroblastoma",
+      "normalized": "neuroblastoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009447"
+      },
+      "note": "NLM MeSH descriptor D009447 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:neuroblastoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:neuro",
+              "surface": "neuro",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:blast",
+              "surface": "blast",
+              "start": 5,
+              "end": 10
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 10,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:neurocytoma",
+      "slug": "neurocytoma",
+      "term": "neurocytoma",
+      "normalized": "neurocytoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018306"
+      },
+      "note": "NLM MeSH descriptor D018306 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:neurocytoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:neuro",
+              "surface": "neuro",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "combining:cyt-o",
+              "surface": "cyt",
+              "start": 5,
+              "end": 8,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 8,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:neurodermatitis",
+      "slug": "neurodermatitis",
+      "term": "neurodermatitis",
+      "normalized": "neurodermatitis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009450"
+      },
+      "note": "NLM MeSH descriptor D009450 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:neurodermatitis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:neuro",
+              "surface": "neuro",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:dermat",
+              "surface": "dermat",
+              "start": 5,
+              "end": 11
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 11,
+              "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:neurofibroma",
+      "slug": "neurofibroma",
+      "term": "neurofibroma",
+      "normalized": "neurofibroma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D009455"
+      },
+      "note": "NLM MeSH descriptor D009455 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:neurofibroma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:neuro",
+              "surface": "neuro",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:fibr",
+              "surface": "fibr",
+              "start": 5,
+              "end": 9
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 9,
+              "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:neurofibrosarcoma",
+      "slug": "neurofibrosarcoma",
+      "term": "neurofibrosarcoma",
+      "normalized": "neurofibrosarcoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018319"
+      },
+      "note": "NLM MeSH descriptor D018319 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:neurofibrosarcoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:neuro",
+              "surface": "neuro",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:fibro",
+              "surface": "fibro",
+              "start": 5,
+              "end": 10
+            },
+            {
+              "partId": "root:sarc",
+              "surface": "sarc",
+              "start": 10,
+              "end": 14
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 14,
+              "end": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:neurology",
       "slug": "neurology",
       "term": "neurology",
@@ -7717,6 +10318,46 @@ export const corpus = {
               "partId": "suffix:plasty",
               "surface": "plasty",
               "start": 5,
+              "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:neurotology",
+      "slug": "neurotology",
+      "term": "neurotology",
+      "normalized": "neurotology",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D063165"
+      },
+      "note": "NLM MeSH descriptor D063165 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:neurotology-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:neur",
+              "surface": "neur",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:oto",
+              "surface": "oto",
+              "start": 4,
+              "end": 7
+            },
+            {
+              "partId": "suffix:logy",
+              "surface": "logy",
+              "start": 7,
               "end": 11
             }
           ]
@@ -7850,6 +10491,189 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:osteoblastoma",
+      "slug": "osteoblastoma",
+      "term": "osteoblastoma",
+      "normalized": "osteoblastoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D018215"
+      },
+      "note": "NLM MeSH descriptor D018215 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:osteoblastoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:osteo",
+              "surface": "osteo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:blast",
+              "surface": "blast",
+              "start": 5,
+              "end": 10
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 10,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:osteochondritis",
+      "slug": "osteochondritis",
+      "term": "osteochondritis",
+      "normalized": "osteochondritis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-skeletal"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010007"
+      },
+      "note": "NLM MeSH descriptor D010007 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:osteochondritis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:osteo",
+              "surface": "osteo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "combining:chondr-o",
+              "surface": "chondr",
+              "start": 5,
+              "end": 11,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 11,
+              "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:osteochondroma",
+      "slug": "osteochondroma",
+      "term": "osteochondroma",
+      "normalized": "osteochondroma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology",
+        "source:ncbi-medical-terminology-skeletal"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D015831"
+      },
+      "note": "NLM MeSH descriptor D015831 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:osteochondroma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:osteo",
+              "surface": "osteo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "combining:chondr-o",
+              "surface": "chondr",
+              "start": 5,
+              "end": 11,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 11,
+              "end": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:osteochondrosis",
+      "slug": "osteochondrosis",
+      "term": "osteochondrosis",
+      "normalized": "osteochondrosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-skeletal"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D055034"
+      },
+      "note": "NLM MeSH descriptor D055034 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:osteochondrosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:osteo",
+              "surface": "osteo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "combining:chondr-o",
+              "surface": "chondr",
+              "start": 5,
+              "end": 11,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 11,
+              "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:osteocyte",
       "slug": "osteocyte",
       "term": "osteocyte",
@@ -7872,6 +10696,40 @@ export const corpus = {
             {
               "partId": "suffix:cyte",
               "surface": "cyte",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:osteology",
+      "slug": "osteology",
+      "term": "osteology",
+      "normalized": "osteology",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D059166"
+      },
+      "note": "NLM MeSH descriptor D059166 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:osteology-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:osteo",
+              "surface": "osteo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:logy",
+              "surface": "logy",
               "start": 5,
               "end": 9
             }
@@ -8001,6 +10859,47 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:osteosarcoma",
+      "slug": "osteosarcoma",
+      "term": "osteosarcoma",
+      "normalized": "osteosarcoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D012516"
+      },
+      "note": "NLM MeSH descriptor D012516 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:osteosarcoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:osteo",
+              "surface": "osteo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:sarc",
+              "surface": "sarc",
+              "start": 5,
+              "end": 9
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 9,
+              "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:osteosclerosis",
       "slug": "osteosclerosis",
       "term": "osteosclerosis",
@@ -8055,6 +10954,34 @@ export const corpus = {
               "surface": "otomy",
               "start": 4,
               "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:ostomy",
+      "slug": "ostomy",
+      "term": "ostomy",
+      "normalized": "ostomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010030"
+      },
+      "note": "NLM MeSH descriptor D010030 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:ostomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "suffix:ostomy",
+              "surface": "ostomy",
+              "start": 0,
+              "end": 6
             }
           ]
         }
@@ -8121,6 +11048,80 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:otolaryngology",
+      "slug": "otolaryngology",
+      "term": "otolaryngology",
+      "normalized": "otolaryngology",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010036"
+      },
+      "note": "NLM MeSH descriptor D010036 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:otolaryngology-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:oto",
+              "surface": "oto",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "root:laryngo",
+              "surface": "laryngo",
+              "start": 3,
+              "end": 10
+            },
+            {
+              "partId": "suffix:logy",
+              "surface": "logy",
+              "start": 10,
+              "end": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:otosclerosis",
+      "slug": "otosclerosis",
+      "term": "otosclerosis",
+      "normalized": "otosclerosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010040"
+      },
+      "note": "NLM MeSH descriptor D010040 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:otosclerosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:oto",
+              "surface": "oto",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "suffix:sclerosis",
+              "surface": "sclerosis",
+              "start": 3,
+              "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:otoscopy",
       "slug": "otoscopy",
       "term": "otoscopy",
@@ -8145,6 +11146,86 @@ export const corpus = {
               "surface": "scopy",
               "start": 3,
               "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:periarthritis",
+      "slug": "periarthritis",
+      "term": "periarthritis",
+      "normalized": "periarthritis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010489"
+      },
+      "note": "NLM MeSH descriptor D010489 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:periarthritis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:peri",
+              "surface": "peri",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:arthr",
+              "surface": "arthr",
+              "start": 4,
+              "end": 9
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 9,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:pericardiectomy",
+      "slug": "pericardiectomy",
+      "term": "pericardiectomy",
+      "normalized": "pericardiectomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010492"
+      },
+      "note": "NLM MeSH descriptor D010492 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:pericardiectomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:peri",
+              "surface": "peri",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:cardi",
+              "surface": "cardi",
+              "start": 4,
+              "end": 9
+            },
+            {
+              "partId": "suffix:ectomy",
+              "surface": "ectomy",
+              "start": 9,
+              "end": 15
             }
           ]
         }
@@ -8187,6 +11268,341 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:perilymph",
+      "slug": "perilymph",
+      "term": "perilymph",
+      "normalized": "perilymph",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010498"
+      },
+      "note": "NLM MeSH descriptor D010498 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:perilymph-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:peri",
+              "surface": "peri",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:lymph",
+              "surface": "lymph",
+              "start": 4,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:perinephritis",
+      "slug": "perinephritis",
+      "term": "perinephritis",
+      "normalized": "perinephritis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010501"
+      },
+      "note": "NLM MeSH descriptor D010501 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:perinephritis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:peri",
+              "surface": "peri",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "root:nephr",
+              "surface": "nephr",
+              "start": 4,
+              "end": 9
+            },
+            {
+              "partId": "suffix:itis",
+              "surface": "itis",
+              "start": 9,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:phonocardiography",
+      "slug": "phonocardiography",
+      "term": "phonocardiography",
+      "normalized": "phonocardiography",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D010701"
+      },
+      "note": "NLM MeSH descriptor D010701 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:phonocardiography-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:phon-o",
+              "surface": "phono",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:cardio",
+              "surface": "cardio",
+              "start": 5,
+              "end": 11
+            },
+            {
+              "partId": "suffix:graphy",
+              "surface": "graphy",
+              "start": 11,
+              "end": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:pneumonectomy",
+      "slug": "pneumonectomy",
+      "term": "pneumonectomy",
+      "normalized": "pneumonectomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D011013"
+      },
+      "note": "NLM MeSH descriptor D011013 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:pneumonectomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:pneumon-o",
+              "surface": "pneumon",
+              "start": 0,
+              "end": 7,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:ectomy",
+              "surface": "ectomy",
+              "start": 7,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:pneumonia",
+      "slug": "pneumonia",
+      "term": "pneumonia",
+      "normalized": "pneumonia",
+      "sources": [
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D011014"
+      },
+      "note": "NLM MeSH descriptor D011014 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:pneumonia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:pneumon-o",
+              "surface": "pneumon",
+              "start": 0,
+              "end": 7,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:ia",
+              "surface": "ia",
+              "start": 7,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:sarcocystosis",
+      "slug": "sarcocystosis",
+      "term": "sarcocystosis",
+      "normalized": "sarcocystosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-sensory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D012523"
+      },
+      "note": "NLM MeSH descriptor D012523 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:sarcocystosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:sarco",
+              "surface": "sarco",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "combining:cyst-o",
+              "surface": "cyst",
+              "start": 5,
+              "end": 9,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 9,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:sarcoma",
+      "slug": "sarcoma",
+      "term": "sarcoma",
+      "normalized": "sarcoma",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D012509"
+      },
+      "note": "NLM MeSH descriptor D012509 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:sarcoma-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:sarc",
+              "surface": "sarc",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "suffix:oma",
+              "surface": "oma",
+              "start": 4,
+              "end": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:sclerosis",
+      "slug": "sclerosis",
+      "term": "sclerosis",
+      "normalized": "sclerosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D012598"
+      },
+      "note": "NLM MeSH descriptor D012598 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:sclerosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "suffix:sclerosis",
+              "surface": "sclerosis",
+              "start": 0,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:spasm",
+      "slug": "spasm",
+      "term": "spasm",
+      "normalized": "spasm",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D013035"
+      },
+      "note": "NLM MeSH descriptor D013035 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:spasm-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "suffix:spasm",
+              "surface": "spasm",
+              "start": 0,
+              "end": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:tachycardia",
       "slug": "tachycardia",
       "term": "tachycardia",
@@ -8223,6 +11639,103 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:tachypnea",
+      "slug": "tachypnea",
+      "term": "tachypnea",
+      "normalized": "tachypnea",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D059246"
+      },
+      "note": "NLM MeSH descriptor D059246 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:tachypnea-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "prefix:tachy",
+              "surface": "tachy",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:pnea",
+              "surface": "pnea",
+              "start": 5,
+              "end": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:thorax",
+      "slug": "thorax",
+      "term": "thorax",
+      "normalized": "thorax",
+      "sources": [
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-respiratory"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D013909"
+      },
+      "note": "NLM MeSH descriptor D013909 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:thorax-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "suffix:thorax",
+              "surface": "thorax",
+              "start": 0,
+              "end": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:thrombectomy",
+      "slug": "thrombectomy",
+      "term": "thrombectomy",
+      "normalized": "thrombectomy",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D017131"
+      },
+      "note": "NLM MeSH descriptor D017131 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:thrombectomy-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:thromb",
+              "surface": "thromb",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:ectomy",
+              "surface": "ectomy",
+              "start": 6,
+              "end": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:thrombocyte",
       "slug": "thrombocyte",
       "term": "thrombocyte",
@@ -8247,6 +11760,122 @@ export const corpus = {
               "surface": "cyte",
               "start": 7,
               "end": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:thrombocytosis",
+      "slug": "thrombocytosis",
+      "term": "thrombocytosis",
+      "normalized": "thrombocytosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D013922"
+      },
+      "note": "NLM MeSH descriptor D013922 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:thrombocytosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:thrombo",
+              "surface": "thrombo",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "partId": "combining:cyt-o",
+              "surface": "cyt",
+              "start": 7,
+              "end": 10,
+              "transformations": [
+                {
+                  "kind": "drop_terminal_vowel",
+                  "vowel": "o"
+                }
+              ]
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 10,
+              "end": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:thrombosis",
+      "slug": "thrombosis",
+      "term": "thrombosis",
+      "normalized": "thrombosis",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D013927"
+      },
+      "note": "NLM MeSH descriptor D013927 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:thrombosis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:thromb",
+              "surface": "thromb",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "suffix:osis",
+              "surface": "osis",
+              "start": 6,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:toxemia",
+      "slug": "toxemia",
+      "term": "toxemia",
+      "normalized": "toxemia",
+      "sources": [
+        "source:medlineplus-appendix-a",
+        "source:mesh-terms",
+        "source:ncbi-medical-terminology-lymphatic"
+      ],
+      "externalIds": {
+        "meshDescriptor": "D014115"
+      },
+      "note": "NLM MeSH descriptor D014115 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+      "analyses": [
+        {
+          "id": "analysis:toxemia-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:tox",
+              "surface": "tox",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "suffix:emia",
+              "surface": "emia",
+              "start": 3,
+              "end": 7
             }
           ]
         }

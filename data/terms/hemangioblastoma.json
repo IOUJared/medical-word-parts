@@ -1,0 +1,47 @@
+{
+  "id": "term:hemangioblastoma",
+  "slug": "hemangioblastoma",
+  "term": "hemangioblastoma",
+  "normalized": "hemangioblastoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D018325"
+  },
+  "note": "NLM MeSH descriptor D018325 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:hemangioblastoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hem",
+          "surface": "hem",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "root:angio",
+          "surface": "angio",
+          "start": 3,
+          "end": 8
+        },
+        {
+          "partId": "root:blast",
+          "surface": "blast",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 13,
+          "end": 16
+        }
+      ]
+    }
+  ]
+}

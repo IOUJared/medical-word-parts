@@ -1,0 +1,28 @@
+{
+  "id": "term:sclerosis",
+  "slug": "sclerosis",
+  "term": "sclerosis",
+  "normalized": "sclerosis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D012598"
+  },
+  "note": "NLM MeSH descriptor D012598 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:sclerosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "suffix:sclerosis",
+          "surface": "sclerosis",
+          "start": 0,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

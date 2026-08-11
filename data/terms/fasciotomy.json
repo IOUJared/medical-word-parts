@@ -1,0 +1,41 @@
+{
+  "id": "term:fasciotomy",
+  "slug": "fasciotomy",
+  "term": "fasciotomy",
+  "normalized": "fasciotomy",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-muscular"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D000071938"
+  },
+  "note": "NLM MeSH descriptor D000071938 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:fasciotomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "combining:fasci-o",
+          "surface": "fasci",
+          "start": 0,
+          "end": 5,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:otomy",
+          "surface": "otomy",
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

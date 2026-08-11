@@ -1,0 +1,47 @@
+{
+  "id": "term:neurofibrosarcoma",
+  "slug": "neurofibrosarcoma",
+  "term": "neurofibrosarcoma",
+  "normalized": "neurofibrosarcoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D018319"
+  },
+  "note": "NLM MeSH descriptor D018319 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:neurofibrosarcoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:neuro",
+          "surface": "neuro",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:fibro",
+          "surface": "fibro",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "partId": "root:sarc",
+          "surface": "sarc",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 14,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}

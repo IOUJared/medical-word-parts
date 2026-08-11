@@ -1,0 +1,41 @@
+{
+  "id": "term:adenomyoma",
+  "slug": "adenomyoma",
+  "term": "adenomyoma",
+  "normalized": "adenomyoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D018194"
+  },
+  "note": "NLM MeSH descriptor D018194 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:adenomyoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:adeno",
+          "surface": "adeno",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:my",
+          "surface": "my",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

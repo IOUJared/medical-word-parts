@@ -41,11 +41,14 @@ Part kinds are fixed to `prefix`, `root`, `suffix`, and `combiningForm`.
 
 ### Term
 
+Verified terms may include an optional `externalIds.meshDescriptor` value. The value must be an NLM MeSH descriptor identifier in the `D` namespace and records the exact controlled-vocabulary identity used to verify an imported headword.
+
 - `id`
 - `slug`
 - `term`
 - `normalized`
 - `sources`
+- `externalIds` is optional; verified imports may carry `meshDescriptor`
 - `note`
 - `analyses`
 

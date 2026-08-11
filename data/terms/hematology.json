@@ -1,0 +1,34 @@
+{
+  "id": "term:hematology",
+  "slug": "hematology",
+  "term": "hematology",
+  "normalized": "hematology",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D006405"
+  },
+  "note": "NLM MeSH descriptor D006405 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:hematology-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hemato",
+          "surface": "hemato",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "suffix:logy",
+          "surface": "logy",
+          "start": 6,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

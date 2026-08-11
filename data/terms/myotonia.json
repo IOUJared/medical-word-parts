@@ -1,0 +1,48 @@
+{
+  "id": "term:myotonia",
+  "slug": "myotonia",
+  "term": "myotonia",
+  "normalized": "myotonia",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology",
+    "source:ncbi-medical-terminology-sensory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D009222"
+  },
+  "note": "NLM MeSH descriptor D009222 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:myotonia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:myo",
+          "surface": "myo",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "combining:ton-o",
+          "surface": "ton",
+          "start": 3,
+          "end": 6,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:ia",
+          "surface": "ia",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

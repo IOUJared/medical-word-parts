@@ -1,0 +1,35 @@
+{
+  "id": "term:laryngocele",
+  "slug": "laryngocele",
+  "term": "laryngocele",
+  "normalized": "laryngocele",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-nervous"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D059608"
+  },
+  "note": "NLM MeSH descriptor D059608 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:laryngocele-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:laryngo",
+          "surface": "laryngo",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:cele",
+          "surface": "cele",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

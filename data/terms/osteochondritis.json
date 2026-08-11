@@ -1,0 +1,47 @@
+{
+  "id": "term:osteochondritis",
+  "slug": "osteochondritis",
+  "term": "osteochondritis",
+  "normalized": "osteochondritis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-skeletal"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D010007"
+  },
+  "note": "NLM MeSH descriptor D010007 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:osteochondritis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:osteo",
+          "surface": "osteo",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "combining:chondr-o",
+          "surface": "chondr",
+          "start": 5,
+          "end": 11,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 11,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}

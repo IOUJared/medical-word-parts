@@ -1,0 +1,40 @@
+{
+  "id": "term:otolaryngology",
+  "slug": "otolaryngology",
+  "term": "otolaryngology",
+  "normalized": "otolaryngology",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D010036"
+  },
+  "note": "NLM MeSH descriptor D010036 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:otolaryngology-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:oto",
+          "surface": "oto",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "root:laryngo",
+          "surface": "laryngo",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "partId": "suffix:logy",
+          "surface": "logy",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    }
+  ]
+}

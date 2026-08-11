@@ -16,7 +16,7 @@ const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
 let generatedDirectory = "";
 const generatedNames = ["candidates.ts", "corpus.ts", "index.ts", "routes.ts", "segmentation.ts"] as const;
 const generatedHeader = "// GENERATED FILE. DO NOT EDIT. Run npm run data:build to regenerate.\n\n";
-const verifiedTermTarget = 204;
+const verifiedTermTarget = 298;
 const originalCandidateTermCount = 1_057;
 const candidateDispositionsDocument = candidateDispositionsDocumentSchema.parse(candidateDispositionsJson);
 

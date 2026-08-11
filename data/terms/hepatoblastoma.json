@@ -1,0 +1,41 @@
+{
+  "id": "term:hepatoblastoma",
+  "slug": "hepatoblastoma",
+  "term": "hepatoblastoma",
+  "normalized": "hepatoblastoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D018197"
+  },
+  "note": "NLM MeSH descriptor D018197 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:hepatoblastoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:hepato",
+          "surface": "hepato",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "root:blast",
+          "surface": "blast",
+          "start": 6,
+          "end": 11
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    }
+  ]
+}

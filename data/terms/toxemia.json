@@ -1,0 +1,35 @@
+{
+  "id": "term:toxemia",
+  "slug": "toxemia",
+  "term": "toxemia",
+  "normalized": "toxemia",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-lymphatic"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D014115"
+  },
+  "note": "NLM MeSH descriptor D014115 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:toxemia-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:tox",
+          "surface": "tox",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "partId": "suffix:emia",
+          "surface": "emia",
+          "start": 3,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}

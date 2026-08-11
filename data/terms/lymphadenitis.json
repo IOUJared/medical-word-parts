@@ -1,0 +1,41 @@
+{
+  "id": "term:lymphadenitis",
+  "slug": "lymphadenitis",
+  "term": "lymphadenitis",
+  "normalized": "lymphadenitis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D008199"
+  },
+  "note": "NLM MeSH descriptor D008199 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:lymphadenitis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:lymph",
+          "surface": "lymph",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:aden",
+          "surface": "aden",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

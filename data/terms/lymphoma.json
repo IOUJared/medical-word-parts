@@ -1,0 +1,35 @@
+{
+  "id": "term:lymphoma",
+  "slug": "lymphoma",
+  "term": "lymphoma",
+  "normalized": "lymphoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D008223"
+  },
+  "note": "NLM MeSH descriptor D008223 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:lymphoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:lymph",
+          "surface": "lymph",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 5,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

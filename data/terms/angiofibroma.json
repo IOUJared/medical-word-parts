@@ -1,0 +1,41 @@
+{
+  "id": "term:angiofibroma",
+  "slug": "angiofibroma",
+  "term": "angiofibroma",
+  "normalized": "angiofibroma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D018322"
+  },
+  "note": "NLM MeSH descriptor D018322 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:angiofibroma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:angio",
+          "surface": "angio",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:fibr",
+          "surface": "fibr",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    }
+  ]
+}

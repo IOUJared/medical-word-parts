@@ -1,0 +1,40 @@
+{
+  "id": "term:gastroenterology",
+  "slug": "gastroenterology",
+  "term": "gastroenterology",
+  "normalized": "gastroenterology",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D005762"
+  },
+  "note": "NLM MeSH descriptor D005762 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:gastroenterology-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:gastro",
+          "surface": "gastro",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "root:entero",
+          "surface": "entero",
+          "start": 6,
+          "end": 12
+        },
+        {
+          "partId": "suffix:logy",
+          "surface": "logy",
+          "start": 12,
+          "end": 16
+        }
+      ]
+    }
+  ]
+}

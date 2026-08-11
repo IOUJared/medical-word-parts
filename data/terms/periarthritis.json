@@ -1,0 +1,40 @@
+{
+  "id": "term:periarthritis",
+  "slug": "periarthritis",
+  "term": "periarthritis",
+  "normalized": "periarthritis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D010489"
+  },
+  "note": "NLM MeSH descriptor D010489 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:periarthritis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "prefix:peri",
+          "surface": "peri",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "root:arthr",
+          "surface": "arthr",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "partId": "suffix:itis",
+          "surface": "itis",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

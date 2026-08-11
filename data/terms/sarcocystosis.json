@@ -1,0 +1,47 @@
+{
+  "id": "term:sarcocystosis",
+  "slug": "sarcocystosis",
+  "term": "sarcocystosis",
+  "normalized": "sarcocystosis",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-sensory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D012523"
+  },
+  "note": "NLM MeSH descriptor D012523 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:sarcocystosis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:sarco",
+          "surface": "sarco",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "combining:cyst-o",
+          "surface": "cyst",
+          "start": 5,
+          "end": 9,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:osis",
+          "surface": "osis",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

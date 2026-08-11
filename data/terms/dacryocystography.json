@@ -1,0 +1,41 @@
+{
+  "id": "term:dacryocystography",
+  "slug": "dacryocystography",
+  "term": "dacryocystography",
+  "normalized": "dacryocystography",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-sensory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D000090104"
+  },
+  "note": "NLM MeSH descriptor D000090104 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:dacryocystography-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "combining:dacry-o",
+          "surface": "dacryo",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "combining:cyst-o",
+          "surface": "cysto",
+          "start": 6,
+          "end": 11
+        },
+        {
+          "partId": "suffix:graphy",
+          "surface": "graphy",
+          "start": 11,
+          "end": 17
+        }
+      ]
+    }
+  ]
+}

@@ -52,6 +52,8 @@ describe("deterministic analyzer browser bundle", () => {
 
     expect(digest()).toBe(firstDigest);
     expect(bundle).toMatch(/^\/\/ GENERATED FILE/);
+    expect(bundle).not.toContain("NLM MeSH descriptor");
+    expect(bundle).not.toContain("meshDescriptor");
     expect(Buffer.byteLength(bundle)).toBeLessThanOrEqual(139_800);
     expect(bundle).not.toContain("sourceMappingURL");
     expect(bundle).not.toContain("react-dom");

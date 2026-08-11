@@ -1,0 +1,28 @@
+{
+  "id": "term:spasm",
+  "slug": "spasm",
+  "term": "spasm",
+  "normalized": "spasm",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D013035"
+  },
+  "note": "NLM MeSH descriptor D013035 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:spasm-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "suffix:spasm",
+          "surface": "spasm",
+          "start": 0,
+          "end": 5
+        }
+      ]
+    }
+  ]
+}

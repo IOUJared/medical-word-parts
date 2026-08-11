@@ -1,0 +1,35 @@
+{
+  "id": "term:hemolymph",
+  "slug": "hemolymph",
+  "term": "hemolymph",
+  "normalized": "hemolymph",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-respiratory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D006458"
+  },
+  "note": "NLM MeSH descriptor D006458 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:hemolymph-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "combining:hem-o",
+          "surface": "hemo",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "root:lymph",
+          "surface": "lymph",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

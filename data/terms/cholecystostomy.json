@@ -1,0 +1,48 @@
+{
+  "id": "term:cholecystostomy",
+  "slug": "cholecystostomy",
+  "term": "cholecystostomy",
+  "normalized": "cholecystostomy",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology-digestive",
+    "source:ncbi-medical-terminology-sensory"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D002767"
+  },
+  "note": "NLM MeSH descriptor D002767 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:cholecystostomy-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "combining:chol-e",
+          "surface": "chole",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "combining:cyst-o",
+          "surface": "cyst",
+          "start": 5,
+          "end": 9,
+          "transformations": [
+            {
+              "kind": "drop_terminal_vowel",
+              "vowel": "o"
+            }
+          ]
+        },
+        {
+          "partId": "suffix:ostomy",
+          "surface": "ostomy",
+          "start": 9,
+          "end": 15
+        }
+      ]
+    }
+  ]
+}

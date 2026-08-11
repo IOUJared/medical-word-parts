@@ -1,0 +1,41 @@
+{
+  "id": "term:osteoblastoma",
+  "slug": "osteoblastoma",
+  "term": "osteoblastoma",
+  "normalized": "osteoblastoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D018215"
+  },
+  "note": "NLM MeSH descriptor D018215 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:osteoblastoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:osteo",
+          "surface": "osteo",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:blast",
+          "surface": "blast",
+          "start": 5,
+          "end": 10
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

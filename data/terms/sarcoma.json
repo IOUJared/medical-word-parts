@@ -1,0 +1,35 @@
+{
+  "id": "term:sarcoma",
+  "slug": "sarcoma",
+  "term": "sarcoma",
+  "normalized": "sarcoma",
+  "sources": [
+    "source:medlineplus-appendix-a",
+    "source:mesh-terms",
+    "source:ncbi-medical-terminology"
+  ],
+  "externalIds": {
+    "meshDescriptor": "D012509"
+  },
+  "note": "NLM MeSH descriptor D012509 verifies this medical headword; the word-part analysis uses existing source-backed parts.",
+  "analyses": [
+    {
+      "id": "analysis:sarcoma-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:sarc",
+          "surface": "sarc",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:oma",
+          "surface": "oma",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    }
+  ]
+}

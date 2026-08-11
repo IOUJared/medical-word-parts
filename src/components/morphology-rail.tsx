@@ -31,6 +31,6 @@ export function MorphologyRail({ analysis, headingId, reconstructedTerm }: Morph
         <h3><Link href={href} prefetch={false}>{item.segment.notation}</Link></h3><p className="segment-surface">Surface: <strong>{item.segment.surface}</strong></p><p>{item.segment.meaning}</p><Transformation segment={item.segment} />
       </li>;
     })}</ol>
-    <p className="reconstruction" aria-label={`Reconstructed term: ${reconstructedTerm}`}><span aria-hidden="true">→</span> {reconstructedTerm}</p>
+    <p className={reconstructedTerm.length >= 19 ? "reconstruction long-term" : "reconstruction"} aria-label={`Reconstructed term: ${reconstructedTerm}`}><span aria-hidden="true">→</span> {reconstructedTerm}</p>
   </section>;
 }

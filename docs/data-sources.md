@@ -27,6 +27,12 @@ The common terms route cites the NLM CORE Problem List Subset as the frequency-b
 
 Candidate records that cite `source:mesh-terms` with a MeSH descriptor identifier are source-backed term identities only. Their word parts remain unverified until a separate editorial pass identifies each proposed segment, checks any new or unused part against an authoritative word-part source, adds missing `data/word-parts/*.json` records with citations, and then authors a reconstructing `data/terms/*.json` analysis. Do not infer or publish a word-part meaning from a candidate term alone.
 
+### Medical word-list import
+
+The 2026-08-11 import used `medical_words_fast.txt` (SHA-256 `c32dac685979d48d52413ad06941ccbfe61670f99b5d1d66ff746c01f4143956`) only as a discovery list. Of 58,468 unique lines, deterministic filtering removed 188 entries containing numbers, 1,416 abbreviation-like entries shorter than four letters, 235 all-capital abbreviations, 69 mixed-case abbreviation-like entries, 11,559 phrases, and 1,016 punctuated or non-ASCII entries. Existing terms were not duplicated.
+
+Publication required both an exact NLM MeSH descriptor identity and a complete reconstruction from already cited word parts. Ninety-four new terms met both conditions. Twelve other exact MeSH headwords were withheld because the available segmentation would teach a misleading meaning (for example, interpreting the `angio` in a bile-duct term as “blood vessel”). No definitions or other prose were copied from the discovery list.
+
 ## Provenance notes
 
 Every authored term, part, alias, and relation has at least one source key. The validation command rejects dangling citations, unknown JSON fields, duplicate IDs, duplicate slugs, duplicate normalized values, invalid segment spans, non-reconstructing analyses, invalid vowel-drop rules, and invalid relations.
