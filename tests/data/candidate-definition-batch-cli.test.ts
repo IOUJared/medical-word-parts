@@ -29,7 +29,17 @@ function writeJson(path: string, value: unknown): void {
   writeFileSync(path, `${JSON.stringify(value, null, 2)}\n`);
 }
 
-function writeFixtureData(directory: string): void {
+function writeFixtureData(directory: string, candidateTerms: readonly unknown[] = [
+  {
+    id: "candidate:homeostasis",
+    term: "homeostasis",
+    normalized: "homeostasis",
+    status: "candidate",
+    sources: ["source:test"],
+    sourceVersion: "fixture",
+    license: "fixture license",
+  },
+]): void {
   mkdirSync(join(directory, "terms"), { recursive: true });
   mkdirSync(join(directory, "word-parts"), { recursive: true });
   writeJson(join(directory, "sources.json"), {
@@ -38,19 +48,10 @@ function writeFixtureData(directory: string): void {
   writeJson(join(directory, "aliases.json"), { aliases: [] });
   writeJson(join(directory, "relations.json"), { relations: [] });
   writeJson(join(directory, "candidate-terms.json"), {
-    candidateTerms: [
-      {
-        id: "candidate:homeostasis",
-        term: "homeostasis",
-        normalized: "homeostasis",
-        status: "candidate",
-        sources: ["source:test"],
-        sourceVersion: "fixture",
-        license: "fixture license",
-      },
-    ],
+    candidateTerms,
   });
   writeJson(join(directory, "candidate-review-decisions.json"), { candidateReviewDecisions: [] });
+  writeJson(join(directory, "candidate-dispositions.json"), { candidateDispositions: [] });
   writeJson(join(directory, "word-parts", "prefixes.json"), {
     parts: [{ id: "prefix:pre", kind: "prefix", form: "pre-", meaning: "before", sources: ["source:test"] }],
   });
@@ -109,5 +110,51 @@ describe("candidate definition batch CLI", () => {
     expect(outcome.output).toContain("refusing to write");
     expect(existsSync(output)).toBe(false);
     expect(isProtectedDefinitionOutputPath(output)).toBe(true);
+  });
+
+  it("rejects malformed and oversized definition batch sizes before writing or checking", () => {
+    const directory = mkdtempSync(join(tmpdir(), "candidate-definitions-arguments-"));
+    const output = join(directory, "candidate-definition-batch.json");
+    try {
+      const malformed = runCandidateDefinitions(["--batch-size", "100junk", "--output", output]);
+      const zero = runCandidateDefinitions(["--batch-size", "0", "--output", output]);
+      const oversizedWrite = runCandidateDefinitions(["--batch-size", "101", "--output", output]);
+      const oversizedCheck = runCandidateDefinitionsCheck(["--batch-size", "101", "--output", output]);
+
+      expect(malformed.status).not.toBe(0);
+      expect(malformed.output).toContain("positive integer");
+      expect(zero.status).not.toBe(0);
+      expect(zero.output).toContain("positive integer");
+      expect(oversizedWrite.status).not.toBe(0);
+      expect(oversizedWrite.output).toContain("at most 100");
+      expect(oversizedCheck.status).not.toBe(0);
+      expect(oversizedCheck.output).toContain("at most 100");
+      expect(existsSync(output)).toBe(false);
+    } finally {
+      rmSync(directory, { recursive: true, force: true });
+    }
+  });
+
+  it("writes a zero-candidate default batch that its default checker accepts", () => {
+    const directory = mkdtempSync(join(tmpdir(), "candidate-definitions-zero-"));
+    const output = join(directory, "candidate-definition-batch.json");
+    try {
+      const dataDirectory = join(directory, "data");
+      writeFixtureData(dataDirectory, []);
+      const options = ["--data", dataDirectory, "--output", output] as const;
+
+      const write = runCandidateDefinitions(options);
+
+      expect(write.status).toBe(0);
+      expect(JSON.parse(readFileSync(output, "utf8")).summary).toMatchObject({
+        candidateTermCount: 0,
+        includedCandidateCount: 0,
+        batchSize: 100,
+        batchNumber: 1,
+      });
+      expect(runCandidateDefinitionsCheck(options).status).toBe(0);
+    } finally {
+      rmSync(directory, { recursive: true, force: true });
+    }
   });
 });

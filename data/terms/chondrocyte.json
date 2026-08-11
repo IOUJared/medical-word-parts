@@ -1,0 +1,30 @@
+{
+  "id": "term:chondrocyte",
+  "slug": "chondrocyte",
+  "term": "chondrocyte",
+  "normalized": "chondrocyte",
+  "sources": [
+    "source:ncbi-medical-terminology-skeletal"
+  ],
+  "note": "Source-backed word-part analysis promoted from candidate:chondrocyte.",
+  "analyses": [
+    {
+      "id": "analysis:chondrocyte-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "combining:chondr-o",
+          "surface": "chondro",
+          "start": 0,
+          "end": 7
+        },
+        {
+          "partId": "suffix:cyte",
+          "surface": "cyte",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  ]
+}

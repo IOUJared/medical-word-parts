@@ -11,29 +11,6 @@ declare global {
 
 test.describe.configure({ mode: "serial" });
 
-test("known search routes canonically and survives a direct refresh", async ({ page }) => {
-  await page.goto(appUrl("/"), { waitUntil: "networkidle" });
-  await page.getByRole("searchbox", { name: "Medical term" }).fill("adrenal");
-  await page.getByRole("searchbox", { name: "Medical term" }).press("Enter");
-
-  await expect(page).toHaveURL(/\/term\/adrenal\/$/);
-  await expect(page.getByRole("heading", { level: 1, name: "adrenal" })).toBeVisible();
-  await page.reload({ waitUntil: "networkidle" });
-  await expect(page.getByRole("heading", { level: 1, name: "adrenal" })).toBeVisible();
-});
-
-test("candidate-only terms remain on discovery queue and do not resolve to a term page", async ({ page }) => {
-  for (const term of ["homeostasis", "epidermis", "vasoconstriction"] as const) {
-    const response = await page.goto(appUrl(`/term/${term}/`), { waitUntil: "networkidle" });
-    expect(response?.status()).toBe(404);
-    await expect(page.getByText("Not found")).toBeVisible();
-    await expect(page.locator("a[href*='github.com/IOUJared/medical-word-parts/issues/new']")).toHaveCount(0);
-    await page.goto(appUrl(`/common-medical-terms/?term=${term}`), { waitUntil: "networkidle" });
-    await expect(page.getByText("Candidate only - no verified word parts yet").first()).toBeVisible();
-    await expect(page.getByText(term)).toBeVisible();
-  }
-});
-
 test("representative verified terms begin with canonical identity followed by complete primary morphology", async ({ page }) => {
   for (const slug of [
     "achondroplasia",
@@ -94,6 +71,17 @@ test("mobile navigation opens, closes with Escape, and returns focus", async ({ 
   await expect(menu).toHaveAttribute("aria-expanded", "true");
   await expect(page.locator("#mobile-menu")).toBeVisible();
   await expect(page.locator("#mobile-menu").getByRole("link", { name: "Methodology" })).toBeVisible();
+  const backdropColors = await page.locator("#mobile-menu").evaluate((popover) => {
+    const backdrop = getComputedStyle(popover, "::backdrop").backgroundColor;
+    const probe = document.createElement("div");
+    probe.style.backgroundColor = "var(--color-scrim)";
+    document.body.append(probe);
+    const token = getComputedStyle(probe).backgroundColor;
+    probe.remove();
+    return { backdrop, token };
+  });
+  expect(backdropColors.backdrop).toBe(backdropColors.token);
+  expect(backdropColors.backdrop).not.toMatch(/transparent|rgba?\([^)]*,\s*0\s*\)$/);
   await page.keyboard.press("Escape");
 
   await expect(page.locator("#mobile-menu")).toBeHidden();

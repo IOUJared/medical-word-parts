@@ -33,6 +33,7 @@ pre { max-inline-size: 100%; overflow-wrap: anywhere; white-space: pre-wrap; }
 .mobile-nav { position: relative; }
 .mobile-menu { position: fixed; z-index: 30; inset-block-start: var(--space-16); inset-inline: auto var(--space-4); display: none; min-inline-size: min(18rem, calc(100vw - var(--space-8))); margin: 0; padding: 0; border: var(--rule-active) solid var(--color-ink); background: var(--color-paper-strong); }
 .mobile-menu:popover-open { display: grid; }
+.mobile-menu::backdrop { background: var(--color-scrim); }
 .mobile-menu a { display: flex; min-block-size: var(--size-control-lg); align-items: center; padding-inline: var(--space-4); border-block-end: var(--rule-hairline) solid var(--color-rule-subtle); }
 main { flex: 1; min-inline-size: 0; }
 .page-sheet { inline-size: min(calc(100% - var(--space-8)), var(--layout-paper-max)); margin-inline: auto; padding: var(--space-12) var(--space-4) var(--space-20); border-block-start: var(--space-1) solid var(--color-blue-400); background: var(--color-paper); }

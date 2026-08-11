@@ -1,0 +1,30 @@
+{
+  "id": "term:cytology",
+  "slug": "cytology",
+  "term": "cytology",
+  "normalized": "cytology",
+  "sources": [
+    "source:ncbi-medical-terminology-whole-body"
+  ],
+  "note": "Source-backed word-part analysis promoted from candidate:cytology.",
+  "analyses": [
+    {
+      "id": "analysis:cytology-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "combining:cyt-o",
+          "surface": "cyto",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:logy",
+          "surface": "logy",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    }
+  ]
+}

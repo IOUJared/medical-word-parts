@@ -5,6 +5,19 @@ import { compareCodePoints } from "./ordering";
 import type { Corpus } from "./validate";
 
 const generatedHeader = "// GENERATED FILE. DO NOT EDIT. Run npm run data:build to regenerate.";
+const generatedCandidateType = `import type { corpus } from "./corpus";
+
+type CandidateTerm = {
+  readonly id: \`candidate:\${string}\`;
+  readonly term: string;
+  readonly normalized: string;
+  readonly status: "candidate";
+  readonly sources: readonly (typeof corpus.sources)[number]["id"][];
+  readonly sourceVersion: string;
+  readonly license: string;
+  readonly aliases?: readonly string[];
+  readonly externalIds?: Readonly<Record<string, string>>;
+};`;
 
 type CitationBucket = {
   readonly terms: readonly string[];
@@ -174,7 +187,7 @@ export function renderGeneratedCorpus(corpus: Corpus): readonly GeneratedOutput[
     },
     {
       filename: "candidates.ts",
-      contents: `${generatedHeader}\n\nexport const candidateTerms = ${json(candidateTermData)} as const;\n`,
+      contents: `${generatedHeader}\n\n${generatedCandidateType}\n\nexport const candidateTerms: readonly CandidateTerm[] = ${json(candidateTermData)};\n`,
     },
     {
       filename: "index.ts",

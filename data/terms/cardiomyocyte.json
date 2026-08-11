@@ -1,0 +1,36 @@
+{
+  "id": "term:cardiomyocyte",
+  "slug": "cardiomyocyte",
+  "term": "cardiomyocyte",
+  "normalized": "cardiomyocyte",
+  "sources": [
+    "source:ncbi-medical-terminology-cardiovascular"
+  ],
+  "note": "Source-backed word-part analysis promoted from candidate:cardiomyocyte.",
+  "analyses": [
+    {
+      "id": "analysis:cardiomyocyte-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:cardio",
+          "surface": "cardio",
+          "start": 0,
+          "end": 6
+        },
+        {
+          "partId": "root:myo",
+          "surface": "myo",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "partId": "suffix:cyte",
+          "surface": "cyte",
+          "start": 9,
+          "end": 13
+        }
+      ]
+    }
+  ]
+}

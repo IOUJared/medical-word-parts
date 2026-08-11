@@ -1,0 +1,30 @@
+{
+  "id": "term:osteocyte",
+  "slug": "osteocyte",
+  "term": "osteocyte",
+  "normalized": "osteocyte",
+  "sources": [
+    "source:ncbi-medical-terminology-skeletal"
+  ],
+  "note": "Source-backed word-part analysis promoted from candidate:osteocyte.",
+  "analyses": [
+    {
+      "id": "analysis:osteocyte-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:osteo",
+          "surface": "osteo",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "suffix:cyte",
+          "surface": "cyte",
+          "start": 5,
+          "end": 9
+        }
+      ]
+    }
+  ]
+}

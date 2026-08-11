@@ -46,6 +46,7 @@ function testCorpus(): Corpus {
       candidate("candidate:heart-failure", "heart failure"),
       candidate("candidate:type2", "type2"),
     ],
+    candidateDispositions: [],
     candidateReviewDecisions: [
       {
         candidateId: "candidate:unknown",
@@ -132,13 +133,14 @@ describe("candidate verification triage", () => {
     expect(candidateTriageReportJson(report)).not.toContain("condition");
   });
 
-  it("counts every non-deferred imported candidate as pending review", () => {
+  it("reports the resolved production queue as intentionally empty", () => {
     const report = createCandidateTriageReport(validateCorpus(loadCorpus("data")));
 
     expect(report.summary).toMatchObject({
-      candidateTermCount: 1057,
-      pendingReviewCandidateCount: 988,
-      deferredCandidateCount: 69,
+      verifiedTermCount: 204,
+      candidateTermCount: 0,
+      pendingReviewCandidateCount: 0,
+      deferredCandidateCount: 0,
     });
   });
 

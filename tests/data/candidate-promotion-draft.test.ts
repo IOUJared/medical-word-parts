@@ -50,6 +50,7 @@ function testCorpus(): Corpus {
         license: "fixture license",
       },
     ],
+    candidateDispositions: [],
     candidateReviewDecisions: [],
     relations: [],
   };
@@ -89,6 +90,7 @@ function writeFixtureData(directory: string): void {
     ],
   });
   writeJson(join(directory, "candidate-review-decisions.json"), { candidateReviewDecisions: [] });
+  writeJson(join(directory, "candidate-dispositions.json"), { candidateDispositions: [] });
   writeJson(join(directory, "word-parts", "prefixes.json"), {
     parts: [{ id: "prefix:pre", kind: "prefix", form: "pre-", meaning: "before", sources: ["source:test"] }],
   });

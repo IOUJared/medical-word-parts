@@ -236,6 +236,7 @@ export function createFixture(options: FixtureOptions = {}): string {
       ? [candidateReviewDecision, candidateReviewDecision]
       : [candidateReviewDecision],
   });
+  writeJson(join(directory, "candidate-dispositions.json"), { candidateDispositions: [] });
   return directory;
 }
 

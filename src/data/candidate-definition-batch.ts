@@ -1,5 +1,6 @@
 import { relative, resolve, sep } from "node:path";
 
+import { candidateManifestWindowSize } from "./candidate-manifest";
 import { compareCodePoints } from "./ordering";
 import type { CandidateTerm } from "./schemas";
 import type { Corpus } from "./validate";
@@ -70,7 +71,6 @@ export type CandidateDefinitionBatch = {
 };
 
 type CandidateDefinitionBatchOptions = {
-  readonly limit?: number;
   readonly batchSize?: number;
   readonly batchNumber?: number;
   readonly concurrency?: number;
@@ -153,7 +153,10 @@ function candidateBatchWindow(corpus: Corpus, options: CandidateDefinitionBatchO
   const candidates = corpus.candidateTerms
     .filter((candidate) => !deferred.has(candidate.id))
     .sort((left, right) => compareCodePoints(left.normalized, right.normalized) || compareCodePoints(left.id, right.id));
-  const batchSize = options.batchSize ?? options.limit ?? candidates.length;
+  const batchSize = options.batchSize ?? candidateManifestWindowSize;
+  if (!Number.isSafeInteger(batchSize) || batchSize < 1 || batchSize > candidateManifestWindowSize) {
+    throw new RangeError(`batch size must be between 1 and ${candidateManifestWindowSize}`);
+  }
   const batchNumber = options.batchNumber ?? 1;
   const startIndex = (batchNumber - 1) * batchSize;
   const selected = candidates.slice(startIndex, startIndex + batchSize);

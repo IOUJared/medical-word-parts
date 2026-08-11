@@ -1,8 +1,9 @@
 import { DataValidationError } from "./errors";
 import type { LoadedCorpus, Located } from "./load";
 import { compareCodePoints } from "./ordering";
-import type { Alias, CandidateReviewDecision, CandidateTerm, Part, Relation, Source, Term } from "./schemas";
+import type { Alias, CandidateDisposition, CandidateReviewDecision, CandidateTerm, Part, Relation, Source, Term } from "./schemas";
 import { checkAnalyses } from "./validate-analyses";
+import { checkCandidateDispositions } from "./validate-candidate-dispositions";
 
 export type Corpus = {
   readonly sources: readonly Source[];
@@ -10,6 +11,7 @@ export type Corpus = {
   readonly terms: readonly Term[];
   readonly aliases: readonly Alias[];
   readonly candidateTerms: readonly CandidateTerm[];
+  readonly candidateDispositions: readonly CandidateDisposition[];
   readonly candidateReviewDecisions: readonly CandidateReviewDecision[];
   readonly relations: readonly Relation[];
 };
@@ -185,6 +187,13 @@ export function validateCorpus(loaded: LoadedCorpus): Corpus {
   checkAnalyses(loaded.terms, partById, errors);
   checkAliases(loaded.aliases, references, errors);
   checkCandidateTerms(loaded.candidateTerms, references, errors);
+  checkCandidateDispositions({
+    dispositions: loaded.candidateDispositions,
+    candidateTerms: loaded.candidateTerms,
+    termIds: references.termIds,
+    sourceIds: references.sourceIds,
+    errors,
+  });
   checkCandidateReviewDecisions(
     loaded.candidateReviewDecisions,
     new Set(loaded.candidateTerms.map((record) => record.value.id)),
@@ -201,6 +210,7 @@ export function validateCorpus(loaded: LoadedCorpus): Corpus {
     terms: loaded.terms.map((record) => record.value),
     aliases: loaded.aliases.map((record) => record.value),
     candidateTerms: loaded.candidateTerms.map((record) => record.value),
+    candidateDispositions: loaded.candidateDispositions.map((record) => record.value),
     candidateReviewDecisions: loaded.candidateReviewDecisions.map((record) => record.value),
     relations: loaded.relations.map((record) => record.value),
   };

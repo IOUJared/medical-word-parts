@@ -5,6 +5,7 @@ import {
   createCandidateDefinitionBatch,
   type MeshDefinitionClient,
 } from "../../src/data/candidate-definition-batch";
+import { parseCandidateDefinitionBatchArtifactJson } from "../../src/data/candidate-batch-artifacts";
 import type { Corpus } from "../../src/data";
 
 function candidate(id: string, normalized: string, meshDescriptor?: string): Corpus["candidateTerms"][number] {
@@ -34,6 +35,7 @@ function testCorpus(): Corpus {
       candidate("candidate:homeostasis", "homeostasis"),
       candidate("candidate:deferred", "deferred", "D999999"),
     ],
+    candidateDispositions: [],
     candidateReviewDecisions: [
       {
         candidateId: "candidate:deferred",
@@ -85,7 +87,7 @@ describe("candidate definition batch", () => {
       meshDefinitionCount: 1,
       sourceReviewLeadCount: 1,
       failedDefinitionCount: 0,
-      batchSize: 2,
+      batchSize: 100,
       batchNumber: 1,
       batchStart: 1,
       batchEnd: 2,
@@ -125,6 +127,23 @@ describe("candidate definition batch", () => {
       },
     ]);
     expect(candidateDefinitionBatchJson(report)).toBe(candidateDefinitionBatchJson(report));
+  });
+
+  it("uses the frozen 100-candidate default for an empty pending queue", async () => {
+    // Given: no candidate remains for definition review.
+    const corpus = largeTestCorpus(0);
+
+    // When: batch selection omits a size.
+    const batch = await createCandidateDefinitionBatch(corpus, fixtureClient());
+
+    // Then: the emitted artifact retains the frozen window size and strict consumer compatibility.
+    expect(batch.summary).toMatchObject({
+      candidateTermCount: 0,
+      includedCandidateCount: 0,
+      batchSize: 100,
+      batchNumber: 1,
+    });
+    expect(() => parseCandidateDefinitionBatchArtifactJson(candidateDefinitionBatchJson(batch))).not.toThrow();
   });
 
   it("creates numbered 100-word batches from the pending candidate queue", async () => {

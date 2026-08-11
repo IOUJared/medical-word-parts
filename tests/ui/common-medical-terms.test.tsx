@@ -15,12 +15,13 @@ describe("common medical terms page", () => {
     expect(screen.getAllByText("Verified word-part record")).toHaveLength(corpus.terms.length);
   });
 
-  it("Given open candidate terms, when the page renders, then candidates are separated from verified records", () => {
+  it("Given no active candidate terms, when the page renders, then it shows an intentional empty discovery state", () => {
     render(<CommonMedicalTermsPage />);
 
-    expect(screen.getByRole("heading", { name: "Candidate terms awaiting verification" })).toBeVisible();
+    expect(candidateTerms).toEqual([]);
+    expect(screen.getByRole("heading", { name: "Candidate discovery queue" })).toBeVisible();
     expect(screen.getByText(`Discovery queue: ${candidateTerms.length} open-source candidate terms awaiting authored word-part review.`)).toBeVisible();
-    expect(screen.getAllByText("Candidate only - no verified word parts yet")).toHaveLength(candidateTerms.length);
-    expect(screen.getByText("diabetes")).toBeVisible();
+    expect(screen.getByText("No candidate terms are currently awaiting verification.")).toBeVisible();
+    expect(screen.queryByText("Candidate only - no verified word parts yet")).not.toBeInTheDocument();
   });
 });

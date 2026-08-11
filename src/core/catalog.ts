@@ -1,5 +1,4 @@
 import { corpus } from "../generated/corpus";
-import { termSearchIndex } from "../generated/index";
 import { CorpusInvariantError } from "./invariants";
 import type {
   AuthoredAnalysis,
@@ -48,7 +47,9 @@ export type TermRecord = {
 
 const partById: ReadonlyMap<string, PartRecord> = new Map(corpus.parts.map((part) => [part.id, part]));
 const termById: ReadonlyMap<string, TermRecord> = new Map(corpus.terms.map((term) => [term.id, term]));
-const termIdByNormalized: ReadonlyMap<string, string> = new Map(Object.entries(termSearchIndex));
+const termIdByNormalized: ReadonlyMap<string, string> = new Map(
+  corpus.terms.map((term) => [term.normalized, term.id]),
+);
 const aliasByNormalized: ReadonlyMap<string, (typeof corpus.aliases)[number]> = new Map(
   corpus.aliases.map((alias) => [alias.normalized, alias]),
 );

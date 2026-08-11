@@ -3376,6 +3376,42 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:cardiomyocyte",
+      "slug": "cardiomyocyte",
+      "term": "cardiomyocyte",
+      "normalized": "cardiomyocyte",
+      "sources": [
+        "source:ncbi-medical-terminology-cardiovascular"
+      ],
+      "note": "Source-backed word-part analysis promoted from candidate:cardiomyocyte.",
+      "analyses": [
+        {
+          "id": "analysis:cardiomyocyte-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:cardio",
+              "surface": "cardio",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "partId": "root:myo",
+              "surface": "myo",
+              "start": 6,
+              "end": 9
+            },
+            {
+              "partId": "suffix:cyte",
+              "surface": "cyte",
+              "start": 9,
+              "end": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:cephalalgia",
       "slug": "cephalalgia",
       "term": "cephalalgia",
@@ -3659,6 +3695,36 @@ export const corpus = {
               "surface": "oma",
               "start": 12,
               "end": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:chondrocyte",
+      "slug": "chondrocyte",
+      "term": "chondrocyte",
+      "normalized": "chondrocyte",
+      "sources": [
+        "source:ncbi-medical-terminology-skeletal"
+      ],
+      "note": "Source-backed word-part analysis promoted from candidate:chondrocyte.",
+      "analyses": [
+        {
+          "id": "analysis:chondrocyte-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:chondr-o",
+              "surface": "chondro",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "partId": "suffix:cyte",
+              "surface": "cyte",
+              "start": 7,
+              "end": 11
             }
           ]
         }
@@ -4121,6 +4187,36 @@ export const corpus = {
             {
               "partId": "suffix:kine",
               "surface": "kine",
+              "start": 4,
+              "end": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:cytology",
+      "slug": "cytology",
+      "term": "cytology",
+      "normalized": "cytology",
+      "sources": [
+        "source:ncbi-medical-terminology-whole-body"
+      ],
+      "note": "Source-backed word-part analysis promoted from candidate:cytology.",
+      "analyses": [
+        {
+          "id": "analysis:cytology-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:cyt-o",
+              "surface": "cyto",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "suffix:logy",
+              "surface": "logy",
               "start": 4,
               "end": 8
             }
@@ -5085,6 +5181,36 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:fibroblast",
+      "slug": "fibroblast",
+      "term": "fibroblast",
+      "normalized": "fibroblast",
+      "sources": [
+        "source:ncbi-medical-terminology-integumentary"
+      ],
+      "note": "Source-backed word-part analysis promoted from candidate:fibroblast.",
+      "analyses": [
+        {
+          "id": "analysis:fibroblast-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:fibro",
+              "surface": "fibro",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:blast",
+              "surface": "blast",
+              "start": 5,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:fibroma",
       "slug": "fibroma",
       "term": "fibroma",
@@ -5956,6 +6082,36 @@ export const corpus = {
             {
               "partId": "suffix:plegia",
               "surface": "plegia",
+              "start": 4,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:hemostasis",
+      "slug": "hemostasis",
+      "term": "hemostasis",
+      "normalized": "hemostasis",
+      "sources": [
+        "source:ncbi-medical-terminology-cardiovascular"
+      ],
+      "note": "Source-backed word-part analysis promoted from candidate:hemostasis.",
+      "analyses": [
+        {
+          "id": "analysis:hemostasis-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "combining:hem-o",
+              "surface": "hemo",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "partId": "suffix:stasis",
+              "surface": "stasis",
               "start": 4,
               "end": 10
             }
@@ -6998,6 +7154,36 @@ export const corpus = {
       ]
     },
     {
+      "id": "term:myocyte",
+      "slug": "myocyte",
+      "term": "myocyte",
+      "normalized": "myocyte",
+      "sources": [
+        "source:ncbi-medical-terminology-muscular"
+      ],
+      "note": "Source-backed word-part analysis promoted from candidate:myocyte.",
+      "analyses": [
+        {
+          "id": "analysis:myocyte-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:myo",
+              "surface": "myo",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "partId": "suffix:cyte",
+              "surface": "cyte",
+              "start": 3,
+              "end": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "term:myogram",
       "slug": "myogram",
       "term": "myogram",
@@ -7628,6 +7814,66 @@ export const corpus = {
               "surface": "itis",
               "start": 10,
               "end": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:osteoblast",
+      "slug": "osteoblast",
+      "term": "osteoblast",
+      "normalized": "osteoblast",
+      "sources": [
+        "source:ncbi-medical-terminology-skeletal"
+      ],
+      "note": "Source-backed word-part analysis promoted from candidate:osteoblast.",
+      "analyses": [
+        {
+          "id": "analysis:osteoblast-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:osteo",
+              "surface": "osteo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "root:blast",
+              "surface": "blast",
+              "start": 5,
+              "end": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "term:osteocyte",
+      "slug": "osteocyte",
+      "term": "osteocyte",
+      "normalized": "osteocyte",
+      "sources": [
+        "source:ncbi-medical-terminology-skeletal"
+      ],
+      "note": "Source-backed word-part analysis promoted from candidate:osteocyte.",
+      "analyses": [
+        {
+          "id": "analysis:osteocyte-primary",
+          "primary": true,
+          "segments": [
+            {
+              "partId": "root:osteo",
+              "surface": "osteo",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "partId": "suffix:cyte",
+              "surface": "cyte",
+              "start": 5,
+              "end": 9
             }
           ]
         }

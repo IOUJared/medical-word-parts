@@ -1,0 +1,30 @@
+{
+  "id": "term:fibroblast",
+  "slug": "fibroblast",
+  "term": "fibroblast",
+  "normalized": "fibroblast",
+  "sources": [
+    "source:ncbi-medical-terminology-integumentary"
+  ],
+  "note": "Source-backed word-part analysis promoted from candidate:fibroblast.",
+  "analyses": [
+    {
+      "id": "analysis:fibroblast-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "root:fibro",
+          "surface": "fibro",
+          "start": 0,
+          "end": 5
+        },
+        {
+          "partId": "root:blast",
+          "surface": "blast",
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}

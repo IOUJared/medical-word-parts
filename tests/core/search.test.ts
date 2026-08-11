@@ -13,33 +13,22 @@ describe("deterministic corpus search", () => {
     });
   });
 
-  it("Given an open-source candidate term, when searched, then it is returned as awaiting verification", () => {
+  it("Given an archived candidate term, when searched, then it is not returned as an active candidate", () => {
     const results = searchCorpus({ query: "diabetes" });
 
-    expect(results[0]).toMatchObject({
-      kind: "candidateTerm",
-      id: "candidate:diabetes",
-      term: "diabetes",
-      status: "candidate",
-      matchedBy: { kind: "exact", field: "term", value: "diabetes" },
-    });
+    expect(results.some((result) => result.kind === "candidateTerm")).toBe(false);
   });
 
-  it.each([
-    ["homeostasis", "candidate:homeostasis"],
-    ["epidermis", "candidate:epidermis"],
-    ["vasoconstriction", "candidate:vasoconstriction"],
-  ] as const)("Given exact candidate query %s, when searched, then the candidate ranks first", (query, id) => {
+  it.each(["homeostasis", "epidermis", "vasoconstriction"] as const)(
+    "Given archived candidate query %s, when searched, then no active candidate result is returned",
+    (query) => {
     const results = searchCorpus({ query });
 
-    expect(results[0]).toMatchObject({
-      kind: "candidateTerm",
-      id,
-      status: "candidate",
-    });
-  });
+      expect(results.some((result) => result.kind === "candidateTerm")).toBe(false);
+    },
+  );
 
-  it("Given a verified term and a candidate prefix match, when searched, then verified results rank first", () => {
+  it("Given verified term and part prefix matches, when searched, then verified results rank first", () => {
     const results = searchCorpus({ query: "neph" });
 
     expect(results.map((result) => result.id).slice(0, 7)).toEqual([
@@ -52,13 +41,7 @@ describe("deterministic corpus search", () => {
       "term:nephrotomy",
     ]);
     expect(results.map((result) => result.id).slice(7, 9)).toEqual(["root:nephr", "root:nephro"]);
-    expect(results.map((result) => result.id).slice(9)).toEqual([
-      "candidate:nephrotic-syndrome",
-      "candidate:balkan-nephropathy",
-      "candidate:diabetic-nephropathies",
-      "term:glomerulonephritis",
-      "candidate:hydronephrosis",
-    ]);
+    expect(results.map((result) => result.id).slice(9)).toEqual(["term:glomerulonephritis"]);
   });
 
   it("Given an alias spelling, when searched, then its canonical term carries alias evidence", () => {
@@ -143,13 +126,7 @@ describe("deterministic corpus search", () => {
     const first = searchCorpus({ query: "kidney" });
     const second = searchCorpus({ query: "kidney" });
 
-    expect(first.map((result) => result.id)).toEqual([
-      "root:nephr",
-      "root:nephro",
-      "root:ren",
-      "root:reno",
-      "candidate:chronic-kidney-disease",
-    ]);
+    expect(first.map((result) => result.id)).toEqual(["root:nephr", "root:nephro", "root:ren", "root:reno"]);
     expect(second).toEqual(first);
   });
 

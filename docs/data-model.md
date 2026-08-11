@@ -14,6 +14,9 @@ The corpus is authored in `data/` and compiled into derived modules in `src/gene
 | `data/terms/*.json` | Canonical term records |
 | `data/aliases.json` | Alias records |
 | `data/relations.json` | Term relations |
+| `data/candidate-terms.json` | Active candidate queue |
+| `data/candidate-review-decisions.json` | Reviews for candidates still in the active queue |
+| `data/candidate-dispositions.json` | Permanent outcomes for original candidates, including candidates removed from the active queue |
 
 ## Record shapes
 
@@ -81,6 +84,22 @@ Aliases map a spelling variant to one canonical term.
 
 The current relation kinds are `contrast` and `related`.
 
+### Candidate disposition
+
+Every disposition preserves the candidate's original identity independently of `candidate-terms.json`:
+
+- `originalCandidateId`
+- `originalTerm`
+- `originalNormalized`
+- `outcome`
+- `reviewSources`
+- `note`
+- `promotedTermId` is required only for `promoted_verified_term`
+
+Allowed outcomes are `promoted_verified_term`, `deferred_insufficient_evidence`, `deferred_schema_incompatible`, `deferred_phrase_review`, `source_review_required`, and `rejected_out_of_scope`. Disposition notes are final editorial records and cannot contain `TODO` or `draft` markers. The archive may remain empty while candidates are active; later apply steps can remove candidates without losing their IDs, spelling, normalization, source review, or final outcome.
+
+Promotion and non-promoted apply are manifest-bound. `candidate:promote:apply` promotes only complete known-part decompositions. `candidate:dispose:apply` processes one ordered manifest window of at most 100 IDs, rejects still-active promotable candidates, migrates deferred reviews, and maps partial, no-known-part, phrase, collision, and unsupported candidates to outcome-specific dispositions. Both commands remove finalized candidates and matching active review decisions only after validating the complete planned corpus; disposition-first writes make interrupted runs recoverable and repeated runs idempotent.
+
 ## Cross-record validation
 
 `npm run data:validate` enforces these rules:
@@ -94,6 +113,11 @@ The current relation kinds are `contrast` and `related`.
 - all part references resolve
 - all alias term references resolve
 - all relation term references resolve
+- disposition candidate IDs are unique
+- promoted disposition term references resolve
+- all disposition review-source references resolve
+- dispositions for active candidates preserve the active record's exact term and normalized identity
+- `npm run data:validate -- --candidate-disposition-manifest <manifest>` additionally requires complete, unique frozen-manifest disposition coverage and a matching candidate-source hash before applying a disposition archive
 - no self relations
 - no duplicate relations
 - every term has exactly one primary analysis

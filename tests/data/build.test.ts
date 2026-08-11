@@ -7,15 +7,18 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
 import { candidateTerms } from "../../src/generated/candidates";
 import { corpus } from "../../src/generated/corpus";
-import { relatedTermIds } from "../../src/generated/index";
+import { candidateTermSearchIndex, relatedTermIds, sourceCitations } from "../../src/generated/index";
+import candidateDispositionsJson from "../../data/candidate-dispositions.json";
+import { candidateDispositionsDocumentSchema } from "../../src/data/schemas";
 
 const repositoryRoot = process.cwd();
 const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
 let generatedDirectory = "";
 const generatedNames = ["candidates.ts", "corpus.ts", "index.ts", "routes.ts", "segmentation.ts"] as const;
 const generatedHeader = "// GENERATED FILE. DO NOT EDIT. Run npm run data:build to regenerate.\n\n";
-const verifiedTermTarget = 196;
-const candidateTermTarget = 1_057;
+const verifiedTermTarget = 204;
+const originalCandidateTermCount = 1_057;
+const candidateDispositionsDocument = candidateDispositionsDocumentSchema.parse(candidateDispositionsJson);
 
 function build(): { readonly status: number | null; readonly output: string } {
   const outcome = spawnSync(npmCommand, ["run", "data:build", "--", "--output", generatedDirectory], {
@@ -74,20 +77,17 @@ describe("deterministic corpus generation", () => {
     expect(corpus.terms).toHaveLength(verifiedTermTarget);
   });
 
-  it("includes the requested MeSH-backed candidate queue coverage", () => {
-    expect(candidateTerms).toHaveLength(candidateTermTarget);
-    const meshCandidates = candidateTerms.filter(
-      (candidate) => candidate.sources.length === 1 && candidate.sources[0] === "source:mesh-terms",
+  it("emits an empty active candidate index backed by complete disposition provenance", () => {
+    const dispositionIds = new Set(
+      candidateDispositionsDocument.candidateDispositions.map((disposition) => disposition.originalCandidateId),
     );
-    expect(meshCandidates).toHaveLength(923);
-    expect(meshCandidates.every((candidate) => candidate.status === "candidate")).toBe(true);
-    expect(meshCandidates.every((candidate) => candidate.sourceVersion === "MeSH descriptor export")).toBe(true);
-    expect(meshCandidates.every((candidate) => candidate.license === "MeSH free reuse with NLM acknowledgement")).toBe(true);
-    expect(
-      meshCandidates.every(
-        (candidate) => "externalIds" in candidate && candidate.externalIds.meshDescriptor !== undefined,
-      ),
-    ).toBe(true);
+
+    expect(candidateTerms).toEqual([]);
+    expect(candidateTermSearchIndex).toEqual({});
+    expect(candidateDispositionsDocument.candidateDispositions).toHaveLength(originalCandidateTermCount);
+    expect(dispositionIds.size).toBe(originalCandidateTermCount);
+    expect(candidateDispositionsDocument.candidateDispositions.every((disposition) => disposition.reviewSources.length > 0)).toBe(true);
+    expect(Object.values(sourceCitations).every((citation) => citation.candidateTerms.length === 0)).toBe(true);
   });
 
   it("keeps generated headers separated from module contents", () => {

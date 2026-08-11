@@ -1,8 +1,11 @@
 import { describe, expect, it } from "vitest";
 
+import candidateDispositionsJson from "../../data/candidate-dispositions.json";
 import sourcesDocument from "../../data/sources.json";
+import { candidateDispositionsDocumentSchema } from "../../src/data/schemas";
 import { candidateTerms } from "../../src/generated/candidates";
 import { corpus } from "../../src/generated/corpus";
+import { expectedSourceGroups } from "./anatomy-physiology-candidate-sources";
 
 const expectedInventory = [
   "absorption",
@@ -112,167 +115,60 @@ const expectedInventory = [
   "ventilation",
 ] as const;
 
-const expectedSourceGroups = {
-  "source:ncbi-medical-terminology-whole-body": [
-    "homeostasis",
-    "anatomy",
-    "physiology",
-    "histology",
-    "cytology",
-    "metabolism",
-    "anabolism",
-    "catabolism",
-    "extracellular",
-    "intracellular",
-    "interstitial",
-  ],
-  "source:ncbi-medical-terminology-integumentary": [
-    "epithelial",
-    "connective tissue",
-    "adipocyte",
-    "fibroblast",
-    "epidermis",
-    "dermis",
-    "hypodermis",
-    "keratinocyte",
-    "melanocyte",
-    "sebaceous gland",
-    "sudoriferous gland",
-  ],
-  "source:ncbi-medical-terminology-skeletal": [
-    "chondrocyte",
-    "osteocyte",
-    "osteoblast",
-    "osteoclast",
-    "hematopoiesis",
-    "periosteum",
-    "endosteum",
-    "perichondrium",
-    "epiphysis",
-    "metaphysis",
-    "diaphysis",
-    "osteon",
-    "osteogenesis",
-    "ossification",
-  ],
-  "source:ncbi-medical-terminology-cardiovascular": [
-    "erythrocyte",
-    "leukocyte",
-    "cardiomyocyte",
-    "endocardium",
-    "myocardium",
-    "pericardium",
-    "epicardium",
-    "erythropoiesis",
-    "leukopoiesis",
-    "thrombopoiesis",
-    "hemostasis",
-    "vasoconstriction",
-    "vasodilation",
-    "systole",
-    "diastole",
-    "perfusion",
-  ],
-  "source:ncbi-medical-terminology-muscular": [
-    "myocyte",
-    "epimysium",
-    "perimysium",
-    "endomysium",
-    "sarcolemma",
-    "sarcoplasm",
-    "sarcomere",
-    "myofibril",
-    "actin",
-    "myosin",
-    "contraction",
-    "relaxation",
-  ],
-  "source:ncbi-medical-terminology-nervous": [
-    "neuron",
-    "neuroglia",
-    "cerebrum",
-    "cerebellum",
-    "hypothalamus",
-    "thalamus",
-    "meninges",
-    "dendrite",
-    "axon",
-    "synapse",
-    "neurotransmitter",
-    "depolarization",
-    "repolarization",
-  ],
-  "source:ncbi-medical-terminology-respiratory": [
-    "ventilation",
-    "respiration",
-    "inspiration",
-    "expiration",
-    "diffusion",
-    "oxygenation",
-  ],
-  "source:ncbi-medical-terminology-digestive": [
-    "peristalsis",
-    "mastication",
-    "deglutition",
-    "absorption",
-    "assimilation",
-    "glycogenesis",
-    "glycogenolysis",
-    "gluconeogenesis",
-    "lipolysis",
-  ],
-  "source:ncbi-medical-terminology-urinary": [
-    "filtration",
-    "reabsorption",
-    "secretion",
-    "micturition",
-    "diuresis",
-    "osmosis",
-  ],
-  "source:ncbi-medical-terminology-male-reproductive": ["spermatogenesis"],
-  "source:ncbi-medical-terminology-female-reproductive": [
-    "oogenesis",
-    "ovulation",
-    "fertilization",
-    "implantation",
-    "lactation",
-  ],
-  "source:ncbi-medical-terminology-endocrine": ["gonadotropin"],
-} as const;
-
 const expectedSourceByTerm = new Map<string, string>(
   Object.entries(expectedSourceGroups).flatMap(([sourceId, terms]) => terms.map((term) => [term, sourceId] as const)),
 );
 const expectedSet = new Set<string>(expectedInventory);
-const importedCandidates = candidateTerms.filter((candidate) => expectedSet.has(candidate.normalized));
+const candidateDispositionsDocument = candidateDispositionsDocumentSchema.parse(candidateDispositionsJson);
+const importedDispositions = candidateDispositionsDocument.candidateDispositions.filter((disposition) =>
+  expectedSet.has(disposition.originalNormalized)
+);
+const promotedTerms = new Set([
+  "cardiomyocyte",
+  "chondrocyte",
+  "cytology",
+  "fibroblast",
+  "hemostasis",
+  "myocyte",
+  "osteoblast",
+  "osteocyte",
+]);
 
-describe("anatomy and physiology candidate import", () => {
-  it("Given the approved inventory, when generated candidates are loaded, then the exact set is present once", () => {
-    const importedSet = new Set<string>(importedCandidates.map((candidate) => candidate.normalized));
+describe("anatomy and physiology candidate dispositions", () => {
+  it("Given the approved inventory, when the resolved corpus is loaded, then every original candidate is archived once", () => {
+    const importedSet = new Set<string>(importedDispositions.map((disposition) => disposition.originalNormalized));
     const missing = expectedInventory.filter((term) => !importedSet.has(term));
     const unexpected = [...importedSet].filter((term) => !expectedSet.has(term));
 
     expect(expectedInventory).toHaveLength(105);
     expect([...expectedInventory].sort()).toEqual(expectedInventory);
-    expect(importedCandidates).toHaveLength(105);
+    expect(candidateTerms).toEqual([]);
+    expect(importedDispositions).toHaveLength(105);
     expect(importedSet.size).toBe(105);
     expect(missing).toEqual([]);
     expect(unexpected).toEqual([]);
-    expect(corpus.terms.some((term) => expectedSet.has(term.normalized))).toBe(false);
+    expect(corpus.terms.filter((term) => expectedSet.has(term.normalized)).map((term) => term.normalized).sort()).toEqual(
+      [...promotedTerms].sort(),
+    );
   });
 
-  it("Given an approved candidate, when its generated record is inspected, then identity and provenance are exact", () => {
-    for (const candidate of importedCandidates) {
-      const expectedSource = expectedSourceByTerm.get(candidate.normalized);
+  it("Given an archived candidate, when its disposition is inspected, then original identity and provenance are exact", () => {
+    for (const disposition of importedDispositions) {
+      const expectedSource = expectedSourceByTerm.get(disposition.originalNormalized);
       expect(expectedSource).toBeDefined();
-      expect(candidate.term).toBe(candidate.normalized);
-      expect(candidate.id).toBe(`candidate:${candidate.normalized.replaceAll(" ", "-")}`);
-      expect(candidate.status).toBe("candidate");
-      expect(candidate.sources).toEqual([expectedSource]);
-      expect(candidate.sourceVersion).toBe("Medical Terminology, 2nd ed.");
-      expect(candidate.license).toBe("CC BY 4.0");
-      expect(candidate).not.toHaveProperty("aliases");
-      expect(candidate).not.toHaveProperty("externalIds");
+      expect(disposition.originalTerm).toBe(disposition.originalNormalized);
+      expect(disposition.originalCandidateId).toBe(
+        `candidate:${disposition.originalNormalized.replaceAll(" ", "-")}`,
+      );
+      expect(disposition.reviewSources).toEqual([expectedSource]);
+      if (promotedTerms.has(disposition.originalNormalized)) {
+        expect(disposition).toMatchObject({
+          outcome: "promoted_verified_term",
+          promotedTermId: `term:${disposition.originalNormalized}`,
+        });
+      } else {
+        expect(disposition.outcome).not.toBe("promoted_verified_term");
+      }
     }
   });
 
@@ -285,13 +181,13 @@ describe("anatomy and physiology candidate import", () => {
     });
   });
 
-  it("Given the approved source map, when imported candidates are bucketed, then every bucket is exhaustive", () => {
+  it("Given the approved source map, when archived dispositions are bucketed, then every bucket is exhaustive", () => {
     const importedBySource = new Map<string, string[]>();
-    for (const candidate of importedCandidates) {
-      const sourceId = candidate.sources[0];
+    for (const disposition of importedDispositions) {
+      const sourceId = disposition.reviewSources[0];
       if (sourceId === undefined) continue;
       const bucket = importedBySource.get(sourceId) ?? [];
-      bucket.push(candidate.normalized);
+      bucket.push(disposition.originalNormalized);
       importedBySource.set(sourceId, bucket);
     }
 

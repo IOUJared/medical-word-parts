@@ -6,6 +6,7 @@ import { DataError } from "./errors";
 import { compareCodePoints } from "./ordering";
 import {
   aliasesDocumentSchema,
+  candidateDispositionsDocumentSchema,
   candidateReviewDecisionsDocumentSchema,
   candidateTermsDocumentSchema,
   partsDocumentSchema,
@@ -14,6 +15,7 @@ import {
   termSchema,
   type Alias,
   type CandidateTerm,
+  type CandidateDisposition,
   type CandidateReviewDecision,
   type Part,
   type Relation,
@@ -32,6 +34,7 @@ export type LoadedCorpus = {
   readonly terms: readonly Located<Term>[];
   readonly aliases: readonly Located<Alias>[];
   readonly candidateTerms: readonly Located<CandidateTerm>[];
+  readonly candidateDispositions: readonly Located<CandidateDisposition>[];
   readonly candidateReviewDecisions: readonly Located<CandidateReviewDecision>[];
   readonly relations: readonly Located<Relation>[];
 };
@@ -88,6 +91,7 @@ export function loadCorpus(root: string): LoadedCorpus {
   const aliasPath = join(root, "aliases.json");
   const relationPath = join(root, "relations.json");
   const candidateTermsPath = join(root, "candidate-terms.json");
+  const candidateDispositionsPath = join(root, "candidate-dispositions.json");
   const candidateReviewDecisionsPath = join(root, "candidate-review-decisions.json");
   const sources = parseFile(root, sourcePath, sourcesDocumentSchema).sources.map((value) => ({
     path: displayPath(root, sourcePath),
@@ -103,6 +107,14 @@ export function loadCorpus(root: string): LoadedCorpus {
   }));
   const candidateTerms = parseFile(root, candidateTermsPath, candidateTermsDocumentSchema).candidateTerms.map((value) => ({
     path: displayPath(root, candidateTermsPath),
+    value,
+  }));
+  const candidateDispositions = parseFile(
+    root,
+    candidateDispositionsPath,
+    candidateDispositionsDocumentSchema,
+  ).candidateDispositions.map((value) => ({
+    path: displayPath(root, candidateDispositionsPath),
     value,
   }));
   const candidateReviewDecisions = parseFile(
@@ -124,6 +136,7 @@ export function loadCorpus(root: string): LoadedCorpus {
     terms: loadTerms(root),
     aliases,
     candidateTerms,
+    candidateDispositions,
     candidateReviewDecisions,
     relations,
   };

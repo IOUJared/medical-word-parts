@@ -6,6 +6,17 @@ export const candidateReviewReasons = [
   "insufficient_decomposition_evidence",
   "term_schema_incompatible",
 ] as const;
+const nonPromotedCandidateDispositionOutcomes = [
+  "deferred_insufficient_evidence",
+  "deferred_schema_incompatible",
+  "deferred_phrase_review",
+  "source_review_required",
+  "rejected_out_of_scope",
+] as const;
+export const candidateDispositionOutcomes = [
+  "promoted_verified_term",
+  ...nonPromotedCandidateDispositionOutcomes,
+] as const;
 
 const partNamespaceByKind = {
   prefix: "prefix",
@@ -126,6 +137,34 @@ export const candidateReviewDecisionsDocumentSchema = z.strictObject({
   candidateReviewDecisions: z.array(candidateReviewDecisionSchema),
 });
 
+const finalDispositionNote = z.string().min(1).refine(
+  (value) => !/\b(?:todo|draft)\b/i.test(value),
+  "final disposition note must not contain TODO or draft text",
+);
+const candidateDispositionIdentity = {
+  originalCandidateId: candidateId,
+  originalTerm: z.string().min(1),
+  originalNormalized: normalizedCandidateTerm,
+  reviewSources: citationIds,
+  note: finalDispositionNote,
+} as const;
+
+export const candidateDispositionSchema = z.discriminatedUnion("outcome", [
+  z.strictObject({
+    ...candidateDispositionIdentity,
+    outcome: z.literal("promoted_verified_term"),
+    promotedTermId: termId,
+  }),
+  z.strictObject({
+    ...candidateDispositionIdentity,
+    outcome: z.enum(nonPromotedCandidateDispositionOutcomes),
+  }),
+]);
+
+export const candidateDispositionsDocumentSchema = z.strictObject({
+  candidateDispositions: z.array(candidateDispositionSchema),
+});
+
 export const relationSchema = z.strictObject({
     kind: z.enum(relationKinds),
     from: termId,
@@ -141,5 +180,6 @@ export type Term = z.infer<typeof termSchema>;
 export type Alias = z.infer<typeof aliasSchema>;
 export type CandidateTerm = z.infer<typeof candidateTermSchema>;
 export type CandidateReviewDecision = z.infer<typeof candidateReviewDecisionSchema>;
+export type CandidateDisposition = z.infer<typeof candidateDispositionSchema>;
 export type Relation = z.infer<typeof relationSchema>;
 export type Transformation = z.infer<typeof transformationSchema>;

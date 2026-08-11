@@ -1,0 +1,30 @@
+{
+  "id": "term:hemostasis",
+  "slug": "hemostasis",
+  "term": "hemostasis",
+  "normalized": "hemostasis",
+  "sources": [
+    "source:ncbi-medical-terminology-cardiovascular"
+  ],
+  "note": "Source-backed word-part analysis promoted from candidate:hemostasis.",
+  "analyses": [
+    {
+      "id": "analysis:hemostasis-primary",
+      "primary": true,
+      "segments": [
+        {
+          "partId": "combining:hem-o",
+          "surface": "hemo",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "partId": "suffix:stasis",
+          "surface": "stasis",
+          "start": 4,
+          "end": 10
+        }
+      ]
+    }
+  ]
+}
