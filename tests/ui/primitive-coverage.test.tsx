@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 import { CorrectionFlow } from "../../src/components/correction-flow";
 import { MorphologyRail } from "../../src/components/morphology-rail";
 import { StatusPanel } from "../../src/components/status-panel";
+import { TermConstruction } from "../../src/components/term-construction";
 import { TermSearchForm } from "../../src/components/term-search-form";
 import { analyzeTerm } from "../../src/core/analyzer";
 
@@ -45,6 +46,7 @@ describe("test-only primitive coverage", () => {
     if (exact.kind !== "exact" || partial.kind !== "partial") throw new TypeError("Expected primitive fixtures");
     const { container } = render(<div>
       <MorphologyRail analysis={exact.primary} headingId="fixture-exact-morphology" reconstructedTerm={exact.term.term} />
+      <TermConstruction segments={exact.primary.segments} />
       <MorphologyRail analysis={partial} headingId="fixture-partial-morphology" reconstructedTerm={partial.normalized} />
       <CorrectionFlow currentBreakdown="hypo- + glyc/o + -emia" subject="hypoglycemia" />
     </div>);

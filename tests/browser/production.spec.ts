@@ -11,7 +11,7 @@ declare global {
 
 test.describe.configure({ mode: "serial" });
 
-test("representative verified terms begin with canonical identity followed by complete primary morphology", async ({ page }) => {
+test("representative verified terms begin with breadcrumb, identity, concise construction, and parts", async ({ page }) => {
   for (const slug of [
     "achondroplasia",
     "adrenal",
@@ -38,15 +38,18 @@ test("representative verified terms begin with canonical identity followed by co
     await page.goto(appUrl(`/term/${slug}/`), { waitUntil: "networkidle" });
     const leadingBlocks = page.locator(".term-page > *");
 
-    await expect(leadingBlocks.nth(0)).toHaveClass(/term-opening/);
-    await expect(leadingBlocks.nth(0).getByRole("heading", { level: 1, name: slug })).toBeVisible();
-    await expect(leadingBlocks.nth(0).getByText("Verified corpus entry")).toBeVisible();
-    await expect(leadingBlocks.nth(1)).toHaveClass(/morphology/);
-    expect(await leadingBlocks.nth(1).locator(".morphology-rail > li").evaluateAll((segments) => segments.every((segment) => {
-      const surface = segment.getAttribute("data-surface");
-      return surface !== null && segment.textContent?.includes(surface) === true && segment.querySelector("h3") !== null;
-    }))).toBe(true);
+    await expect(leadingBlocks.nth(0)).toHaveClass(/breadcrumbs/);
+    await expect(leadingBlocks.nth(1)).toHaveClass(/term-opening/);
+    await expect(leadingBlocks.nth(1).getByRole("heading", { level: 1, name: slug })).toBeVisible();
+    await expect(leadingBlocks.nth(1).getByText("Verified entry")).toBeVisible();
+    await expect(leadingBlocks.nth(2)).toHaveClass(/term-construction/);
+    await expect(leadingBlocks.nth(2).getByRole("heading", { level: 2, name: "Construction" })).toBeVisible();
+    await expect(leadingBlocks.nth(3)).toHaveClass(/term-parts/);
+    await expect(page.getByText(slug, { exact: true })).toHaveCount(2);
+    await expect(page.locator(".reconstruction")).toHaveCount(0);
+    await expect(page.getByText("Authored note")).toHaveCount(0);
   }
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
 });
 
 test("mobile navigation opens, closes with Escape, and returns focus", async ({ page }) => {

@@ -25,32 +25,45 @@ describe("verified term hierarchy", () => {
     expect(getByRole("heading", { level: 1, name: "adrenal" })).toBeVisible();
   });
 
-  it.each(representativeTerms)("Given the authored %s term, when its page renders, then the canonical word and complete primary morphology lead the document", async (slug) => {
+  it.each(representativeTerms)("Given the authored %s term, when its page renders, then the breadcrumb, canonical word, concise construction, and parts lead the document without repeated identity", async (slug) => {
     const analysis = analyzeTerm(slug);
     if (analysis.kind !== "exact") throw new TypeError(`Expected exact analysis for ${slug}`);
 
     const { container } = render(await TermDetailPage({ params: Promise.resolve({ slug }) }));
     const sheet = container.querySelector<HTMLElement>(".page-sheet");
     if (sheet === null) throw new TypeError("Expected term page sheet");
-    const first = sheet.children.item(0);
-    const second = sheet.children.item(1);
-    if (!(first instanceof HTMLElement) || !(second instanceof HTMLElement)) throw new TypeError("Expected leading term blocks");
+    const leadingBlocks = [...sheet.children].slice(0, 4);
+    expect(leadingBlocks[0]).toHaveClass("breadcrumbs");
+    expect(leadingBlocks[1]).toHaveClass("term-opening");
+    expect(leadingBlocks[2]).toHaveClass("term-construction");
+    expect(leadingBlocks[3]).toHaveClass("term-parts");
 
-    expect(first).toHaveClass("term-opening");
-    expect(first.tagName).toBe("SECTION");
-    expect(within(first).getByRole("heading", { level: 1, name: analysis.term.term })).toBeVisible();
-    expect(within(first).getByText("Verified corpus entry")).toBeVisible();
-    expect(second).toHaveClass("morphology");
+    const opening = leadingBlocks[1];
+    const construction = leadingBlocks[2];
+    const parts = leadingBlocks[3];
+    if (!(opening instanceof HTMLElement) || !(construction instanceof HTMLElement) || !(parts instanceof HTMLElement)) throw new TypeError("Expected leading term blocks");
 
-    const segments = [...second.querySelectorAll<HTMLElement>(".morphology-rail > li")];
+    expect(within(opening).getByRole("heading", { level: 1, name: analysis.term.term })).toBeVisible();
+    expect(within(opening).getByText("Verified entry")).toBeVisible();
+    expect(within(construction).getByRole("heading", { level: 2, name: "Construction" })).toBeVisible();
+    expect(within(parts).getByRole("heading", { level: 2, name: "Parts" })).toBeVisible();
+    expect(within(sheet).getAllByText(analysis.term.term)).toHaveLength(2);
+    expect(sheet.querySelector(":scope > .morphology")).not.toBeInTheDocument();
+    expect(within(sheet).queryByText("Authored note")).not.toBeInTheDocument();
+    expect(sheet.querySelector(".reconstruction")).not.toBeInTheDocument();
+
+    const segments = [...construction.querySelectorAll<HTMLElement>(".term-construction-part")];
+    const partRows = [...parts.querySelectorAll<HTMLElement>(".term-part-row")];
     expect(segments).toHaveLength(analysis.primary.segments.length);
+    expect(partRows).toHaveLength(analysis.primary.segments.length);
     for (const [index, segment] of analysis.primary.segments.entries()) {
       const rendered = segments[index];
+      const partRow = partRows[index];
       if (rendered === undefined) throw new TypeError(`Missing rendered segment ${index}`);
-      expect(rendered).toHaveAttribute("data-surface", segment.surface);
-      expect(within(rendered).getByRole("heading", { level: 3, name: segment.notation })).toBeVisible();
-      expect(rendered.querySelector(".segment-surface")).toHaveTextContent(`Surface: ${segment.surface}`);
-      expect(within(rendered).getByText(segment.meaning)).toBeVisible();
+      if (partRow === undefined) throw new TypeError(`Missing rendered part row ${index}`);
+      expect(within(rendered).getByRole("link", { name: segment.notation })).toBeVisible();
+      expect(within(partRow).getByRole("link", { name: segment.notation })).toBeVisible();
+      expect(within(partRow).getByText(segment.meaning)).toBeVisible();
     }
   });
 });

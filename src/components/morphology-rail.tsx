@@ -13,14 +13,15 @@ type MorphologyRailProps = {
   readonly analysis: RailAnalysis;
   readonly headingId: string;
   readonly reconstructedTerm: string;
+  readonly showReconstruction?: boolean;
 };
 
-export function MorphologyRail({ analysis, headingId, reconstructedTerm }: MorphologyRailProps) {
+export function MorphologyRail({ analysis, headingId, reconstructedTerm, showReconstruction = true }: MorphologyRailProps) {
   const items = orderedRailItems(analysis);
   const summary = items.map((item) => item.kind === "segment" ? `${partKindLabel(item.segment.kind)} ${item.segment.notation}, ${item.segment.meaning}` : `unresolved ${item.span.surface}`).join("; ");
   return <section className="morphology" aria-labelledby={headingId}>
     <div className="section-heading"><p className="overline">Reading order</p><h2 id={headingId}>Morphology rail</h2></div>
-    <p className="rail-summary"><strong>Construction:</strong> {summary}; reconstructs <strong>{reconstructedTerm}</strong>.</p>
+    <p className="rail-summary"><strong>Construction:</strong> {summary}{showReconstruction ? <>; reconstructs <strong>{reconstructedTerm}</strong>.</> : "."}</p>
     <ol className="morphology-rail">{items.map((item, index) => {
       if (item.kind === "unresolved") return <li className="segment segment-unresolved" data-surface={item.span.surface} data-unresolved="true" key={`unresolved-${item.start}`}>
         <span className="ordinal">{String(index + 1).padStart(2, "0")}</span><span className="kind-code">? / Unresolved</span><strong>{item.span.surface}</strong><p>These literal characters are not explained by a known part.</p>
@@ -31,6 +32,6 @@ export function MorphologyRail({ analysis, headingId, reconstructedTerm }: Morph
         <h3><Link href={href} prefetch={false}>{item.segment.notation}</Link></h3><p className="segment-surface">Surface: <strong>{item.segment.surface}</strong></p><p>{item.segment.meaning}</p><Transformation segment={item.segment} />
       </li>;
     })}</ol>
-    <p className={reconstructedTerm.length >= 19 ? "reconstruction long-term" : "reconstruction"} aria-label={`Reconstructed term: ${reconstructedTerm}`}><span aria-hidden="true">→</span> {reconstructedTerm}</p>
+    {showReconstruction ? <p className={reconstructedTerm.length >= 19 ? "reconstruction long-term" : "reconstruction"} aria-label={`Reconstructed term: ${reconstructedTerm}`}><span aria-hidden="true">→</span> {reconstructedTerm}</p> : null}
   </section>;
 }

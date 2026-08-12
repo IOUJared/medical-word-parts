@@ -317,7 +317,7 @@ The masthead is not sticky by default. It must not consume reading space at 200%
 |---|---|---|
 | `/` | Field-guide title and scope → analyzer search → morphology rail example → browse-by-kind index → evidence/method links | **Hook:** identify the reference. **Convert:** start lookup. **Explain/prove:** show the signature grammar without making a medical claim. **Navigate:** browse parts. **Retain trust:** expose sources/methodology and correction route. |
 | `/analyze/` | Page title/boundary → labeled term input → result status → morphology rail → segment explanations → alternatives/unresolved detail → citations → correction action | **Orient:** state local analysis limits. **Act:** submit. **Explain:** show basis and construction. **Compare:** alternatives only after primary result. **Prove:** cite. **Correct:** public evidence path. |
-| `/term/[slug]/` | Canonical term section with visible `Verified corpus entry` → primary morphology rail → breadcrumb → full verified status → authored note → primary qualification when present → alternative analyses → related parts/terms → source ledger → correction | **Orient:** begin with the canonical word. **Explain:** expose every authored notation, surface, and meaning immediately in canonical order. **Prove:** retain full status and authored context after the rail. **Navigate:** related entries. **Audit/correct:** provenance and amendment. |
+| `/term/[slug]/` | Breadcrumb → bold canonical term with compact verified label → minimal construction → part meanings → related terms when present → qualification/alternative analyses when present → source ledger → correction | **Orient:** establish location, then name the canonical word once as the page title. **Explain:** show the construction as a short notation sequence before expanding part meanings. **Navigate:** keep parts and related terms adjacent. **Audit/correct:** preserve provenance and amendment after the learning task. Generic corpus notes and a reconstructed copy of the title are omitted because they repeat information already established by the route, title, construction, and sources. |
 | `/parts/` | Title/scope → search → kind filters + result count → grouped/alphabetical part list → no-results recovery → methodology link | **Orient:** define the collection. **Find:** search/filter. **Compare:** scan notation, kind, meaning. **Recover:** reset filters or analyze a term. **Prove:** explain taxonomy. |
 | `/parts/[slug]/` | Breadcrumb → notation + explicit kind label → meaning → known surfaces/transformation note → example terms → source ledger → correction | **Orient:** identify the part. **Explain:** notation and authored meaning. **Prove:** show usage and provenance. **Navigate/correct:** examples and public correction. |
 | `/sources/` | Title/scope → how citations work → source records → external-link/privacy note → methodology link | **Orient:** explain what a listed source does and does not prove. **Audit:** publisher/title/URL exactly as authored. **Navigate:** open external source knowingly. **Explain:** methodology. |
@@ -330,7 +330,7 @@ The masthead is not sticky by default. It must not consume reading space at 200%
 - Lists wrap; they do not clip or silently ellipsize authored medical/reference content.
 - At 375px, all primary content reflows to one column with no viewport-level horizontal scroll. Morphology never requires a horizontal swipe.
 - External source URLs may wrap, but the visible link label should be the authored source title or host, not an unbroken raw URL when avoidable.
-- On term pages the canonical opening and primary morphology rail are the first two direct children of the reading sheet. Their separation is `--space-8`; all provenance and navigation blocks after the rail return to the standard `--space-16` page rhythm.
+- On term pages the breadcrumb is the first direct child, followed by the canonical opening, compact construction, parts, and optional related terms. Breadcrumb-to-title separation is `--space-6`; title-to-construction separation is `--space-8`. Lower-priority provenance and correction blocks return to the standard `--space-16` page rhythm.
 
 ## 5. Primitives and States
 
@@ -415,6 +415,14 @@ Future implementation starts with a development-only primitive showcase. It must
 - **Responsive:** horizontal ordered construction only when all segments fit naturally. At 375 and under content stress, it becomes a vertical ledger with operators in their own rows. It never horizontally scrolls or truncates.
 - **Motion:** after analysis, segments may enter together with a single standard opacity/translate transition; no stagger. Reduced motion renders the final state immediately.
 - **Accessibility:** `<ol>` order is canonical; decorative hatch is hidden from accessibility APIs; kinds and unresolved status are text; the reconstruction has a complete text summary before any visual rail.
+
+### TermConstruction
+
+- **Purpose:** the verified term route's concise first-pass explanation. It complements rather than duplicates the full analyzer `MorphologyRail`.
+- **Structure:** `section` with the visible heading `Construction`, followed by one ordered list of authored part notations. Every list item shows the full part kind and linked canonical notation; visible `+` operators preserve reading order. A transformation note appears only when authored data records a change such as a dropped combining vowel.
+- **Content restraint:** do not repeat the canonical term, reconstructed term, ordinals, surface labels, meanings, or generic corpus-status prose inside this primitive. Part meanings follow immediately in the `Parts` section.
+- **Responsive:** compact horizontal sequence when it fits; a vertical sequence with isolated operators at narrow widths. No horizontal scrolling or truncation.
+- **Accessibility:** `<ol>` remains canonical; kind labels are written text; operators are decorative; the section heading supplies the accessible purpose.
 
 ### ReferenceEntry
 

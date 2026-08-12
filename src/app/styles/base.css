@@ -38,10 +38,12 @@ pre { max-inline-size: 100%; overflow-wrap: anywhere; white-space: pre-wrap; }
 main { flex: 1; min-inline-size: 0; }
 .page-sheet { inline-size: min(calc(100% - var(--space-8)), var(--layout-paper-max)); margin-inline: auto; padding: var(--space-12) var(--space-4) var(--space-20); border-block-start: var(--space-1) solid var(--color-blue-400); background: var(--color-paper); }
 .page-sheet > * + * { margin-block-start: var(--space-16); }
-.term-page > .term-opening + .morphology { margin-block-start: var(--space-8); }
+.term-page > .breadcrumbs + .term-opening { margin-block-start: var(--space-6); }
+.term-page > .term-opening + .term-construction { margin-block-start: var(--space-8); }
+.term-page > .term-construction + .term-parts { margin-block-start: var(--space-12); }
 .term-opening { max-inline-size: var(--measure-reading); }
-.term-opening h1 { margin-block-end: 0; font-size: var(--type-term); line-height: 1.05; overflow-wrap: anywhere; }
-.term-note > p { max-inline-size: var(--measure-reading); }
+.term-opening h1 { margin-block-end: 0; font-size: var(--type-term); font-weight: 700; line-height: 1.05; overflow-wrap: anywhere; }
+.term-verification { display: inline-flex; align-items: center; gap: var(--space-2); margin-block: var(--space-2) 0; color: var(--color-success-ink); font-weight: 700; }
 .page-heading { max-inline-size: var(--measure-reading); }
 .page-heading h1 { overflow-wrap: anywhere; }
 .home-page .page-heading h1 { font-size: var(--type-display); font-weight: 500; line-height: 1.02; }
