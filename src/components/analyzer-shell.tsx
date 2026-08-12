@@ -1,6 +1,7 @@
 import { publicUrl } from "../lib/paths";
 import { ProgressiveEnhancerScript } from "./progressive-enhancer-script";
 import { StatusPanel } from "./status-panel";
+import { TermSuggestionField } from "./term-suggestion-field";
 
 export function AnalyzerShell() {
   return <div className="analyzer" data-analyzer-root data-base-path={publicUrl("/").slice(0, -1)}>
@@ -8,7 +9,7 @@ export function AnalyzerShell() {
       <label htmlFor="analyzer-term">Medical term</label>
       <p className="field-helper">Enter one word. Analysis runs only in this browser.</p>
       <div className="search-row">
-        <input autoComplete="off" id="analyzer-term" name="term" type="search" />
+        <TermSuggestionField inputId="analyzer-term" />
         <button className="button button-primary" type="submit">Analyze</button>
       </div>
       <p className="privacy-hint">Query text appears in the URL and may remain in browser history. Do not enter private medical information.</p>

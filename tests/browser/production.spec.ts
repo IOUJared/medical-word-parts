@@ -108,7 +108,7 @@ test("mobile navigation remains a native operable popover without JavaScript or 
 test("analyzer preserves encoded query state, status variants, keyboard focus, and copy fallback", async ({ page, context }) => {
   await context.grantPermissions(["clipboard-read", "clipboard-write"]);
   await page.goto(appUrl("/analyze/"), { waitUntil: "networkidle" });
-  const field = page.getByRole("searchbox", { name: "Medical term" });
+  const field = page.getByRole("combobox", { name: "Medical term" });
   await field.fill("hypo nephritis");
   await field.press("Enter");
 

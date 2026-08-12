@@ -1,4 +1,6 @@
 import { analyzeTerm } from "../core/analyzer";
+import { corpus } from "../generated/corpus";
+import { enhanceTermSuggestions, type TermSuggestion } from "../lib/term-suggestions";
 import { renderAnalyzerResult } from "./result";
 
 export class AnalyzerMarkupError extends Error {
@@ -25,8 +27,20 @@ function elements(document: Document): AnalyzerElements {
   return { form, input, result };
 }
 
+function verifiedTermSuggestions(): readonly TermSuggestion[] {
+  const canonicalById = new Map(corpus.terms.map((term) => [term.id, term.normalized]));
+  const suggestions: TermSuggestion[] = corpus.terms.map((term) => ({ canonical: term.normalized, value: term.normalized }));
+  for (const alias of corpus.aliases) {
+    const canonical = canonicalById.get(alias.termId);
+    if (canonical === undefined) throw new AnalyzerMarkupError(`Alias ${alias.normalized} has no verified term`);
+    suggestions.push({ canonical, value: alias.normalized });
+  }
+  return suggestions;
+}
+
 export function enhanceAnalyzer(window: Window): () => void {
   const analyzer = elements(window.document);
+  const cleanupSuggestions = enhanceTermSuggestions(window, analyzer.input, verifiedTermSuggestions());
   const initialNodes = Array.from(analyzer.result.childNodes, (node) => node.cloneNode(true));
   const render = (term: string, moveFocus: boolean): void => {
     analyzer.result.replaceChildren(renderAnalyzerResult(window, analyzeTerm(term)));
@@ -51,6 +65,7 @@ export function enhanceAnalyzer(window: Window): () => void {
   analyzer.form.addEventListener("submit", handleSubmit);
   window.addEventListener("popstate", renderLocation);
   return () => {
+    cleanupSuggestions();
     analyzer.form.removeEventListener("submit", handleSubmit);
     window.removeEventListener("popstate", renderLocation);
   };

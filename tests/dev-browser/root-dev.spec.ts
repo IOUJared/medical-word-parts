@@ -47,7 +47,7 @@ test("analyzer enhancement survives final root development hydration on every re
   const errors = captureErrors(page);
   await page.goto("/analyze/?term=adrenal", { waitUntil: "load" });
   await proveNoLaterReplacement(page);
-  const input = page.getByRole("searchbox", { name: "Medical term" });
+  const input = page.getByRole("combobox", { name: "Medical term" });
   await input.fill("hyponephritis");
   await input.press("Enter");
   await expect(page).toHaveURL(/term=hyponephritis$/);

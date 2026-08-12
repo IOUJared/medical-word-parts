@@ -26,7 +26,7 @@ test("canonical, alias, unknown, and markup-shaped searches navigate safely", as
   ] as const;
   for (const fixture of cases) {
     await page.goto(appUrl("/"), { waitUntil: "networkidle" });
-    const search = page.getByRole("searchbox", { name: "Medical term" });
+    const search = page.getByRole("combobox", { name: "Medical term" });
     await search.fill(fixture.input);
     await search.press("Enter");
 
@@ -64,7 +64,7 @@ test("clipboard failure announces manual recovery and focuses the fallback", asy
 
 test("404 search recovery uses canonical site routing", async ({ page }) => {
   await page.goto(appUrl("/404/"), { waitUntil: "networkidle" });
-  const search = page.getByRole("searchbox", { name: "Medical term" });
+  const search = page.getByRole("combobox", { name: "Medical term" });
   await search.fill("cytokine");
   await search.press("Enter");
 

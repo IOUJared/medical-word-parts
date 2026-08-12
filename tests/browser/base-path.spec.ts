@@ -16,8 +16,8 @@ test("home routing and all local enhancer scripts use the active server-rendered
   ] as const;
   for (const fixture of cases) {
     await page.goto(appUrl("/"), { waitUntil: "networkidle" });
-    await page.getByRole("searchbox", { name: "Medical term" }).fill(fixture.input);
-    await page.getByRole("searchbox", { name: "Medical term" }).press("Enter");
+    await page.getByRole("combobox", { name: "Medical term" }).fill(fixture.input);
+    await page.getByRole("combobox", { name: "Medical term" }).press("Enter");
 
     await expect(page).toHaveURL(new URL(fixture.destination, page.url()).toString());
   }

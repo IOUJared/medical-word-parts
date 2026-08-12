@@ -15,7 +15,7 @@ function setupAnalyzer(search = ""): HTMLInputElement {
   window.history.replaceState(null, "", `/analyze/${search}`);
   render(<AnalyzerShell />);
   cleanups.push(enhanceAnalyzer(window));
-  return screen.getByRole("searchbox", { name: "Medical term" });
+  return screen.getByRole("combobox", { name: "Medical term" });
 }
 
 describe("analyzer progressive enhancement", () => {

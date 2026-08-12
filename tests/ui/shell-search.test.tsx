@@ -254,7 +254,7 @@ describe("term search progressive enhancement", () => {
     form.setAttribute("data-base-path", basePath);
     cleanups.push(enhanceSite(window, { navigate }));
 
-    await userEvent.type(screen.getByRole("searchbox", { name: /medical term/i }), term);
+    await userEvent.type(screen.getByRole("combobox", { name: /medical term/i }), term);
     fireEvent.submit(form);
 
     expect(navigate).toHaveBeenCalledWith(expected);
@@ -274,7 +274,7 @@ describe("term search progressive enhancement", () => {
   it("Given a populated search, when cleared, then input and message reset while focus returns to the field", async () => {
     render(<TermSearchForm />);
     cleanups.push(enhanceSite(window, { navigate: vi.fn() }));
-    const search = screen.getByRole("searchbox", { name: /medical term/i });
+    const search = screen.getByRole("combobox", { name: /medical term/i });
     await userEvent.type(search, "adrenal");
     const clear = screen.getByRole("button", { name: "Clear" });
 

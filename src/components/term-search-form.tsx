@@ -1,4 +1,5 @@
 import { publicUrl } from "../lib/paths";
+import { TermSuggestionField } from "./term-suggestion-field";
 
 export function TermSearchForm({ compact = false }: { readonly compact?: boolean }) {
   const inputId = compact ? "compact-term" : "home-term";
@@ -6,7 +7,7 @@ export function TermSearchForm({ compact = false }: { readonly compact?: boolean
     <label htmlFor={inputId}>Medical term</label>
     <p className="field-helper">Known entries open their verified page. Other input is analyzed locally.</p>
     <div className="search-row">
-      <input autoComplete="off" data-term-input id={inputId} name="term" type="search" />
+      <TermSuggestionField inputId={inputId} />
       <button className="button button-quiet" data-term-clear hidden type="button">Clear</button>
       <button className="button button-primary" type="submit">Find term</button>
     </div>

@@ -1,6 +1,8 @@
 import { focusAndSelectText, writeClipboard } from "../lib/clipboard";
 import { browserPublicUrl } from "../lib/browser-paths";
 import { decideTermRoute } from "../lib/term-route";
+import { enhanceTermSuggestions } from "../lib/term-suggestions";
+import { termRouteIndex } from "../generated/index";
 import { enhanceTheme } from "../theme/client";
 
 type SiteEnhancementOptions = {
@@ -40,6 +42,8 @@ export function enhanceSite(target: Window, options: SiteEnhancementOptions = {}
     const input = requiredElement<HTMLInputElement>(form, "[data-term-input]");
     const clear = requiredElement<HTMLButtonElement>(form, "[data-term-clear]");
     const message = requiredElement<HTMLElement>(form, "[data-term-message]");
+    const suggestions = Object.entries(termRouteIndex).map(([value, canonical]) => ({ canonical, value }));
+    cleanups.push(enhanceTermSuggestions(target, input, suggestions));
     const handleInput = () => {
       clear.hidden = input.value.length === 0;
       if (input.value.trim().length > 0) message.textContent = "";
