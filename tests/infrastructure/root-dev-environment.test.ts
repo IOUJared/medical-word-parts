@@ -7,7 +7,7 @@ const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
 
 describe("root development end-to-end environment", () => {
   it("Given inherited Cloudflare production variables, when root development E2E runs, then root mounting and client hydration pass", () => {
-    const outcome = spawnSync(npmCommand, ["run", "test:e2e:dev"], {
+    const outcome = spawnSync(npmCommand, ["run", "test:e2e:dev:browser"], {
       cwd: repositoryRoot,
       encoding: "utf8",
       env: {

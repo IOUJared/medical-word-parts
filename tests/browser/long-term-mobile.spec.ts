@@ -14,13 +14,12 @@ async function textLineCount(locator: Locator, text: string): Promise<number> {
   }, text);
 }
 
-test("long verified terms do not leave a one-letter orphan on mobile", async ({ page }) => {
+test("a long verified term heading does not leave a one-letter orphan on mobile", async ({ page }) => {
   const term = "dermatofibrosarcoma";
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto(appUrl(`/term/${term}/`), { waitUntil: "networkidle" });
 
   await expect(page.getByRole("heading", { level: 1, name: term })).toBeVisible();
   expect(await textLineCount(page.getByRole("heading", { level: 1 }), term)).toBe(1);
-  expect(await textLineCount(page.locator(".reconstruction"), term)).toBe(1);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(375);
 });

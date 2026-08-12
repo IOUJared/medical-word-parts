@@ -10,7 +10,7 @@
     "dev": "next dev",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vitest run --exclude tests/infrastructure/root-dev-environment.test.ts",
     "data:validate": "tsx scripts/data-validate.ts",
     "data:build": "tsx scripts/data-build.ts",
     "data:test": "vitest run tests/data",
@@ -41,7 +41,8 @@
     "static:validate": "tsx scripts/static-export-finalize.ts --check",
     "serve:static-test": "tsx scripts/static-export-test-server.ts",
     "test:e2e": "playwright test",
-    "test:e2e:dev": "playwright test --config tests/browser/playwright.root-dev.config.ts",
+    "test:e2e:dev": "vitest run tests/infrastructure/root-dev-environment.test.ts",
+    "test:e2e:dev:browser": "playwright test --config tests/browser/playwright.root-dev.config.ts",
     "build": "npm run browser:build && next build && npm run static:finalize",
     "audit:production": "tsx scripts/production-audit.ts",
     "deploy:cloudflare": "wrangler pages deploy out --project-name medical-word-parts"

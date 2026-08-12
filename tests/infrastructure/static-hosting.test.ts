@@ -42,9 +42,15 @@ describe("static hosting path contract", () => {
     expect(packageJson.scripts["static:validate"]).toBe("tsx scripts/static-export-finalize.ts --check");
   });
 
-  it("runs browser acceptance tests through Playwright after a finalized static build", () => {
+  it("keeps root development acceptance outside the unit suite and runs its browser once", () => {
+    expect(packageJson.scripts["test"]).toBe(
+      "vitest run --exclude tests/infrastructure/root-dev-environment.test.ts",
+    );
     expect(packageJson.scripts["test:e2e"]).toBe("playwright test");
     expect(packageJson.scripts["test:e2e:dev"]).toBe(
+      "vitest run tests/infrastructure/root-dev-environment.test.ts",
+    );
+    expect(packageJson.scripts["test:e2e:dev:browser"]).toBe(
       "playwright test --config tests/browser/playwright.root-dev.config.ts",
     );
   });

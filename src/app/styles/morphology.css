@@ -14,7 +14,9 @@
 .ordinal { display: inline-block; min-inline-size: var(--space-8); margin-inline-end: var(--space-2); font-weight: 700; }
 .segment-transform { padding-block-start: var(--space-2); border-block-start: var(--rule-hairline) solid currentColor; font-size: var(--type-small); }
 .reconstruction { margin-block-start: var(--space-6); border-block-end: var(--rule-active) solid var(--color-ink); font-family: var(--font-display); font-size: var(--type-term); font-weight: 600; overflow-wrap: anywhere; }
+.term-construction { container-type: inline-size; }
 .term-construction .section-heading, .term-parts .section-heading, .term-related .section-heading { margin-block-end: var(--space-4); }
+.term-construction h2 { font-size: min(var(--type-h2), 18cqi); overflow-wrap: anywhere; }
 .term-construction-list { display: grid; gap: var(--space-6); margin: 0; padding: 0; list-style: none; }
 .term-construction-part { position: relative; display: grid; min-inline-size: 0; gap: var(--space-1); padding: var(--space-4); border-block-start: var(--rule-active) solid var(--color-ink); background: var(--color-layer-subtle); }
 .term-construction-part + .term-construction-part::before { content: "+"; position: absolute; inset-block-start: calc(var(--space-6) * -1); inset-inline-start: 0; display: grid; inline-size: 100%; block-size: var(--space-6); place-items: center; color: var(--color-ink); font-weight: 700; }
